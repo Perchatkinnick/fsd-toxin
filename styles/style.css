@@ -1,0 +1,52 @@
+﻿body{
+	position: relative;
+	width: 1440px;
+	height: 1343px;
+	background: #E5E5E5;
+	margin: 0 auto;
+	}
+
+
+.image{
+	display: block;
+	position: absolute;
+	width: 1600px;
+	height: 900px;
+	
+	background:  no-repeat url(../media/images/bgrd.png);
+}
+
+.slogan{
+	/* Лучшие номера для вашей работы, отдыха и просто вдохновения */
+
+
+	position: absolute;
+	width: 297px;
+	height: 48px;
+	left: 1009px;
+	top: 834px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	/* or 171% */
+	
+	text-align: right;
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.header{
+	/* Standard Nav Bar */
+
+
+	position: absolute;
+	width: 1440px;
+	height: 70px;
+	left: 0px;
+	top: 0px;
+}
