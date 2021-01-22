@@ -1,11 +1,63 @@
-﻿body{
+﻿@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.ttf') format('ttf'),
+	     url('../fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
 	position: relative;
 	width: 1440px;
 	height: 1343px;
-	background: #E5E5E5;
+	background: #E5E5E5;;
 	margin: 0 auto;
+}
+.rectangle {
+	position: absolute;
+	width: 1440px;
+	height: 70px;
+	left: 0px;
+	top: 0px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 	}
+	
+.footer-rectangle{
+	position: absolute;
+	width: 1440px;
+	height: 372px;
+	left: 0px;
+	top: 900px;
+	
+	background: #FFFFFF;
+	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+}
 
+.copyrightbar-rectangle{
+	position: absolute;
+	width: 1440px;
+	height: 70px;
+	left: -1px;
+	top: 1273px;
+	
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.search-rectangle{
+	position: absolute;
+	width: 380px;
+	height: 374px;
+	left: 140px;
+	top: 140px;
+	
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
 
 .image{
 	display: block;
@@ -16,7 +68,7 @@
 	background:  no-repeat url(../media/images/bgrd.png);
 }
 
-.slogan{
+.slogan {
 	/* Лучшие номера для вашей работы, отдыха и просто вдохновения */
 
 
@@ -25,26 +77,19 @@
 	height: 48px;
 	left: 1009px;
 	top: 834px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 17px;
-	line-height: 24px;
-	/* or 171% */
-	
-	text-align: right;
-	
-	/* Dark 75% */
-	
+	font-size: 13.7px;
+	line-height: 24px; /* or 171% */;
+	text-align: right; /* Dark 75% */;
 	color: rgba(31, 32, 65, 0.75);
 }
-
-.header{
+.header {
 	/* Standard Nav Bar */
 
 
-	position: absolute;
+	position: relative;
 	width: 1440px;
 	height: 70px;
 	left: 0px;
