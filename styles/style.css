@@ -6,6 +6,237 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.ttf') format('ttf'),
+	     url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.expand-services{
+	position: absolute;
+	width: 24px;
+	height: 21px;
+	left: 643px;
+	top: 25px;
+	
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+	
+	background-image: url('../media/svg/expand_more.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+		
+	}
+	
+.expand-agreements{
+	position: absolute;
+	width: 24px;
+	height: 21px;
+	left: 953px;
+	top: 25px;
+	
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+	
+	background-image: url('../media/svg/expand_more.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.agreements{
+	position: absolute;
+	width: 92px;
+	height: 18px;
+	left: 861px;
+	top: 26px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.news{
+	position: absolute;
+	width: 62px;
+	height: 18px;
+	left: 779px;
+	top: 26px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.vacancies{
+	position: absolute;
+	width: 72px;
+	height: 18px;
+	left: 687px;
+	top: 26px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.services{
+	position: absolute;
+	width: 50px;
+	height: 18px;
+	left: 593px;
+	top: 26px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.about{
+	position: absolute;
+	width: 42px;
+	height: 18px;
+	left: 531px;
+	top: 26px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.logo{
+	position: relative;
+}
+
+.title{
+	position: absolute;
+	width: 53.9px;
+	height: 13.5px;
+	left: 192.5px;
+	top: 28.33px;
+	
+	background-image: url('../media/svg/toxin.svg');
+	/* Dark 100% 
+	
+	background: #1F2041;*/
+}
+
+.vector2{
+	position: absolute;
+	width: 9.12px;
+	height: 5.91px;
+	left: 161.47px;
+	top: 30.29px;
+	
+	background-image: url('../media/svg/vector2.svg');
+	
+	/* Secondary Gradient 
+	
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	
+	border-top: 3px solid #6FCF97 ;
+    border-radius: 360px 0 0 0;
+    float: left;
+    height: 11px;
+    padding-top: 1px;
+    width: 11px;*/
+
+}
+
+.vector1{
+	position: absolute;
+	width: 11.76px;
+	height: 11.76px;
+	left: 149.41px;
+	top: 30.29px;
+	
+	background-image: url('../media/svg/vector.svg');
+	
+	/* Primary Gradient 
+	
+	border-top: 3px solid #BC9CFF ;
+    border-radius: 0 360px 0 0;
+    border-right: 3px solid #BC9CFF;
+    float: left;
+    
+    padding-top: 1px;*/
+    
+    
+}
+
+.round{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 140px;
+	top: 15px;
+	
+	/* Primary Gradient */
+	
+	/*background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);*/
+	
+	border-radius: 100px;
+    /*border: 3px solid #8BA4F9;*/
+    
+    background-image: radial-gradient(circle, transparent, transparent 60%, #BC9CFF 0%, #8BA4F9 100%);
+}
+
 body {
 	position: relative;
 	width: 1440px;
@@ -22,6 +253,29 @@ body {
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 	}
+	
+.search{
+	position: relative ;
+}
+	
+.search-slogan{
+	position: absolute;
+	width: 320px;
+	height: 59px;
+	left: 170px;
+	top: 180px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+	z-index: 10000;
+}
 	
 .footer-rectangle{
 	position: absolute;
