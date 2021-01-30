@@ -14,8 +14,555 @@
 	font-style: normal;
 }
 
+
+body {
+	position: relative;
+	width: 1440px;
+	height: 1343px;
+	background: #E5E5E5;;
+	margin: 0 auto;
+}
+
+header{
+	position: relative ;
+}
+
+.footer{
+	position:relative ;
+}
+
+.footer-navigation{
+	position: relative;
+	width: 143px;
+	height: 168px;
+	left: 440px;
+	top: 964px;
+}
+
+.footer-logo{
+	position:relative ;
+	left: 140px;
+	top: 1000px;
+
+}
+
+.footer-slogan{
+	/* Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды» */
+
+
+	position: absolute;
+	width: 260px;
+	height: 72px;
+	left: 140px;
+	top: 1060px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	/* or 171% */
+	
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.footer_subscription{
+	position: absolute;
+	width: 260px;
+	height: 84px;
+	left: 1040px;
+	top: 1004px;
+}
+
+input{
+	position: absolute;
+	width: 200px;
+	height: 24px;
+	left: 1px;
+	top: 115px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	/* identical to box height, or 171% */
+	
+	
+	/* Dark 25% */
+	
+	color: rgba(31, 32, 65, 0.25);
+	border: none;
+	outline:none;
+}
+
+.footer_subscription_arrow{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 216px;
+	top: 108px;
+	
+	/*font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	 Primary Gradient 
+	
+	color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);*/
+	
+	background-image: url('../media/svg/arrow_forward_colored.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.footer_subscription_rect{
+	position: absolute;
+	width: 260px;
+	height: 44px;
+	top: 108px;
+	
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.footer_subscription_notation{
+	position: absolute;
+	width: 260px;
+	height: 48px;
+	top: 40px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	/* or 171% */
+	
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+	
+}
+
+.footer_subscription_title{
+	position: absolute;
+	width: 76px;
+	height: 15px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.footer_support{
+	position: absolute;
+	width: 149px;
+	height: 130px;
+	left: 840px;
+	top: 1004px;
+}
+
+.footer_support_connection{
+	position: absolute;
+	width: 96px;
+	height: 18px;
+	top: 116px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_support_communities{
+	position: absolute;
+	width: 90px;
+	height: 18px;
+	top: 78px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_support_agreements{
+	position: absolute;
+	width: 92px;
+	height: 18px;
+	top: 40px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_support_title{
+	position: absolute;
+	width: 149px;
+	height: 15px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.footer_about{
+	position: absolute ;
+	width: 108px;
+	height: 168px;
+	left: 640px;
+	top: 1004px;
+}
+
+.footer_about_investors{
+	
+	position: absolute;
+	width: 82px;
+	height: 18px;
+	top: 154px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_about_vacancies{
+	position: absolute;
+	width: 72px;
+	height: 18px;
+	top: 116px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_about_title{
+	position: absolute;
+	width: 42px;
+	height: 15px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.footer_about_team{
+	position: absolute;
+	width: 108px;
+	height: 18px;
+	top: 78px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_about_about{
+	position: absolute;
+	width: 77px;
+	height: 18px;
+	top: 40px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_navigation_services{
+	position: absolute;
+	width: 50px;
+	height: 18px;
+	top: 154px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_navigation_support{
+	position: absolute;
+	width: 143px;
+	height: 18px;
+	top: 116px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_navigation_news{
+	position: absolute;
+	width: 62px;
+	height: 18px;
+	top: 78px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_navigation_about{
+	position: absolute;
+	width: 42px;
+	height: 18px;
+	
+	top: 40px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 50% */
+	
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.footer_navigation_title{
+	position: absolute;
+	width: 83px;
+	height: 15px;
+		
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.arrow-forward{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 446px;
+	top: 440px;
+	
+	/*font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	color: #FFFFFF;*/
+	
+	background-image: url('../media/svg/arrow_forward.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.search-title{
+	position: absolute;
+	width: 280px;
+	height: 15px;
+	left: 188px;
+	top: 454px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-align: center;
+	text-transform: uppercase;
+	
+	color: #FFFFFF;
+}
+
+.search-button{
+	position: absolute;
+	width: 320px;
+	height: 44px;
+	left: 170px;
+	top: 440px;
+	
+	/* Primary Gradient */
+	
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+}
+
 .guests-form{
 	position: relative ;
+}
+
+.guests-arrow{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 445.74px;
+	top: 365.56px;
+	
+	/*font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	 Dark 50% 
+	
+	color: rgba(31, 32, 65, 0.5);*/
+	
+	background-image: url('../media/svg/expand_more.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.guests-count{
+	position: absolute;
+	width: 112px;
+	height: 18px;
+	left: 185px;
+	top: 378px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* identical to box height, or 129% */
+	
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.guests-count:before{
+	content: "Сколько гостей"
+}
+
+
+.guests-rect{
+	position: absolute;
+	width: 320px;
+	height: 44px;
+	left: 170px;
+	top: 365px;
+	
+	background: #FFFFFF;
+	/* Dark 25% */
+	
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
 }
 
 .guests{
@@ -308,7 +855,7 @@
 }
 
 .login-button-border{
-	position: relative;
+	position: absolute;
 	width: 87px;
 	height: 34px;
 	left: 995px;
@@ -450,16 +997,27 @@
 	color: rgba(31, 32, 65, 0.5);
 }
 
+.header-logo{
+	position: relative;
+
+	left: 140px;
+	top: 15px;
+}
+
 .logo{
 	position: relative;
+	width: 105.69px;
+	height: 40px;
+		
+	
 }
 
 .title{
 	position: absolute;
 	width: 53.9px;
 	height: 13.5px;
-	left: 192.5px;
-	top: 28.33px;
+	left: 51.79px;
+	top: 13.25px;
 	
 	background-image: url('../media/svg/toxin.svg');
 	/* Dark 100% 
@@ -471,8 +1029,8 @@
 	position: absolute;
 	width: 9.12px;
 	height: 5.91px;
-	left: 161.47px;
-	top: 30.29px;
+	left: 21.47px;
+	top: 15.29px;
 	
 	background-image: url('../media/svg/vector2.svg');
 	
@@ -493,8 +1051,8 @@
 	position: absolute;
 	width: 11.76px;
 	height: 11.76px;
-	left: 149.41px;
-	top: 30.29px;
+	left: 9.41px;
+	top: 15.29px;
 	
 	background-image: url('../media/svg/vector.svg');
 	
@@ -510,30 +1068,34 @@
     
 }
 
-.round{
+.round-gradient{
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	left: 140px;
-	top: 15px;
+	left: 0px;
+	top: 0px;
 	
 	/* Primary Gradient */
 	
-	/*background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);*/
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	
 	border-radius: 100px;
-    /*border: 3px solid #8BA4F9;*/
+    /*border: 3px solid #8BA4F9;
     
-    background-image: radial-gradient(circle, transparent, transparent 60%, #BC9CFF 0%, #8BA4F9 100%);
+    background-image: radial-gradient(circle, transparent, transparent 60%, #BC9CFF 0%, #8BA4F9 100%);*/
 }
 
-body {
-	position: relative;
-	width: 1440px;
-	height: 1343px;
-	background: #E5E5E5;;
-	margin: 0 auto;
+.round-background{
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	left: 3px;
+	top: 3px;
+	background:white;
+	border-radius: 100%;
+
 }
+
 .rectangle {
 	position: absolute;
 	width: 1440px;
@@ -578,6 +1140,7 @@ body {
 	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 }
 
+
 .copyrightbar-rectangle{
 	position: absolute;
 	width: 1440px;
@@ -587,6 +1150,100 @@ body {
 	
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.copyrightbar_copiright{
+	position: absolute;
+	width: 367px;
+	height: 18px;
+	left: 139px;
+	top: 1299px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.insta{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 1275px;
+	top: 1296px;
+}
+
+i.fab.fa-instagram{
+	font-family: Font Awesome 5 Brands;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 23px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	/* Primary Gradient */
+	
+	color: #BC9CFF;
+}
+
+.facebook{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 1231px;
+	top: 1296px;
+}
+
+i.fab.fa-facebook-square{
+	font-family: Font Awesome 5 Brands;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 23px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	/* Primary Gradient */
+	
+	color: #BC9CFF;
+}
+
+.twitter{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 1187px;
+	top: 1296px;
+
+}
+
+i.fab.fa-twitter{
+	font-family: Font Awesome 5 Brands;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 23px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	/* Primary Gradient */
+	
+	color: #BC9CFF ;
 }
 
 .search-rectangle{
@@ -629,6 +1286,7 @@ body {
 	text-align: right; /* Dark 75% */;
 	color: rgba(31, 32, 65, 0.75);
 }
+
 .header {
 	/* Standard Nav Bar */
 
