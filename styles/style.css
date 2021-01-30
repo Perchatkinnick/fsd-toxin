@@ -14,6 +14,249 @@
 	font-style: normal;
 }
 
+.guests-form{
+	position: relative ;
+}
+
+.guests{
+	position: absolute;
+	width: 43px;
+	height: 15px;
+	left: 170px;
+	top: 345px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.departure-form{
+	position: relative ;
+}
+
+.departure{
+	position: absolute;
+	width: 83px;
+	height: 15px;
+	left: 340px;
+	top: 260px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.departure-rect{
+	position: absolute;
+	width: 150px;
+	height: 44px;
+	left: 340px;
+	top: 280.44px;
+	
+	background: #FFFFFF;
+	/* Dark 25% */
+	
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.departure-date{
+	position: absolute;
+	width: 103px;
+	height: 24px;
+	left: 355px;
+	top: 292px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* or 129% */
+	
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.departure-date:before{
+	content: "ДД.ММ.ГГГГ"
+}
+
+.departure-arrow{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 446px;
+	top: 281px;
+	
+	/*font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	 Dark 50% 
+	
+	color: rgba(31, 32, 65, 0.5);*/
+	
+	background-image: url('../media/svg/expand_more.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.arrive-form{
+	position: relative ;
+}
+
+
+
+.arrive{
+	position: absolute;
+	width: 83px;
+	height: 15px;
+	left: 170px;
+	top: 260px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Dark 100% */
+	
+	color: #1F2041;
+}
+
+.arrive-rect{
+	position: absolute;
+	width: 150px;
+	height: 44px;
+	left: 170px;
+	top: 280.44px;
+	
+	background: #FFFFFF;
+	/* Dark 25% */
+	
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.arrive-date{
+	position: absolute;
+	width: 103px;
+	height: 24px;
+	left: 185px;
+	top: 292px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	/* or 129% */
+	
+	
+	/* Dark 75% */
+	
+	color: rgba(31, 32, 65, 0.75);
+	
+	
+}
+
+.arrive-date:before{
+	content: "ДД.ММ.ГГГГ"
+}
+
+.registration-button{
+	position: absolute;
+	width: 196px;
+	height: 34px;
+	left: 1104px;
+	top: 18px;
+	
+	/* Primary Gradient */
+	
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+}
+
+.arrive-arrow{
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 276px;
+	top: 281px;
+	
+	/*font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	 Dark 50% 
+	
+	color: rgba(31, 32, 65, 0.5);*/
+	
+	background-image: url('../media/svg/expand_more.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+
+}
+
+.registration{
+	position: absolute;
+	width: 157px;
+	height: 15px;
+	left: 1123px;
+	top: 27px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	color: #FFFFFF;
+
+}
+
 .expand-services{
 	position: absolute;
 	width: 24px;
@@ -41,6 +284,53 @@
 	background-repeat: no-repeat;
 		
 	}
+
+.login{
+	position: absolute;
+	width: 47px;
+	height: 15px;
+	left: 1017px;
+	top: 27px;
+	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	/* Primary Color */
+	
+	color: #BC9CFF;
+	
+}
+
+.login-button-border{
+	position: relative;
+	width: 87px;
+	height: 34px;
+	left: 995px;
+	top: 16px;
+	
+	border-radius: 22px;	
+	background: linear-gradient(to right, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+	
+	padding: 2px;
+}
+
+.login-button-background{
+	
+	width: 83px;
+	height: 30px;
+	
+	border-radius: 22px;
+
+	background: white;
+	
+	padding: 2px;
+}
 	
 .expand-agreements{
 	position: absolute;
