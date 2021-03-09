@@ -10,12 +10,22 @@
 	<meta charset="utf-8">
 	<link type="text/css" rel="stylesheet" media="all" href="styles/reset.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="styles/style.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="styles/calendar/style.css" />
+
 	<link type="text/css" rel="stylesheet" media="all" href="fontawesome/all.min.css" />
+
+	<script src="scripts/calendar/script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="scripts/script.js" charset="utf-8" type="text/javascript"></script>
+
+	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
+
+
+
 
 	<title>Toxin</title>
 </head>
 	
-	<body>
+	<body onload="onLoad()">
 		<header >
 			<div class="header"> 
 				<div class="rectangle"></div>
@@ -49,31 +59,59 @@
 		
 		<div class="content">
 			<div class="image"></div>
-			<div class="search">
-				<div class="search-slogan">Найдём номера под ваши пожелания</div>
-				<div class="search-rectangle"></div>
-				<div class="arrive-form">
-					<div class="arrive">прибытие</div>
-					<div class="arrive-rect"></div>
-					<div class="arrive-date"></div>
-					<div class="arrive-arrow"></div> 
-				</div>
-				<div class="departure-form">
-					<div class="departure">выезд</div>
-					<div class="departure-rect"></div>
-					<div class="departure-date"></div>
-					<div class="departure-arrow"></div>
-				</div>
-				<div class="guests-form">
-					<div class="guests">гости</div>
-					<div class="guests-rect"></div>
-					<div class="guests-count"></div>
-					<div class="guests-arrow"></div>
-				</div>
-				<div class="search-button"></div>
-				<div class="search-title">подобрать номер</div>
-				<div class="arrow-forward"></div>
-			</div>
+            <div class="search">
+                <div class="search-slogan">Найдём номера под ваши пожелания</div>
+                <div class="search-rectangle"></div>
+                <div class="arrive-form">
+                    <div class="arrive">прибытие</div>
+                    <div class="arrive-rect"></div>
+                    <div class="arrive-date">ДД.ММ.ГГГГ</div>
+                    <div class="arrive-arrow"></div>
+                </div>
+                <div class="departure-form">
+                    <div class="departure">выезд</div>
+                    <div class="departure-rect"></div>
+                    <div class="departure-date">ДД.ММ.ГГГГ</div>
+                    <div class="departure-arrow"></div>
+                </div>
+                <div class="calendar-parent">
+                    <div id="days">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Пн</th>
+                                    <th>Вт</th>
+                                    <th>Ср</th>
+                                    <th>Чт</th>
+                                    <th>Пт</th>
+                                    <th>Сб</th>
+                                    <th>Вс</th>
+                                </tr>
+                            </thead>
+                            <tbody class="body" data-dot1="" data-dot2=""></tbody>
+                        </table>
+                    </div>
+
+                    <div class="info">Август</div>
+
+                    <i class="material-icons arrow-back">arrow_back</i>
+                    <i class="material-icons arrow-forward">arrow_forward</i>
+
+                    <span class="clear">очистить</span>
+                    <span class="apply">применить</span>
+                </div>
+
+                <div class="guests-form">
+                    <div class="guests">гости</div>
+                    <div class="guests-rect"></div>
+                    <div class="guests-count"></div>
+                    <div class="guests-arrow"></div>
+                </div>
+
+                <div class="search-button">подобрать номер</div>
+
+                <!--<div class="arrow-forward"></div>-->
+            </div>
 			<div class="slogan">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
 		</div>
 		

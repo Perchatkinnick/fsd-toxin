@@ -1,7 +1,7 @@
 ﻿@font-face {
 	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Regular.ttf') format('ttf'),
-	     url('../fonts/Montserrat-Regular.woff') format('woff');
+	src: url('../fonts/Montserrat-Regular.ttf') format('ttf'), 
+		 url('../fonts/Montserrat-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -15,6 +15,7 @@
 }
 
 
+
 body {
 	position: relative;
 	width: 1440px;
@@ -25,6 +26,23 @@ body {
 
 header{
 	position: relative ;
+}
+
+.content {
+	position: relative;
+}
+
+.calendar-parent {
+	position: absolute;
+	display: none;
+	width: 320px;
+	height: 369px;
+	top: 330px;
+	left: 170px;
+	border-radius: 4px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	background: white;
+	z-index: 100;
 }
 
 .footer{
@@ -462,37 +480,24 @@ input{
 
 }
 
-.search-title{
-	position: absolute;
-	width: 280px;
-	height: 15px;
-	left: 188px;
-	top: 454px;
-	
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
-	/* identical to box height */
-	
-	text-align: center;
-	text-transform: uppercase;
-	
-	color: #FFFFFF;
-}
-
-.search-button{
+.search-button {
 	position: absolute;
 	width: 320px;
 	height: 44px;
 	left: 170px;
 	top: 440px;
-	
 	/* Primary Gradient */
-	
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 44px;
+	/* identical to box height */
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
 
 .guests-form{
@@ -611,52 +616,43 @@ input{
 	color: #1F2041;
 }
 
-.departure-rect{
+.departure-rect {
 	position: absolute;
 	width: 150px;
 	height: 44px;
 	left: 340px;
 	top: 280.44px;
-	
 	background: #FFFFFF;
 	/* Dark 25% */
-	
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
-.departure-date{
+.departure-date {
 	position: absolute;
 	width: 103px;
 	height: 24px;
 	left: 355px;
 	top: 292px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
 	/* or 129% */
-	
-	
 	/* Dark 75% */
-	
 	color: rgba(31, 32, 65, 0.75);
+	cursor: pointer;
 }
 
-.departure-date:before{
-	content: "ДД.ММ.ГГГГ"
-}
-
-.departure-arrow{
+.departure-arrow {
 	position: absolute;
 	width: 44px;
 	height: 44px;
 	left: 446px;
 	top: 281px;
-	
 	/*font-family: Material Icons;
 	font-style: normal;
 	font-weight: normal;
@@ -669,16 +665,17 @@ input{
 	 Dark 50% 
 	
 	color: rgba(31, 32, 65, 0.5);*/
-	
 	background-image: url('../media/svg/expand_more.svg');
 	background-position: center;
 	background-repeat: no-repeat;
-
+	cursor: pointer;
 }
 
-.arrive-form{
-	position: relative ;
+.arrive-form {
+	position: relative;
+	
 }
+	
 
 
 
@@ -703,67 +700,55 @@ input{
 	color: #1F2041;
 }
 
-.arrive-rect{
+.arrive-rect {
 	position: absolute;
 	width: 150px;
 	height: 44px;
 	left: 170px;
 	top: 280.44px;
-	
 	background: #FFFFFF;
 	/* Dark 25% */
-	
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
-.arrive-date{
+.arrive-date {
 	position: absolute;
 	width: 103px;
 	height: 24px;
 	left: 185px;
 	top: 292px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
 	/* or 129% */
-	
-	
 	/* Dark 75% */
-	
 	color: rgba(31, 32, 65, 0.75);
-	
-	
+	cursor: pointer;
 }
 
-.arrive-date:before{
-	content: "ДД.ММ.ГГГГ"
-}
 
-.registration-button{
+.registration-button {
 	position: absolute;
 	width: 196px;
 	height: 34px;
 	left: 1104px;
 	top: 18px;
-	
 	/* Primary Gradient */
-	
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
 }
 
-.arrive-arrow{
+.arrive-arrow {
 	position: absolute;
 	width: 44px;
 	height: 44px;
 	left: 276px;
 	top: 281px;
-	
 	/*font-family: Material Icons;
 	font-style: normal;
 	font-weight: normal;
@@ -776,12 +761,10 @@ input{
 	 Dark 50% 
 	
 	color: rgba(31, 32, 65, 0.5);*/
-	
 	background-image: url('../media/svg/expand_more.svg');
 	background-position: center;
 	background-repeat: no-repeat;
-
-
+	cursor: pointer;
 }
 
 .registration{

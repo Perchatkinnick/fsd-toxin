@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-Regular.ttf) format('ttf'), url(fonts/Montserrat-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    position: relative;
+}
+
+thead tr th {
+    width: 39.88px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    color: #BC9CFF;
+}
+
+tbody tr td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    /* Dark 50% */
+    color: rgba(31, 32, 65, 0.5);
+    width: 39.88px;
+    height: 40px;
+}
+
+.today {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+}
+
+.parentDotLeft {
+    background: linear-gradient(to right, white 50%, #eae7ff 50%);
+}
+
+.parentDotRight {
+    background: linear-gradient(to right, #eae7ff 50%, white 50%);
+}
+
+.dot {
+    width: 39.88px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+}
+
+.anotherMonthDays {
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.period {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+}
+
+.info {
+    position: absolute;
+    width: 228px;
+    height: 24px;
+    left: 44px;
+    top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    /* identical to box height */
+    text-align: center;
+    /* Dark 100% */
+    color: #1F2041;
+}
+
+.apply {
+    position: absolute;
+    width: 84px;
+    height: 15px;
+    left: 216px;
+    top: 334px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Primary Color */
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.clear {
+    position: absolute;
+    width: 72px;
+    height: 15px;
+    left: 20px;
+    top: 334px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.arrow-forward {
+    position: absolute;
+    width: 23.93px;
+    height: 24px;
+    left: 275.4px;
+    top: 20px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Primary Color */
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.arrow-back {
+    position: absolute;
+    width: 23.93px;
+    height: 24px;
+    left: 20.2px;
+    top: 20px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Primary Color */
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+#calendar {
+    position: relative;
+    width: 320px;
+    height: 369px;
+    top: 330px;
+    left: 170px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+#days {
+    position: absolute;
+    width: 279.39px;
+    height: 240px;
+    left: 20.93px;
+    top: 62px;
+}
