@@ -11,11 +11,15 @@
 	<link type="text/css" rel="stylesheet" media="all" href="styles/reset.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="styles/style.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="styles/calendar/style.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="styles/guests-dropdaun/guests_dropdaun-style.css" />
+
 
 	<link type="text/css" rel="stylesheet" media="all" href="fontawesome/all.min.css" />
 
 	<script src="scripts/calendar/script.js" charset="utf-8" type="text/javascript"></script>
 	<script src="scripts/script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="scripts/guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
+
 
 	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
 
@@ -104,9 +108,31 @@
                 <div class="guests-form">
                     <div class="guests">гости</div>
                     <div class="guests-rect"></div>
-                    <div class="guests-count"></div>
+					<div class="guests-title">Сколько гостей</div>
                     <div class="guests-arrow"></div>
                 </div>
+				<div class="guests-dropdown">
+					<div class="guests-adult">
+						<div class="guests-note">взрослые</div>
+						<div id="guests-adult-plus" class="guests-plus">+</div>
+						<div id="guests-adult" class="guests-count">2</div>
+						<div id="guests-adult-minus" class="guests-minus">-</div>
+					</div>
+					<div class="guests-children">
+						<div class="guests-note">дети</div>
+						<div id="guests-children-plus" class="guests-plus">+</div>
+						<div id="guests-children" class="guests-count">0</div>
+						<div id="guests-children-minus" class="guests-minus">-</div>
+					</div>
+					<div class="guests-babies">
+						<div class="guests-note">младенцы</div>
+						<div id="guests-babies-plus" class="guests-plus">+</div>
+						<div id="guests-babies" class="guests-count">0</div>
+						<div id="guests-babies-minus" class="guests-minus">-</div>
+					</div>
+					<span class="guests-clear">очистить</span>
+					<span class="guests-apply">применить</span>
+				</div>
 
                 <div class="search-button">подобрать номер</div>
 

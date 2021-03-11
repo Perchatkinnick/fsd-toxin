@@ -7,12 +7,24 @@ function onLoad() {
     departureForm.addEventListener('click', addCalendar);
 
     let guestsForm = document.querySelector('.guests-form');
+    guestsForm.addEventListener('click', addGuestsForm);
     
 
     let searchButton = document.querySelector('.search-button');
     
     
 
+}
+
+function addGuestsForm() {
+    let guestsForm = document.querySelector('.guests-dropdown');
+
+    if (guestsForm.style.display == '') {
+        guestsForm.style.display = 'block';
+        onGuestsDropdaunLoad();
+    } else {
+        guestsForm.style.display = '';
+    }
 }
 
 function addCalendar() {

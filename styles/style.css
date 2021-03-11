@@ -498,19 +498,19 @@ input{
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	cursor: pointer;
 }
 
 .guests-form{
 	position: relative ;
 }
 
-.guests-arrow{
+.guests-arrow {
 	position: absolute;
 	width: 44px;
 	height: 44px;
 	left: 445.74px;
 	top: 365.56px;
-	
 	/*font-family: Material Icons;
 	font-style: normal;
 	font-weight: normal;
@@ -523,51 +523,41 @@ input{
 	 Dark 50% 
 	
 	color: rgba(31, 32, 65, 0.5);*/
-	
 	background-image: url('../media/svg/expand_more.svg');
 	background-position: center;
 	background-repeat: no-repeat;
-
+	cursor: pointer;
 }
 
-.guests-count{
+.guests-title {
 	position: absolute;
 	width: 112px;
 	height: 18px;
 	left: 185px;
 	top: 378px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
 	/* identical to box height, or 129% */
-	
-	
 	/* Dark 75% */
-	
 	color: rgba(31, 32, 65, 0.75);
+	cursor: pointer;
 }
 
-.guests-count:before{
-	content: "Сколько гостей"
-}
-
-
-.guests-rect{
+.guests-rect {
 	position: absolute;
 	width: 320px;
 	height: 44px;
 	left: 170px;
 	top: 365px;
-	
 	background: #FFFFFF;
 	/* Dark 25% */
-	
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .guests{
