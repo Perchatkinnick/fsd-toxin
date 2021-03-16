@@ -43,11 +43,14 @@ function func() {
 		dateLoad(arriveDate, dot1);
 		dateLoad(departureDate, dot2);
 
-		body.dataset.dot1 = '';
-		body.dataset.dot2 = '';
+		if (arriveDate.innerHTML != 'ДД.ММ.ГГГГ' && departureDate.innerHTML != 'ДД.ММ.ГГГГ') {
+			body.dataset.dot1 = '';
+			body.dataset.dot2 = '';
 
-		let calendar = document.querySelector('.calendar-parent');
-		calendar.style.display = '';
+			let calendar = document.querySelector('.calendar-parent');
+			calendar.style.display = '';
+		}
+		
 	});
 
 	let days = document.querySelector('#days');
@@ -75,7 +78,9 @@ function dateLoad(elem, text) {
 		let content = arr[2] + '.' + monthForShow(arr[1]) + '.' + arr[0];
 
 		elem.innerHTML = content;
-	}
+	} else {
+		alert('Выберите дату прибытия и дату отъезда');
+    }
 }
 
 function monthForShow(number) {

@@ -11,9 +11,31 @@ function onLoad() {
     
 
     let searchButton = document.querySelector('.search-button');
-    
-    
+    searchButton.addEventListener('click', function () {
+        addDataToLocalStorage();
+        location.href = 'search-room.html';
+    });
+}
 
+function addDataToLocalStorage() {
+    let dateArrive = document.querySelector('.arrive-date').innerHTML;
+    if (dateArrive != 'ДД.ММ.ГГГГ') {
+        localStorage.setItem('dateArrive', dateArrive);
+    }
+
+    let dateDeparture = document.querySelector('.departure-date').innerHTML;
+    if (dateDeparture != 'ДД.ММ.ГГГГ') {
+        localStorage.setItem('dateDeparture', dateDeparture);
+    }
+
+    let guestsBabies = document.querySelector('#guests-babies').innerHTML;
+    localStorage.setItem('guestsBabies', guestsBabies);
+
+    let guestsChildren = document.querySelector('#guests-children').innerHTML;
+    localStorage.setItem('guestsChildren', guestsChildren);
+
+    let guestsAdult = document.querySelector('#guests-adult').innerHTML;
+    localStorage.setItem('guestsAdult', guestsAdult);
 }
 
 function addGuestsForm() {

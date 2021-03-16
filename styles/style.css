@@ -14,13 +14,11 @@
 	font-style: normal;
 }
 
-
-
 body {
 	position: relative;
 	width: 1440px;
 	height: 1343px;
-	background: #E5E5E5;;
+	background: #E5E5E5;
 	margin: 0 auto;
 }
 
@@ -1118,7 +1116,6 @@ input{
 	position: absolute;
 	width: 1440px;
 	height: 70px;
-	left: -1px;
 	top: 1273px;
 	
 	background: #FFFFFF;

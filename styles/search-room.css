@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('ttf'), url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('ttf'), url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    background: #E5E5E5;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.content__room-settings {
+    width: 100%;
+    height: 1356px;
+    background: #FFFFFF;
+}
+
+.content__date {
+    position: absolute;
+    width: 266px;
+    height: 65px;
+    left: 140px;
+    top: 100px;
+}
+
+.content__date__label {
+    position: absolute;
+    width: 197px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__date__rect {
+    position: absolute;
+    width: 266px;
+    height: 44px;
+    top: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content__date__title {
+    position: absolute;
+    width: 103px;
+    height: 24px;
+    left: 15px;
+    top: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    cursor: pointer;
+}
+
+.content__date__arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 222px;
+    top: 21px;
+    background-image: url('../media/svg/expand_more.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.content__guests {
+    position: absolute;
+    width: 266px;
+    height: 63.56px;
+    left: 140px;
+    top: 184.44px;
+}
+
+.content__guests__label {
+    position: absolute;
+    width: 43px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__guests__rect {
+    position: absolute;
+    width: 266px;
+    height: 44px;
+    top: 24px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content__guests__title {
+    position: absolute;
+    width: 139px;
+    height: 24px;
+    left: 15px;
+    top: 32.44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    cursor: pointer;
+}
+
+.content__guests__arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 222px;
+    top: 20px;
+    background-image: url('../media/svg/expand_more.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.content__price-range {
+    position: absolute;
+    width: 266px;
+    height: 72px;
+    left: 140px;
+    top: 278px;
+}
+
+.content__price-range__label {
+    position: absolute;
+    width: 121px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__price-range__value {
+    position: absolute;
+    width: 102px;
+    height: 15px;
+    left: 164px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__price-range__range {
+    position: absolute;
+    width: 266px;
+    height: 12px;
+    top: 35.44px;
+}
+
+.content__price-range__remark {
+    position: absolute;
+    width: 264px;
+    height: 14px;
+    top: 58px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.slider {
+    width: 80%;
+    height: 5px;
+    background: #FFFFFF;
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+    .slider .bar {
+        position: absolute;
+        left: 50px;
+        width: 266px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border-radius: 3px;
+        height: 100%;
+    }
+
+        .slider .bar .lp span {
+            position: relative;
+            left: -30px;
+        }
+
+        .slider .bar .rp span {
+            position: relative;
+            left: 10px;
+        }
+
+        .slider .bar .lp, .slider .bar .rp {
+            cursor: pointer;
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            border: 2px solid #FFFFFF;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            position: absolute;
+            line-height: 400%;
+            color: red;
+            user-select: none;
+        }
+
+        .slider .bar .lp {
+            left: 0px;
+            top: -7px;
+        }
+
+        .slider .bar .rp {
+            left: 99%;
+            top: -7px;
+        }
