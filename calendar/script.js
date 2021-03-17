@@ -1,27 +1,27 @@
 
 function func() {
-    let backArrow = document.querySelector('.arrow-back');
+	let backArrow = document.querySelector('.arrow-back');
 
 	backArrow.addEventListener('click', function () {
 		isFuture = false;
 		draw(body, getPrevYear(body), getPrevMonth(body), isFuture);
 		showCurrentMonth(body);
 	});
-    
-    let forwardArrow = document.querySelector('.arrow-forward');
+
+	let forwardArrow = document.querySelector('.arrow-forward');
 
 	forwardArrow.addEventListener('click', function () {
 		if (body.dataset.year >= year && body.dataset.month >= month) {
 			isFuture = true;
 		} else {
 			isFuture = false;
-        }
-		
+		}
+
 		draw(body, getNextYear(body), getNextMonth(body), isFuture);
 		showCurrentMonth(body);
 	});
 
-    let clear = document.querySelector('.clear');
+	let clear = document.querySelector('.clear');
 
 	clear.addEventListener('click', function () {
 		body.dataset.month = month;
@@ -33,60 +33,102 @@ function func() {
 		showCurrentMonth(body);
 	});
 
-    let apply = document.querySelector('.apply');
+	let apply = document.querySelector('.apply');
 	apply.addEventListener('click', function () {
 		let arriveDate = document.querySelector('.arrive-date');
 		let departureDate = document.querySelector('.departure-date');
+
 		let dot1 = body.dataset.dot1;
 		let dot2 = body.dataset.dot2;
 
 		dateLoad(arriveDate, dot1);
 		dateLoad(departureDate, dot2);
 
-		if (arriveDate.innerHTML != 'ДД.ММ.ГГГГ' && departureDate.innerHTML != 'ДД.ММ.ГГГГ') {
-			body.dataset.dot1 = '';
-			body.dataset.dot2 = '';
+		localStorage.setItem('dateArrive', dot1);
+		localStorage.setItem('dateDeparture', dot2);
 
-			let calendar = document.querySelector('.calendar-parent');
-			calendar.style.display = '';
+		// for search-room
+		let contentDateTitle = document.querySelector('.content__date__title');
+		if (contentDateTitle != null) {
+			if (dot1 != '' && dot2 != '')
+			complexDateLoad(contentDateTitle, dot1, dot2);
 		}
-		
+
+
+		body.dataset.dot1 = '';
+		body.dataset.dot2 = '';
+
+		let calendar = document.querySelector('.calendar-parent');
+		calendar.style.display = '';
+
+
 	});
 
 	let days = document.querySelector('#days');
-    let body = days.querySelector('.body');
+	let body = days.querySelector('.body');
 
-    let date = new Date();
-    let year = date.getFullYear();
-    let month = date.getMonth();
+	let date = new Date();
+	let year = date.getFullYear();
+	let month = date.getMonth();
 
-    body.dataset.month = month;
+	body.dataset.month = month;
 	body.dataset.year = year;
 
 	let isFuture = false;
 
-    draw(body, year, month, isFuture);
+	draw(body, year, month, isFuture);
 
-    showCurrentMonth(body);
-   
+	showCurrentMonth(body);
+
+}
+
+function complexDateLoad(elem, arriveDate, departureDate) {
+	let complexArriveDate = getComplexDate(arriveDate);
+	let complexDepartureDate = getComplexDate(departureDate);
+
+	elem.innerHTML = complexArriveDate + ' - ' + complexDepartureDate;
+}
+
+function getComplexDate(date) {
+	let arr = date.split('.');
+	date = arr[2] + ' ' + getShortMonth(arr[1]);
+
+	return date;
+}
+
+function getShortMonth(num) {
+
+	let months = ['янв', 'фев', 'мар', 'апр', 'май', 'июнь', 'июль', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+	let str = '';
+
+	for (let i = 0; i < 12; i++) {
+		if (eraseZero(num) == i) {
+			str = months[i];
+		}
+	}
+
+	return str;
 }
 
 function dateLoad(elem, text) {
-	if (text != '') {
-		let arr = text.split('.');
+	if (elem != null) {
+		if (text != '') {
+			let arr = text.split('.');
 
-		let content = arr[2] + '.' + monthForShow(arr[1]) + '.' + arr[0];
+			let content = arr[2] + '.' + monthForShow(arr[1]) + '.' + arr[0];
 
-		elem.innerHTML = content;
-	} else {
-		alert('Выберите дату прибытия и дату отъезда');
-    }
+			elem.innerHTML = content;
+		} else {
+			//alert('Выберите дату прибытия и дату отъезда');
+		}
+	}
+
 }
 
 function monthForShow(number) {
 	if (number == 11) {
 		number = 0;
-    }
+	}
 	number++;
 
 
@@ -171,7 +213,7 @@ function createTable(parent, arr, isFuture) {
 	for (let i = 0; i < arr.length; i++) {
 		let row = document.createElement('tr');
 		parent.appendChild(row);
-		
+
 		for (let k = 0; k < 7; k++) {
 			let cell = document.createElement('td');
 			cell.innerHTML = arr[i][k];
@@ -190,7 +232,7 @@ function createTable(parent, arr, isFuture) {
 					cell.innerHTML = '';
 					parentDiv.classList.add('dot');
 					cell.appendChild(parentDiv);
-                }
+				}
 			}
 
 			if (parent.dataset.dot2 != '') {
@@ -212,14 +254,14 @@ function createTable(parent, arr, isFuture) {
 							if (+cell.innerHTML > eraseZero(dot1[2]) && +cell.innerHTML < eraseZero(dot2[2]) && eraseZero(parent.dataset.month) == eraseZero(dot1[1]) && parent.dataset.year == dot1[0]) {
 								cell.classList.add('period');
 							}
-                        } else {
+						} else {
 							if (+cell.innerHTML > eraseZero(dot1[2]) && eraseZero(dot1[1]) == parent.dataset.month) {
 								cell.classList.add('period');
 							}
 							if (+cell.innerHTML < eraseZero(dot2[2]) && eraseZero(dot2[1]) == parent.dataset.month) {
 								cell.classList.add('period');
 							}
-                        }
+						}
 					}
 				}
 			}
@@ -238,7 +280,7 @@ function createTable(parent, arr, isFuture) {
 				cell.classList.add('anotherMonthDays');
 				cell.classList.remove('period');
 				isFuture = false;
-				
+
 			}
 
 			let currentDate = new Date();
@@ -258,8 +300,8 @@ function createTable(parent, arr, isFuture) {
 							cell.classList.add('dot');
 							parent.dataset.dot2 = dot2;
 							createTable(parent, arr, isFuture)
-                        }
-                    }
+						}
+					}
 				});
 			}
 			row.appendChild(cell);
@@ -292,7 +334,7 @@ function isToday(cell, body) {
 		return true;
 	} else {
 		return false;
-    }
+	}
 }
 
 function normalize(arr, left, right) {
@@ -375,16 +417,15 @@ function getMonth(num) {
 	for (let i = 0; i < 12; i++) {
 		if (num == i) {
 			str = months[i];
-        }
-    }
+		}
+	}
 
 	return str;
 }
 
 function cursorChange(event) {
-    this.style.cursor = 'pointer';
+	this.style.cursor = 'pointer';
 }
-
 
 
 

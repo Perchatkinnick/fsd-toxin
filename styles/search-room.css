@@ -40,6 +40,19 @@ body {
     background: #FFFFFF;
 }
 
+.calendar-parent {
+    position: absolute;
+    display: none;
+    width: 320px;
+    height: 369px;
+    top: 163px;
+    left: 140px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: white;
+    z-index: 100;
+}
+
 .content__date {
     position: absolute;
     width: 266px;
@@ -75,7 +88,7 @@ body {
 
 .content__date__title {
     position: absolute;
-    width: 103px;
+    width: 150px;
     height: 24px;
     left: 15px;
     top: 32px;

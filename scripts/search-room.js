@@ -7,6 +7,44 @@ function onLoad() {
     alert(localStorage.getItem('guestsAdult'));*/
 
     
+
+    let contentDateRect = document.querySelector('.content__date__rect');
+    contentDateRect.addEventListener('click', addCalendar);
+    let contentDateTitle = document.querySelector('.content__date__title');
+    contentDateTitle.addEventListener('click', addCalendar);
+    let contentDateArrow = document.querySelector('.content__date__arrow');
+    contentDateArrow.addEventListener('click', addCalendar);
+
+    function addCalendar() {
+        let calendar = document.querySelector('.calendar-parent');
+
+
+        if (calendar.style.display == '') {
+            calendar.style.display = 'block';
+            func();
+        } else {
+            calendar.style.display = '';
+
+            let body = days.querySelector('.body');
+            body.dataset.dot1 = '';
+            body.dataset.dot2 = '';
+        }
+
+    }
+
+    loadDataFromLocalStorage(contentDateTitle);
+}
+
+function loadDataFromLocalStorage(elemDate) {
+    let arriveDate = localStorage.getItem('dateArrive');
+    let departureDate = localStorage.getItem('dateDeparture');
+
+    if (arriveDate != null && departureDate != null) {
+        let complexArriveDate = getComplexDate(arriveDate);
+        let complexDepartureDate = getComplexDate(departureDate);
+
+        elemDate.innerHTML = complexArriveDate + ' - ' + complexDepartureDate;
+    }
 }
 
 jQuery(document).ready(function ($) {

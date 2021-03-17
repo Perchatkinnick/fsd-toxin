@@ -12,6 +12,8 @@
     <link type="text/css" rel="stylesheet" media="all" href="styles/search-room.css" />
     <link type="text/css" rel="stylesheet" media="all" href="header/header.css" />
     <link type="text/css" rel="stylesheet" media="all" href="footer/footer.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
+    <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
@@ -19,8 +21,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="fontawesome/all.min.css" />
 
     <script src="scripts/search-room.js" charset="utf-8" type="text/javascript"></script>
-
-    <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
+    <script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
 
     <title>Toxin</title>
 </head>
@@ -60,10 +61,35 @@
                 <div class="content__date">
                     <div class="content__date__label">даты пребывания в отеле</div>
                     <div class="content__date__rect"></div>
-                    <div class="content__date__title">123456789</div>
+                    <div class="content__date__title">ДД.ММ.ГГГГ</div>
                     <div class="content__date__arrow"></div>
                 </div>
+                <div class="calendar-parent">
+                    <div id="days">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Пн</th>
+                                    <th>Вт</th>
+                                    <th>Ср</th>
+                                    <th>Чт</th>
+                                    <th>Пт</th>
+                                    <th>Сб</th>
+                                    <th>Вс</th>
+                                </tr>
+                            </thead>
+                            <tbody class="body" data-dot1="" data-dot2=""></tbody>
+                        </table>
+                    </div>
 
+                    <div class="info">Август</div>
+
+                    <i class="material-icons arrow-back">arrow_back</i>
+                    <i class="material-icons arrow-forward">arrow_forward</i>
+
+                    <span class="clear">очистить</span>
+                    <span class="apply">применить</span>
+                </div>
                 <div class="content__guests">
                     <div class="content__guests__label">гости</div>
                     <div class="content__guests__rect"></div>
