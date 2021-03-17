@@ -18,18 +18,42 @@ function onGuestsDropdaunLoad() {
     let babiesMinus = document.querySelector('#guests-babies-minus');
     babiesMinus.addEventListener('click', onBabiesMinusClick);
 
+    let gestsAdultElem = document.querySelector('#guests-adult');
+    let gestsChildrenElem = document.querySelector('#guests-children');
+    let gestsBabies = document.querySelector('#guests-babies');
+
     let clear = document.querySelector('.guests-clear');
     clear.addEventListener('click', function () {
-        document.querySelector('#guests-babies').innerHTML = 0; 
-        document.querySelector('#guests-children').innerHTML = 0;
-        document.querySelector('#guests-adult').innerHTML = 2;
+        gestsBabies.innerHTML = 0; 
+        gestsChildrenElem.innerHTML = 0;
+        gestsAdultElem.innerHTML = 2;
     });
 
     let apply = document.querySelector('.guests-apply');
     apply.addEventListener('click', function () {
 
         let guestsTitle = document.querySelector('.guests-title');
-        guestsTitle.innerHTML = +(document.querySelector('#guests-babies').innerHTML) + +(document.querySelector('#guests-children').innerHTML) + +(document.querySelector('#guests-adult').innerHTML);
+        if (guestsTitle != null) {
+            guestsTitle.innerHTML = +(gestsBabies.innerHTML) + +(gestsChildrenElem.innerHTML) + +(gestsAdultElem.innerHTML);
+        }
+
+        // for search-room
+        let contentGuestsTitle = document.querySelector('.content__guests__title');
+        if (contentGuestsTitle != null) {
+            contentGuestsTitle.innerHTML = gestsAdultElem.innerHTML + ' гостя';
+            if (gestsChildrenElem.innerHTML != 0) {
+                contentGuestsTitle.innerHTML += ', ' + gestsChildrenElem.innerHTML + ' детей';
+            }
+
+            if (gestsBabies.innerHTML != 0) {
+                contentGuestsTitle.innerHTML += ', ' + gestsBabies.innerHTML + ' младенцев';
+            }
+        }
+
+
+        localStorage.setItem('guestsBabies', gestsBabies.innerHTML);
+        localStorage.setItem('guestsChildren', gestsChildrenElem.innerHTML);
+        localStorage.setItem('guestsAdult', gestsAdultElem.innerHTML);
 
         let guestsForm = document.querySelector('.guests-dropdown');
         guestsForm.style.display = '';

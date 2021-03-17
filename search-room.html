@@ -13,6 +13,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="header/header.css" />
     <link type="text/css" rel="stylesheet" media="all" href="footer/footer.css" />
     <link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="guests-dropdaun/guests_dropdaun-style.css" />
     <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -22,6 +23,7 @@
 
     <script src="scripts/search-room.js" charset="utf-8" type="text/javascript"></script>
     <script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
 
     <title>Toxin</title>
 </head>
@@ -96,7 +98,30 @@
                     <div class="content__guests__title">Сколько гостей</div>
                     <div class="content__guests__arrow"></div>
                 </div>
-
+                <div class="content__guests__dropdown">
+                    <div class="guests-dropdown">
+                        <div class="guests-adult">
+                            <div class="guests-note">взрослые</div>
+                            <div id="guests-adult-plus" class="guests-plus">+</div>
+                            <div id="guests-adult" class="guests-count">2</div>
+                            <div id="guests-adult-minus" class="guests-minus">-</div>
+                        </div>
+                        <div class="guests-children">
+                            <div class="guests-note">дети</div>
+                            <div id="guests-children-plus" class="guests-plus">+</div>
+                            <div id="guests-children" class="guests-count">0</div>
+                            <div id="guests-children-minus" class="guests-minus">-</div>
+                        </div>
+                        <div class="guests-babies">
+                            <div class="guests-note">младенцы</div>
+                            <div id="guests-babies-plus" class="guests-plus">+</div>
+                            <div id="guests-babies" class="guests-count">0</div>
+                            <div id="guests-babies-minus" class="guests-minus">-</div>
+                        </div>
+                        <span class="guests-clear">очистить</span>
+                        <span class="guests-apply">применить</span>
+                    </div>
+                </div>
                 <div class="content__price-range">
                     <div class="content__price-range__label">диапазон цены</div>
                     <div class="content__price-range__value"><span class="min">5000Р</span>-<span class="max">10000Р</span></div>

@@ -43,8 +43,14 @@ header{
 	z-index: 100;
 }
 
-.footer{
-	position:relative ;
+.guests__dropdown__container {
+	position: relative;
+	left: 170px;
+	top: 409px;
+}
+
+.footer {
+	position: relative;
 }
 
 .footer-navigation{

@@ -15,27 +15,47 @@ function onLoad() {
     let contentDateArrow = document.querySelector('.content__date__arrow');
     contentDateArrow.addEventListener('click', addCalendar);
 
-    function addCalendar() {
-        let calendar = document.querySelector('.calendar-parent');
+    let contentGuestsRect = document.querySelector('.content__guests__rect');
+    contentGuestsRect.addEventListener('click', addGuestsForm);
+    let contentGuestsTitle = document.querySelector('.content__guests__title');
+    contentGuestsTitle.addEventListener('click', addGuestsForm);
+    let contentGuestsArrow = document.querySelector('.content__guests__arrow');
+    contentGuestsArrow.addEventListener('click', addGuestsForm);
 
+    
 
-        if (calendar.style.display == '') {
-            calendar.style.display = 'block';
-            func();
-        } else {
-            calendar.style.display = '';
-
-            let body = days.querySelector('.body');
-            body.dataset.dot1 = '';
-            body.dataset.dot2 = '';
-        }
-
-    }
-
-    loadDataFromLocalStorage(contentDateTitle);
+    loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
 }
 
-function loadDataFromLocalStorage(elemDate) {
+function addCalendar() {
+    let calendar = document.querySelector('.calendar-parent');
+
+
+    if (calendar.style.display == '') {
+        calendar.style.display = 'block';
+        func();
+    } else {
+        calendar.style.display = '';
+
+        let body = days.querySelector('.body');
+        body.dataset.dot1 = '';
+        body.dataset.dot2 = '';
+    }
+
+}
+
+function addGuestsForm() {
+    let guestsForm = document.querySelector('.guests-dropdown');
+
+    if (guestsForm.style.display == '') {
+        guestsForm.style.display = 'block';
+        onGuestsDropdaunLoad();
+    } else {
+        guestsForm.style.display = '';
+    }
+}
+
+function loadDataFromLocalStorage(elemDate, elemGuests) {
     let arriveDate = localStorage.getItem('dateArrive');
     let departureDate = localStorage.getItem('dateDeparture');
 
@@ -45,6 +65,22 @@ function loadDataFromLocalStorage(elemDate) {
 
         elemDate.innerHTML = complexArriveDate + ' - ' + complexDepartureDate;
     }
+
+    let guestsBabies = localStorage.getItem('guestsBabies');
+    let guestsChildren = localStorage.getItem('guestsChildren');
+    let guestsAdult = localStorage.getItem('guestsAdult');
+
+    if (guestsBabies != null && guestsChildren != null && guestsAdult != null) {
+        elemGuests.innerHTML = guestsAdult + ' гостя';
+        if (guestsChildren != 0) {
+            elemGuests.innerHTML += ', ' + guestsChildren + ' детей';
+        }
+
+        if (guestsBabies != 0) {
+            elemGuests.innerHTML += ', ' + guestsBabies + ' младенцев';
+        }
+    }
+    
 }
 
 jQuery(document).ready(function ($) {

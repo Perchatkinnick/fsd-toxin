@@ -40,6 +40,12 @@ body {
     background: #FFFFFF;
 }
 
+.content__guests__dropdown{
+    position: relative;
+    top: 211px;
+    left: 140px;
+}
+
 .calendar-parent {
     position: absolute;
     display: none;
