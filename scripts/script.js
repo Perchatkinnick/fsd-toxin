@@ -1,4 +1,4 @@
-
+//@ts-check
 function onLoad() {
     let arriveForm = document.querySelector('.arrive-form');
     arriveForm.addEventListener('click', addCalendar);

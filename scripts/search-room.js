@@ -1,13 +1,5 @@
 
 function onLoad() {
-    /*alert(localStorage.getItem('dateArrive'));
-    alert(localStorage.getItem('dateDeparture'));
-    alert(localStorage.getItem('guestsBabies'));
-    alert(localStorage.getItem('guestsChildren'));
-    alert(localStorage.getItem('guestsAdult'));*/
-
-    
-
     let contentDateRect = document.querySelector('.content__date__rect');
     contentDateRect.addEventListener('click', addCalendar);
     let contentDateTitle = document.querySelector('.content__date__title');
@@ -22,9 +14,18 @@ function onLoad() {
     let contentGuestsArrow = document.querySelector('.content__guests__arrow');
     contentGuestsArrow.addEventListener('click', addGuestsForm);
 
-    
-
     loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
+
+    let checkBoxes = document.getElementsByClassName('content__home-rules__checkbox');
+    for (let checkBox of checkBoxes) {
+        checkBox.addEventListener('click', function () {
+            if (checkBox.dataset.checked == 'checked') {
+                checkBox.dataset.checked = 'none';
+            } else {
+                checkBox.dataset.checked = 'checked';
+            }
+        });
+    }
 }
 
 function addCalendar() {
