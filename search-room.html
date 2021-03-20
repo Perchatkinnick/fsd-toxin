@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="footer/footer.css" />
     <link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
     <link type="text/css" rel="stylesheet" media="all" href="guests-dropdaun/guests_dropdaun-style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="facilities__dropdown/facilities-dropdown_style.css" />
     <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -24,6 +25,7 @@
     <script src="scripts/search-room.js" charset="utf-8" type="text/javascript"></script>
     <script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
     <script src="guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="facilities__dropdown/facilities-dropdown_script.js" charset="utf-8" type="text/javascript"></script>
 
     <title>Toxin</title>
 </head>
@@ -58,121 +60,188 @@
             </div>
 
 
-        <div class="content">
-            <div class="content__room-settings">
-                <div class="content__date">
-                    <div class="content__date__label">даты пребывания в отеле</div>
-                    <div class="content__date__rect"></div>
-                    <div class="content__date__title">ДД.ММ.ГГГГ</div>
-                    <div class="content__date__arrow"></div>
-                </div>
-                <div class="calendar-parent">
-                    <div id="days">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Пн</th>
-                                    <th>Вт</th>
-                                    <th>Ср</th>
-                                    <th>Чт</th>
-                                    <th>Пт</th>
-                                    <th>Сб</th>
-                                    <th>Вс</th>
-                                </tr>
-                            </thead>
-                            <tbody class="body" data-dot1="" data-dot2=""></tbody>
-                        </table>
+            <div class="content">
+                <div class="content__room-settings">
+                    <div class="content__date">
+                        <div class="content__date__label">даты пребывания в отеле</div>
+                        <div class="content__date__rect"></div>
+                        <div class="content__date__title">ДД.ММ.ГГГГ</div>
+                        <div class="content__date__arrow"></div>
                     </div>
-
-                    <div class="info">Август</div>
-
-                    <i class="material-icons arrow-back">arrow_back</i>
-                    <i class="material-icons arrow-forward">arrow_forward</i>
-
-                    <span class="clear">очистить</span>
-                    <span class="apply">применить</span>
-                </div>
-                <div class="content__guests">
-                    <div class="content__guests__label">гости</div>
-                    <div class="content__guests__rect"></div>
-                    <div class="content__guests__title">Сколько гостей</div>
-                    <div class="content__guests__arrow"></div>
-                </div>
-                <div class="content__guests__dropdown">
-                    <div class="guests-dropdown">
-                        <div class="guests-adult">
-                            <div class="guests-note">взрослые</div>
-                            <div id="guests-adult-plus" class="guests-plus">+</div>
-                            <div id="guests-adult" class="guests-count">2</div>
-                            <div id="guests-adult-minus" class="guests-minus">-</div>
+                    <div class="calendar-parent">
+                        <div id="days">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Пн</th>
+                                        <th>Вт</th>
+                                        <th>Ср</th>
+                                        <th>Чт</th>
+                                        <th>Пт</th>
+                                        <th>Сб</th>
+                                        <th>Вс</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="body" data-dot1="" data-dot2=""></tbody>
+                            </table>
                         </div>
-                        <div class="guests-children">
-                            <div class="guests-note">дети</div>
-                            <div id="guests-children-plus" class="guests-plus">+</div>
-                            <div id="guests-children" class="guests-count">0</div>
-                            <div id="guests-children-minus" class="guests-minus">-</div>
-                        </div>
-                        <div class="guests-babies">
-                            <div class="guests-note">младенцы</div>
-                            <div id="guests-babies-plus" class="guests-plus">+</div>
-                            <div id="guests-babies" class="guests-count">0</div>
-                            <div id="guests-babies-minus" class="guests-minus">-</div>
-                        </div>
-                        <span class="guests-clear">очистить</span>
-                        <span class="guests-apply">применить</span>
+
+                        <div class="info">Август</div>
+
+                        <i class="material-icons arrow-back">arrow_back</i>
+                        <i class="material-icons arrow-forward">arrow_forward</i>
+
+                        <span class="clear">очистить</span>
+                        <span class="apply">применить</span>
                     </div>
-                </div>
-                <div class="content__price-range">
-                    <div class="content__price-range__label">диапазон цены</div>
-                    <div class="content__price-range__value"><span class="min">5000Р</span>-<span class="max">10000Р</span></div>
-                    <div class="content__price-range__range">
-                        <div class="slider">
-                            <div class="bar">
-                                <div class="lp" data-pos="0.285"></div>
-                                <div class="rp" data-pos="0.64"></div>
+                    <div class="content__guests">
+                        <div class="content__guests__label">гости</div>
+                        <div class="content__guests__rect"></div>
+                        <div class="content__guests__title">Сколько гостей</div>
+                        <div class="content__guests__arrow"></div>
+                    </div>
+                    <div class="content__guests__dropdown">
+                        <div class="guests-dropdown">
+                            <div class="guests-adult">
+                                <div class="guests-note">взрослые</div>
+                                <div id="guests-adult-plus" class="guests-plus">+</div>
+                                <div id="guests-adult" class="guests-count">2</div>
+                                <div id="guests-adult-minus" class="guests-minus">-</div>
+                            </div>
+                            <div class="guests-children">
+                                <div class="guests-note">дети</div>
+                                <div id="guests-children-plus" class="guests-plus">+</div>
+                                <div id="guests-children" class="guests-count">0</div>
+                                <div id="guests-children-minus" class="guests-minus">-</div>
+                            </div>
+                            <div class="guests-babies">
+                                <div class="guests-note">младенцы</div>
+                                <div id="guests-babies-plus" class="guests-plus">+</div>
+                                <div id="guests-babies" class="guests-count">0</div>
+                                <div id="guests-babies-minus" class="guests-minus">-</div>
+                            </div>
+                            <span class="guests-clear">очистить</span>
+                            <span class="guests-apply">применить</span>
+                        </div>
+                    </div>
+                    <div class="content__price-range">
+                        <div class="content__price-range__label">диапазон цены</div>
+                        <div class="content__price-range__value"><span class="min">5000Р</span>-<span class="max">10000Р</span></div>
+                        <div class="content__price-range__range">
+                            <div class="slider">
+                                <div class="bar">
+                                    <div class="lp" data-pos="0.285"></div>
+                                    <div class="rp" data-pos="0.64"></div>
+                                </div>
                             </div>
                         </div>
+                        <div class="content__price-range__remark">Стоимость за сутки пребывания в номере</div>
                     </div>
-                    <div class="content__price-range__remark">Стоимость за сутки пребывания в номере</div>
                 </div>
-            </div>
-            <div class="content__home-rules">
-                <div class="content__home-rules__title">правила дома</div>
-                <div class="content__home-rules__smoke">
-                    <div class="content__home-rules__checkbox" data-checked="none"></div>
-                    <div class="content__home-rules__smoke__title">Можно курить</div>
+                <div class="content__home-rules">
+                    <div class="content__home-rules__title">правила дома</div>
+                    <div class="content__home-rules__smoke">
+                        <div class="content__home-rules__checkbox" data-checked="none"></div>
+                        <div class="content__home-rules__smoke__title">Можно курить</div>
+                    </div>
+                    <div class="content__home-rules__pets">
+                        <div class="content__home-rules__checkbox" data-checked="checked"></div>
+                        <div class="content__home-rules__pets__title">Можно с питомцами</div>
+                    </div>
+                    <div class="content__home-rules__guests">
+                        <div class="content__home-rules__checkbox" data-checked="checked"></div>
+                        <div class="content__home-rules__guests__title">Можно пригласить гостей (до 10 человек)</div>
+                    </div>
                 </div>
-                <div class="content__home-rules__pets">
-                    <div class="content__home-rules__checkbox" data-checked="checked"></div>
-                    <div class="content__home-rules__pets__title">Можно с питомцами</div>
+                <div class="content__room-settings__availability">
+                    <div class="content__room-settings__availability__title">доступность</div>
+                    <div class="content__room-settings__availability__hallway">
+                        <div class="content__home-rules__checkbox" data-checked="none"></div>
+                        <div class="content__room-settings__availability__hallway__title">Широкий коридор</div>
+                        <div class="content__room-settings__availability__hallway__note">Ширина коридоров в номере не менее 91 см.</div>
+                    </div>
+                    <div class="content__room-settings__availability__disabled">
+                        <div class="content__home-rules__checkbox" data-checked="none"></div>
+                        <div class="content__room-settings__availability__disabled__title">Помощник для инвалидов</div>
+                        <div class="content__room-settings__availability__disabled__note">На 1 этаже вас встретит специалист и проводит до номера.</div>
+                    </div>
                 </div>
-                <div class="content__home-rules__guests">
-                    <div class="content__home-rules__checkbox" data-checked="checked"></div>
-                    <div class="content__home-rules__guests__title">Можно пригласить гостей (до 10 человек)</div>
+                <div class="content__room-settings__facilities">
+                    <div class="content__room-settings__facilities__label">удобства номера</div>
+                    <div class="content__room-settings__facilities__rect"></div>
+                    <div class="content__room-settings__facilities__title">1 спальня, 1 кровать, ...</div>
+                    <div class="content__room-settings__facilities__arrow"></div>
                 </div>
-            </div>
-            <div class="content__room-settings__availability">
-                <div class="content__room-settings__availability__title">доступность</div>
-                <div class="content__room-settings__availability__hallway">
-                    <div class="content__home-rules__checkbox" data-checked="none"></div>
-                    <div class="content__room-settings__availability__hallway__title">Широкий коридор</div>
-                    <div class="content__room-settings__availability__hallway__note">Ширина коридоров в номере не менее 91 см.</div>
+                <div class="content__room-settings__facilities__dropdown">
+                    <div class="facilities__dropdown">
+                        <div class="facilities__dropdown__bedrooms">
+                            <div class="facilities__dropdown__note">спальни</div>
+                            <div id="facilities__dropdown__bedrooms__minus" class="facilities__minus">-</div>
+                            <div id="bedrooms__count" class="facilities__dropdown__count">1</div>
+                            <div id="facilities__dropdown__bedrooms__plus" class="facilities__plus">+</div>
+                        </div>
+                        <div class="facilities__dropdown__beds">
+                            <div class="facilities__dropdown__note">кровати</div>
+                            <div id="facilities__dropdown__beds__minus" class="facilities__minus">-</div>
+                            <div id="beds__count" class="facilities__dropdown__count">1</div>
+                            <div id="facilities__dropdown__beds__plus" class="facilities__plus">+</div>
+                        </div>
+                        <div class="facilities__dropdown__bathrooms">
+                            <div class="facilities__dropdown__note">ванные комнаты</div>
+                            <div id="facilities__dropdown__bathrooms__minus" class="facilities__minus">-</div>
+                            <div id="beds__count" class="facilities__dropdown__count">1</div>
+                            <div id="facilities__dropdown__bathrooms__plus" class="facilities__plus">+</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content__room-settings__availability__disabled">
-                    <div class="content__home-rules__checkbox" data-checked="none"></div>
-                    <div class="content__room-settings__availability__disabled__title">Помощник для инвалидов</div>
-                    <div class="content__room-settings__availability__disabled__note">На 1 этаже вас встретит специалист и проводит до номера.</div>
+                <div class="content__room-settings__additional">
+                    <div class="content__room-settings__additional__title">дополнительные удобства</div>
+                    <div class="content__room-settings__additional__arrow" data-checked="none"></div>
+                    <div class="content__room-settings__additional__list">
+                        <div class="content__room-settings__additional__breakfast">
+                            <div class="content__home-rules__checkbox" data-checked="none"></div>
+                            <div class="content__room-settings__additional__elem__title">Завтрак</div>
+                        </div>
+                        <div class="content__room-settings__additional__desk">
+                            <div class="content__home-rules__checkbox" data-checked="none"></div>
+                            <div class="content__room-settings__additional__elem__title">Письменный стол</div>
+                        </div>
+                        <div class="content__room-settings__additional__feeding-chair">
+                            <div class="content__home-rules__checkbox" data-checked="none"></div>
+                            <div class="content__room-settings__additional__elem__title">Cтул для кормления</div>
+                        </div>
+                        <div class="content__room-settings__additional__crib">
+                            <div class="content__home-rules__checkbox" data-checked="none"></div>
+                            <div class="content__room-settings__additional__elem__title">Kроватка</div>
+                        </div>
+                        <div class="content__room-settings__additional__tv">
+                            <div class="content__home-rules__checkbox" data-checked="none"></div>
+                            <div class="content__room-settings__additional__elem__title">Телевизор</div>
+                        </div>
+                        <div class="content__room-settings__additional__shampoo">
+                            <div class="content__home-rules__checkbox" data-checked="none"></div>
+                            <div class="content__room-settings__additional__elem__title">Шампунь</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="content__room-settings__facilities">
-                <div class="content__room-settings__facilities__label">удобства номера</div>
-                <div class="content__room-settings__facilities__rect"></div>
-                <div class="content__room-settings__facilities__title">удобства</div>
-                <div class="content__room-settings__facilities__arrow"></div>
-            </div>
-
-
-
+                <div class="content__show">
+                    <div class="content__show__label">Номера, которые мы для вас подобрали</div>
+                    <div class="content__show__rooms">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                
 
 
 

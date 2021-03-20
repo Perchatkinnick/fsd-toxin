@@ -1,3 +1,4 @@
+//@ts-check
 
 function onLoad() {
     let contentDateRect = document.querySelector('.content__date__rect');
@@ -14,7 +15,17 @@ function onLoad() {
     let contentGuestsArrow = document.querySelector('.content__guests__arrow');
     contentGuestsArrow.addEventListener('click', addGuestsForm);
 
-    loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
+    let contentFacilitiesRect = document.querySelector('.content__room-settings__facilities__rect');
+    contentFacilitiesRect.addEventListener('click', addFacilitiesDropdown);
+    let contentFacilitiesTitle = document.querySelector('.content__room-settings__facilities__title');
+    contentFacilitiesTitle.addEventListener('click', addFacilitiesDropdown);
+    let contentFacilitiesArrow = document.querySelector('.content__room-settings__facilities__arrow');
+    contentFacilitiesArrow.addEventListener('click', addFacilitiesDropdown);
+
+    
+
+    let additionalArrow = document.querySelector('.content__room-settings__additional__arrow');
+    additionalArrow.addEventListener('click', onAdditionalArrowClick);
 
     let checkBoxes = document.getElementsByClassName('content__home-rules__checkbox');
     for (let checkBox of checkBoxes) {
@@ -26,11 +37,28 @@ function onLoad() {
             }
         });
     }
+
+    loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
+}
+
+function onAdditionalArrowClick(e) {
+    if (e.target.dataset.checked == 'checked') {
+        e.target.dataset.checked = 'none';
+    } else {
+        e.target.dataset.checked = 'checked';
+    }
+
+    let list = document.querySelector('.content__room-settings__additional__list');
+    if (list.style.display == '') {
+        list.style.display = 'block';
+    } else {
+        list.style.display = '';
+    }
+    
 }
 
 function addCalendar() {
     let calendar = document.querySelector('.calendar-parent');
-
 
     if (calendar.style.display == '') {
         calendar.style.display = 'block';
@@ -42,7 +70,6 @@ function addCalendar() {
         body.dataset.dot1 = '';
         body.dataset.dot2 = '';
     }
-
 }
 
 function addGuestsForm() {
