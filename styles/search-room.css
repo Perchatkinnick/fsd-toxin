@@ -36,43 +36,18 @@ body {
     background: #FFFFFF;
 }
 
-.content__show {
-    position: relative;
-    float: left;
-    top: 30px;
-    width: 1034px;
-    height: 100%;
-}
-
-.content__show__rooms {
+.content__show__variants {
     position: absolute;
-    width: 834px;
-    height: 1089.5px;
-    top: 81px;
-    left: 60px;
-    display: grid;
-    grid-template-columns: 270px 270px 270px;
-    grid-template-rows: 257px;
-    grid-column-gap: 12px;
-    grid-row-gap: 20.5px;
-}
-
-    .content__show__rooms div {
-        
-    }
-
-.content__show__label {
-    position: absolute;
-    width: 529px;
-    height: 51px;
-    left: 59px;
-    top: 30px;
+    width: 229px;
+    height: 24px;
+    left: 355px;
+    top: 1263px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    color: #1F2041;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .content__room-settings {

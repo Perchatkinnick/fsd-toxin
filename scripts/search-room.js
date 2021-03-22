@@ -39,6 +39,10 @@ function onLoad() {
     }
 
     loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
+
+    loadRooms();
+
+
 }
 
 function onAdditionalArrowClick(e) {
