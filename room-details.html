@@ -1,0 +1,151 @@
+﻿<!-- Perchatkin Nick perchatkinnick@mail.ru -->
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!DOCTYPE html>
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" media="all" href="styles/reset.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="header/header.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="footer/footer.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="guests-dropdaun/guests_dropdaun-style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="styles/room-details__style.css" />
+
+
+    <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
+    <link href="fonts/montserrat__style.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+    <link type="text/css" rel="stylesheet" media="all" href="fontawesome/all.min.css" />
+
+    <script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="scripts/room-details__script.js" charset="utf-8" type="text/javascript"></script>
+
+
+    <title>Toxin</title>
+</head>
+<body onload="onLoad()">
+    <div class="wrapper">
+        <div class="header">
+            <div class="rectangle"></div>
+            <a href="index.html">
+                <div class="header-logo">
+                    <div class="logo">
+                        <div class="round-gradient"></div>
+                        <div class="round-background"></div>
+                        <div class="vector1"></div>
+                        <div class="vector2"></div>
+                        <div class="title"></div>
+                    </div>
+                </div>
+            </a>
+            <div class="about">О нас</div>
+            <div class="services">Услуги</div>
+            <div class="expand-services"></div>
+            <div class="vacancies">Вакансии</div>
+            <div class="news">Новости</div>
+            <div class="agreements">Соглашения</div>
+            <div class="expand-agreements"></div>
+
+            <div class="login-button-border">
+                <div class="login-button-background"></div>
+            </div>
+            <div class="login">войти</div>
+            <div class="registration-button"></div>
+            <div class="registration">зарегистрироваться</div>
+        </div>
+
+        <div class="content">
+            <div class="content__gallery">
+                <div class="content__gallery__main"></div>
+                <div class="content__gallery__2"></div>
+                <div class="content__gallery__3"></div>
+            </div>
+            <div class="content__details">
+                <div class="content__details__info">
+                    <div class="content__details__info__title">Сведения о номере</div>
+                    <div class="content__details__info__comfort">
+                        <div class="content__details__info__icon">insert_emoticon</div>
+                        <div class="content__details__info__subtitle">Комфорт</div>
+                        <div class="content__details__info__content">Шумопоглощающие стены</div>
+                    </div>
+                    <div class="content__details__info__convenience">
+                        <div class="content__details__info__icon">location_city</div>
+                        <div class="content__details__info__subtitle">Удобство</div>
+                        <div class="content__details__info__content">Окно в каждой из спален</div>
+                    </div>
+                    <div class="content__details__info__cosiness">
+                        <div class="content__details__info__icon">whatshot</div>
+                        <div class="content__details__info__subtitle">Уют</div>
+                        <div class="content__details__info__content">Номер оснащён камином</div>
+                    </div>
+                </div>
+                <div class="content__details__impression">
+                    <div class="content__details__impression__title">Впечатления от номера</div>
+                    <div class="content__details__impression__diagramm">
+                        <object type="image/svg+xml" data="diagramm/diagramm.svg" width="200" height="200">
+                            Your browser does not support SVG
+                        </object>
+                    </div>
+                    <div class="content__details__impression__legend"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">
+                <div class="logo">
+                    <div class="round-gradient"></div>
+                    <div class="round-background"></div>
+                    <div class="vector1"></div>
+                    <div class="vector2"></div>
+                    <div class="title"></div>
+                </div>
+            </div>
+            <div class="footer-slogan">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+            <div class="footer-navigation">
+                <div class="footer_navigation_title">навигация</div>
+                <div class="footer_navigation_about">О нас</div>
+                <div class="footer_navigation_news">Новости</div>
+                <div class="footer_navigation_support">Служба поддержки</div>
+                <div class="footer_navigation_services">Услуги</div>
+            </div>
+            <div class="footer_about">
+                <div class="footer_about_title">о нас</div>
+                <div class="footer_about_about">О сервисе</div>
+                <div class="footer_about_team">Наша команда</div>
+                <div class="footer_about_vacancies">Вакансии</div>
+                <div class="footer_about_investors">Инвесторы</div>
+            </div>
+            <div class="footer_support">
+                <div class="footer_support_title">служба поддержки</div>
+                <div class="footer_support_agreements">Соглашения</div>
+                <div class="footer_support_communities">Сообщества</div>
+                <div class="footer_support_connection">Связь с нами</div>
+            </div>
+            <div class="footer_subscription">
+                <div class="footer_subscription_title">подписка</div>
+                <div class="footer_subscription_notation">Получайте специальные предложения и новости сервиса</div>
+                <div class="footer_subscription_rect"></div>
+                <input name="footer_subscription_email-input" onFocus="if(this.value=='Email') this.value='';" onBlur="if(!this.value) this.value='Email';" type="text" value="Email">
+                <div class="footer_subscription_arrow"></div>
+            </div>
+            <div class="copyrightbar">
+                <div class="copyrightbar_copiright">Copyright © 2018 Toxin отель. Все права зачищены.</div>
+                <div class="twitter"><i class="fab fa-twitter"></i></div>
+                <div class="facebook"><i class="fab fa-facebook-square"></i></div>
+                <div class="insta"><i class="fab fa-instagram"></i></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

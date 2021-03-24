@@ -12,7 +12,9 @@ function buildGrid(rooms, page) {
         if (i < roomsData.length) {
             let div = document.createElement('div');
             div.classList.add('room');
-            div.style.background = 'no-repeat url("media/images/rooms/' + rooms[i].room + '.png")';
+            div.addEventListener('click', onRoomClickHandler);
+            div.dataset.room = rooms[i].room;
+            div.style.background = 'no-repeat url("media/images/rooms/' + rooms[i].room + '/icon.png")';
             container.appendChild(div);
 
             for (let k = 0; k < 4; k++) {
@@ -78,6 +80,19 @@ function buildGrid(rooms, page) {
             container.appendChild(div);
         }
     }
+}
+
+function onRoomClickHandler(e) {
+    let number = e.target.dataset.room;
+    let roomData;
+    for (let room of roomsData) {
+        if (room.room == number) {
+            roomData = room;
+        }
+    }
+    localStorage.setItem('roomData', JSON.stringify(roomData));
+
+    location.href = 'room-details.html';
 }
 
 function onEllipsClickHandler(e) {
