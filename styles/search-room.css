@@ -36,9 +36,57 @@ body {
     background: #FFFFFF;
 }
 
+.content__show__page-navigation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 241px;
+    height: 40.44px;
+    left: 350px;
+    top: 1212px;
+}
+
+.content__show__page-navigation__marker__forward {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content__show__page-navigation__marker {
+    width: 40px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
+.content__show__page-navigation__marker__active {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: #ffffff;
+}
+
 .content__show__variants {
     position: absolute;
-    width: 229px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 241px;
     height: 24px;
     left: 355px;
     top: 1263px;

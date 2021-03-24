@@ -40,9 +40,84 @@ function onLoad() {
 
     loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
 
-    loadRooms();
+    loadRooms(1);
 
+    createPageMarkers();
 
+    createShowVariants(1);
+
+}
+
+function createPageMarkers() {
+    let len = roomsData.length;
+    let pages = Math.ceil(len / 12);
+
+    let container = document.querySelector('.content__show__page-navigation');
+
+    for (let i = 1; i <= pages + 1; i++) {
+        let marker = document.createElement('div');
+        if (i == 1) {
+            marker.classList.add('content__show__page-navigation__marker__active');
+        }
+        
+        if (i == pages + 1) {
+            marker.classList.add('material-icons', 'content__show__page-navigation__marker__forward');
+            marker.innerHTML = 'arrow_forward';
+        } else {
+            marker.classList.add('content__show__page-navigation__marker');
+            marker.innerHTML = String(i);
+        }
+
+        marker.addEventListener('click', onMarkerClickHandler);
+        
+        container.appendChild(marker);
+    }
+}
+
+function onMarkerClickHandler(e) {
+    if (e.target.innerHTML == 'arrow_forward') {
+        nextPage();
+    } else {
+        let markers = document.getElementsByClassName('content__show__page-navigation__marker');
+        for (let marker of markers) {
+            marker.classList.remove('content__show__page-navigation__marker__active');
+        }
+
+        e.target.classList.add('content__show__page-navigation__marker__active');
+
+        createShowVariants(+e.target.innerHTML);
+        loadRooms(+e.target.innerHTML);
+    }
+}
+
+function nextPage() {
+    let len = roomsData.length;
+    let pages = Math.ceil(len / 12);
+    let currentPage = document.querySelector('.content__show__page-navigation__marker__active').innerHTML;
+
+    if (+currentPage < pages) {
+        createShowVariants(+currentPage + 1);
+        loadRooms(+currentPage + 1);
+
+        let markers = document.getElementsByClassName('content__show__page-navigation__marker');
+        for (let marker of markers) {
+            marker.classList.remove('content__show__page-navigation__marker__active');
+            if (+marker.innerHTML == +currentPage + 1) {
+                marker.classList.add('content__show__page-navigation__marker__active');
+            }
+        }
+    }
+    
+}
+
+function createShowVariants(page) {
+    let container = document.querySelector('.content__show__variants');
+    let totalVariants = 12 * page;
+    if (totalVariants > roomsData.length) {
+        totalVariants = roomsData.length;
+    }
+
+    container.innerHTML = (12 * (page - 1) + 1) + ' – ' + totalVariants + ' из ' + roomsData.length + ' вариантов аренды'
 }
 
 function onAdditionalArrowClick(e) {
