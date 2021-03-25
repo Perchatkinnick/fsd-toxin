@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+
+.diagramm__vote {
+    font: 16px/1.4em "Montserrat", Arial, sans-serif;
+    fill: #000;
+}
+
+.diagramm__vote__count {
+    width: 30px;
+    font-size: 0.5em;
+    line-height: 1;
+    text-anchor: middle;
+}
+
+.diagramm__vote__label {
+    font-size: 0.3em;
+    text-anchor: middle;
+}

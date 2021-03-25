@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 56 56" class="donut" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	
+	<circle class="donut-hole" cx="17" cy="17" r="15.91549430918954" fill="#fff"></circle>
+	<circle class="donut-ring" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="1.5"></circle>
+	
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#magnificently-gradient)" stroke-width="1.5" stroke-dasharray="50 50" stroke-dashoffset="75"></circle>
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#good-gradient)" stroke-width="1.5" stroke-dasharray="25 75" stroke-dashoffset="0"></circle>
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#passably-gradient)" stroke-width="1.5" stroke-dasharray="25 75" stroke-dashoffset="25"></circle>
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#bad-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
 
-		<circle class="donut-hole" cx="17" cy="17" r="15.91549430918954" fill="#fff"></circle>
-		<circle class="donut-ring" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="1.5"></circle>
-		<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="1.5" stroke-dasharray="25 75" stroke-dashoffset="25"></circle>
-     <!--<circle class="donut-hole" cx="36" cy="36" r="34" fill="#fff"></circle>
-     <circle class="donut-ring" cx="36" cy="36" r="34" fill="transparent" stroke="#fff" stroke-width="2"></circle>
-     <circle class="donut-segment" cx="36" cy="36" r="34" fill="transparent" stroke="#FFE39C" stroke-width="2" stroke-dasharray="75 25"></circle>
-     <circle class="donut-segment" cx="36" cy="36" r="34" fill="transparent" stroke="#6FCF97" stroke-width="2" stroke-dasharray="25 75"></circle>
-     <circle class="donut-segment" cx="36" cy="36" r="34" fill="transparent" stroke="#BC9CFF" stroke-width="2" stroke-dasharray="50 50"></circle>
-	<circle class="donut-segment" cx="36" cy="36" r="34" fill="transparent" stroke="#919191" stroke-width="2" stroke-dasharray="0 100"></circle>-->
+
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="26"></circle>
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="1"></circle>
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="76"></circle>
+	<circle class="donut-segment" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="76"></circle>
+
+	
+
+	<linearGradient id="magnificently-gradient" gradientTransform="rotate(90)">
+		<stop offset="0%" stop-color="#FFE39C"/>
+		<stop offset="100%" stop-color="#FFBA9C"/>
+	</linearGradient>
+	<linearGradient id="good-gradient" gradientTransform="rotate(90)">
+		<stop offset="0%" stop-color="#6FCF97"/>
+		<stop offset="100%" stop-color="#66D2EA"/>
+	</linearGradient>
+	<linearGradient id="passably-gradient" gradientTransform="rotate(90)">
+		<stop offset="0%" stop-color="#BC9CFF"/>
+		<stop offset="100%" stop-color="#8BA4F9"/>
+	</linearGradient>
+	<linearGradient id="bad-gradient" gradientTransform="rotate(90)">
+		<stop offset="0%" stop-color="#919191"/>
+		<stop offset="100%" stop-color="#3D4975"/>
+	</linearGradient>
+
+	
 </svg>
