@@ -77,24 +77,6 @@
 	background-image: url('../media/svg/toxin.svg');
 }
 
-.registration{
-	position: absolute;
-	width: 157px;
-	height: 15px;
-	left: 1123px;
-	top: 27px;
-	
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
-	
-	text-transform: uppercase;
-	
-	color: #FFFFFF;
-}
-
 .registration-button {
 	position: absolute;
 	width: 196px;
@@ -103,6 +85,15 @@
 	top: 18px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
 	cursor: pointer;
 }
 
