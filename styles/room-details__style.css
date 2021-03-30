@@ -36,33 +36,110 @@ body {
     border-radius: 4px;
 }
 
+.content__booking__button {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 30px;
+    top: 437px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content__booking__button__arrow {
+    width: 44px;
+    height: 44px;
+    float: right;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
 .content__booking__calculator {
     position: absolute;
     width: 320px;
     height: 158px;
     left: 30px;
     top: 251px;
-
-}
-
-.content__booking__calculator__main {
-    position: absolute;
-    width: 100%;
-    height: 24px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
-
 }
 
-.content__booking__calculator__main__value {
+.content__booking__calculator__separator__body {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 22px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__booking__calculator__total {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 134px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__booking__calculator__total__separator__body {
+    position: absolute;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    height: 18px;
+}
+
+.content__booking__calculator__extrafee {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 68px;
+}
+
+.content__booking__calculator__fee {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 34px;
+}
+
+.content__booking__calculator__main {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+}
+
+.content__booking__calculator__value {
     float: left;
 }
 
-.content__booking__calculator__main__price {
+.content__booking__calculator__price {
     float: right;
 }
 
