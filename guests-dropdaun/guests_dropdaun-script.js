@@ -29,6 +29,8 @@ function onGuestsDropdaunLoad() {
         gestsAdultElem.innerHTML = 2;
     });
 
+    let event = new Event("changeGuests", { bubbles: true }); ///
+
     let apply = document.querySelector('.guests-apply');
     apply.addEventListener('click', function () {
 
@@ -57,6 +59,8 @@ function onGuestsDropdaunLoad() {
 
         let guestsForm = document.querySelector('.guests-dropdown');
         guestsForm.style.display = '';
+
+        guestsForm.dispatchEvent(event);
     });
 }
 

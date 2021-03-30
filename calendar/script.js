@@ -33,6 +33,8 @@ function func() {
 		showCurrentMonth(body);
 	});
 
+	let event = new Event("changeDate", { bubbles: true }); ///
+
 	let apply = document.querySelector('.apply');
 	apply.addEventListener('click', function () {
 		let arriveDate = document.querySelector('.arrive-date');
@@ -61,7 +63,7 @@ function func() {
 		let calendar = document.querySelector('.calendar-parent');
 		calendar.style.display = '';
 
-
+		calendar.dispatchEvent(event); ///
 	});
 
 	let days = document.querySelector('#days');

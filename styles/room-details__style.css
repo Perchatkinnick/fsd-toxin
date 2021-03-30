@@ -20,10 +20,468 @@ body {
     flex: 1 0 auto;
     background: #FFFFFF;
 }
+
+.content__booking {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 380px;
+    height: 511px;
+    left: 920px;
+    top: 625px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.content__booking__calculator {
+    position: absolute;
+    width: 320px;
+    height: 158px;
+    left: 30px;
+    top: 251px;
+
+}
+
+.content__booking__calculator__main {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+
+}
+
+.content__booking__calculator__main__value {
+    float: left;
+}
+
+.content__booking__calculator__main__price {
+    float: right;
+}
+
+.content__booking__guests-dropdown {
+    position: absolute;
+    top: 228.44px;
+    left: 30px;
+}
+
+.content__booking__guests {
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    left: 30px;
+    top: 164.44px;
+    cursor: pointer;
+}
+
+.content__booking__guests__value {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    top: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__guests__title {
+    position: absolute;
+    width: 43px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__booking__calendar {
+    position: absolute;
+    display: none;
+    width: 320px;
+    height: 369px;
+    left: 30px;
+    top: 144px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: white;
+    z-index: 100;
+}
+
+.content__booking__date {
+    position: absolute;
+    width: 320px;
+    height: 65px;
+    left: 30px;
+    top: 80px;
+}
+
+.content__booking__arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0;
+    top: 20.44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__booking__date__value {
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    top: 20.44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__date__title {
+    position: absolute;
+    width: 83px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__booking__date__arrive {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.content__booking__date__departure {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    left: 170px;
+    cursor: pointer;
+}
+
+.content__booking__price {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 250px;
+    top: 41px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__booking__lux {
+    position: absolute;
+    width: 41px;
+    height: 17px;
+    left: 80px;
+    top: 43px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
+
+.content__booking__number {
+    position: absolute;
+    width: 47px;
+    height: 17px;
+    left: 30px;
+    top: 41px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+   
+}
+
 .content__details {
     float: left;
     width: 100%;
     height: 939px;
+}
+
+.content__details__cancel {
+    position: absolute;
+    width: 341px;
+    height: 140px;
+    left: 501px;
+    top: 1300px;
+}
+
+.content__details__cancel__text {
+    position: absolute;
+    width: 341px;
+    height: 96px;
+    top: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__cancel__title {
+    position: absolute;
+    width: 91.77px;
+    height: 24px;
+    left: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__details__rules {
+    position: absolute;
+    width: 292px;
+    height: 160px;
+    left: 139px;
+    top: 1300px;
+}
+
+.content__details__rules__list {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 44px;
+    list-style: none;
+    height: 100%;
+}
+
+.content__details__rules__list__item {
+    position: relative;
+    padding-left: 30px;
+    height: 24px;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+    .content__details__rules__list__item::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(31, 32, 65, 0.25);
+    }
+
+.content__details__rules__title {
+    position: absolute;
+    width: 91.77px;
+    height: 24px;
+    left: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__details__reviews {
+    position: absolute;
+    width: 712px;
+    left: 139px;
+    top: 958px;
+}
+
+.content__details__reviews__container {
+    position: absolute;
+    display: grid;
+    grid-row-gap: 22px;
+    top: 44px;
+    width: 711px;
+    height: 289px;
+}
+
+.content__details__reviews__container__review {
+    width: 711px;
+    height: 133px;
+}
+
+.content__details__reviews__container__review__likeContainer {
+    position: relative;
+    width: 39.72px;
+    height: 20px;
+    left: 4px;
+    top: -35px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.content__details__reviews__container__review__likeContainer__checkked {
+    border: 1px solid #BC9CFF;
+}
+
+.content__details__reviews__container__review__likeContainer__heart__checked {
+    content: 'favorite';
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content__details__reviews__container__review__likeContainer__count {
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    left: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__details__reviews__container__review__likeContainer__heart {
+    position: absolute;
+    width: 19.86px;
+    height: 20px;
+    left: 5px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 19px;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__details__reviews__container__review__text {
+    position: relative;
+    width: 653px;
+    height: 72px;
+    left: 57.6px;
+    top: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__reviews__container__review__date {
+    position: relative;
+    width: 220.45px;
+    height: 24px;
+    left: 57.6px;
+    top: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__reviews__container__review__name {
+    position: absolute;
+    width: 220.45px;
+    height: 24px;
+    left: 57.6px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__reviews__container__review__photo {
+    position: absolute;
+    width: 47.67px;
+    height: 48px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    border-radius: 32px;
+}
+
+.content__details__reviews__count {
+    position: absolute;
+    width: 62px;
+    height: 14px;
+    top: 10px;
+    left: 649px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__details__reviews__title {
+    position: absolute;
+    width: 302px;
+    height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
 }
 
 .content__details__impression {
@@ -175,6 +633,7 @@ body {
     top: 112px;
     border: 1px rgba(31, 32, 65, 0.1);
     border-style: solid none;
+    
 }
 
 .content__details__info__comfort {
@@ -209,6 +668,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
+    
 }
 
 .content__details__info__icon {
@@ -245,6 +705,7 @@ body {
     display: grid;
     width: 100%;
     height: 485px;
+
 }
 
 .content__gallery__main {

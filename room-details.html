@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
     <link type="text/css" rel="stylesheet" media="all" href="guests-dropdaun/guests_dropdaun-style.css" />
     <link type="text/css" rel="stylesheet" media="all" href="styles/room-details__style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
 
 
     <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
@@ -28,6 +29,8 @@
     <script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
     <script src="guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
     <script src="scripts/room-details__script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="show-rooms/data.js" charset="utf-8" type="text/javascript"></script>
+    <script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
 
 
     <title>Toxin</title>
@@ -136,6 +139,101 @@
                             <li class="content__details__impression__legend__item">Удовлетворительно</li>
                             <li class="content__details__impression__legend__item">Разочарован</li>
                         </ul>
+                    </div>
+                </div>
+                <div class="content__details__reviews">
+                    <div class="content__details__reviews__title">Отзывы посетителей номера</div>
+                    <div class="content__details__reviews__count"></div>
+                    <div class="content__details__reviews__container"></div>
+                </div>
+                <div class="content__details__rules">
+                    <div class="content__details__rules__title">Правила</div>
+                    <ul class="content__details__rules__list">
+                        <li class="content__details__rules__list__item">Нельзя с питомцами</li>
+                        <li class="content__details__rules__list__item">Без вечеринок и мероприятий</li>
+                        <li class="content__details__rules__list__item">Время прибытия — после 13:00, а выезд до 12:00</li>
+                    </ul>
+                </div>
+                <div class="content__details__cancel">
+                    <div class="content__details__cancel__title">Отмена</div>
+                    <div class="content__details__cancel__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</div>
+                </div>
+            </div>
+            <div class="content__booking">
+                <div class="content__booking__number"></div>
+                <div class="content__booking__lux"></div>
+                <div class="content__booking__price"></div>
+                <div class="content__booking__date">
+                    <div class="content__booking__date__arrive">
+                        <div class="content__booking__date__title">прибытие</div>
+                        <div class="content__booking__date__value arrive-date">ДД.ММ.ГГГГ</div>
+                        <div class="content__booking__arrow">expand_more</div>
+                    </div>
+                    <div class="content__booking__date__departure">
+                        <div class="content__booking__date__title">выезд</div>
+                        <div class="content__booking__date__value departure-date">ДД.ММ.ГГГГ</div>
+                        <div class="content__booking__arrow">expand_more</div>
+                    </div>
+                </div>
+                <div class="content__booking__calendar calendar-parent">
+                    <div id="days">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Пн</th>
+                                    <th>Вт</th>
+                                    <th>Ср</th>
+                                    <th>Чт</th>
+                                    <th>Пт</th>
+                                    <th>Сб</th>
+                                    <th>Вс</th>
+                                </tr>
+                            </thead>
+                            <tbody class="body" data-dot1="" data-dot2=""></tbody>
+                        </table>
+                    </div>
+
+                    <div class="info">Август</div>
+
+                    <i class="material-icons arrow-back">arrow_back</i>
+                    <i class="material-icons arrow-forward">arrow_forward</i>
+
+                    <span class="clear">очистить</span>
+                    <span class="apply">применить</span>
+                </div>
+                <div class="content__booking__guests">
+                    <div class="content__booking__guests__title">гости</div>
+                    <div class="content__booking__guests__value content__guests__title">Сколько гостей</div>
+                    <div class="content__booking__arrow">expand_more</div>
+                </div>
+                <div class="content__booking__guests-dropdown">
+                    <div class="guests-dropdown">
+                        <div class="guests-adult">
+                            <div class="guests-note">взрослые</div>
+                            <div id="guests-adult-plus" class="guests-plus">+</div>
+                            <div id="guests-adult" class="guests-count">2</div>
+                            <div id="guests-adult-minus" class="guests-minus">-</div>
+                        </div>
+                        <div class="guests-children">
+                            <div class="guests-note">дети</div>
+                            <div id="guests-children-plus" class="guests-plus">+</div>
+                            <div id="guests-children" class="guests-count">0</div>
+                            <div id="guests-children-minus" class="guests-minus">-</div>
+                        </div>
+                        <div class="guests-babies">
+                            <div class="guests-note">младенцы</div>
+                            <div id="guests-babies-plus" class="guests-plus">+</div>
+                            <div id="guests-babies" class="guests-count">0</div>
+                            <div id="guests-babies-minus" class="guests-minus">-</div>
+                        </div>
+                        <span class="guests-clear">очистить</span>
+                        <span class="guests-apply">применить</span>
+                    </div>
+                </div>
+                <div class="content__booking__calculator">
+                    <div class="content__booking__calculator__main">
+                        <div class="content__booking__calculator__main__value">1000x3</div>
+                        <div class="content__booking__calculator__main__price">3000</div>
                     </div>
                 </div>
             </div>

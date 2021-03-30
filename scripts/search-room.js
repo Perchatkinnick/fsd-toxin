@@ -46,6 +46,7 @@ function onLoad() {
 
     createShowVariants(1);
 
+    func();
 }
 
 function createPageMarkers() {
@@ -141,10 +142,11 @@ function addCalendar() {
 
     if (calendar.style.display == '') {
         calendar.style.display = 'block';
-        func();
+        //func();
     } else {
         calendar.style.display = '';
 
+        let days = document.querySelector('#days');
         let body = days.querySelector('.body');
         body.dataset.dot1 = '';
         body.dataset.dot2 = '';

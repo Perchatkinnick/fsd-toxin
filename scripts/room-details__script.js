@@ -1,15 +1,274 @@
-//@ts-check
+﻿//@ts-check
+let roomsDataParth = [
+    {
+        //more info about room... and than ->
+        reviews: [
+            {
+                user: 1,
+                date: '2021.03.23',
+                text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                likes: 12,
+            },
+            {
+                user: 2,
+                date: '2021.03.21',
+                text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент',
+                likes: 2,
+            },
+        ]
+    },
+    {
+        //next room
+    }
+];
+
+let users = [
+    {
+        id: 1,
+        name: 'Мурад',
+        lastName: 'Сарафанов',
+        sex: 'm',
+        birthday: '',
+        email: '',
+        pass: '',
+        mailing: false,
+    },
+    {
+        id: 2,
+        name: 'Патрисия',
+        lastName: 'Стёклышкова',
+        sex: 'f',
+        birthday: '',
+        email: '',
+        pass: '',
+        mailing: false,
+    },
+];
+
 
 function onLoad() {
     let roomData = JSON.parse(localStorage.getItem("roomData"));
 
     loadPhoto(roomData);
 
-
     loadDiagramm();
+    loadCounts();
+    loadReviews();
+    loadBooking(roomData);
+    func();
+    loadCalendar();
+    loadGuestsDropdaun();
+    loadCalculator(roomData);
+
+
+    document.addEventListener("changeDate", function (event) {
+        loadCalculator(roomData);
+    });
+
+    document.addEventListener("changeGuests", function (event) {
+        
+    });
+}
+
+function loadCalculator(roomData) {
+    loadMainString(roomData);
+}
+
+function loadMainString(roomData) {
+    let valueElem = document.querySelector('.content__booking__calculator__main__value');
+    let priceElem = document.querySelector('.content__booking__calculator__main__price');
+
+    let period = countDays();
+    let coast = roomData.price;
+
+    valueElem.innerHTML = coast + '\u20bd x ' + period + ' суток';
+    priceElem.innerHTML = String(coast * period) + '\u20bd';
+}
+
+function countDays() {
+    let f = localStorage.getItem('dateArrive');
+    if (f != '') {
+        let arriveDate = new Date(localStorage.getItem('dateArrive'));
+        let departureDate = new Date(localStorage.getItem('dateDeparture'));
+
+        let period = Math.round((departureDate - arriveDate) / (60 * 60 * 24 * 1000)) + 1;
+        return period;
+    }
+}
+
+function loadGuestsDropdaun() {
+    let guestsElem = document.querySelector('.content__booking__guests');
+    guestsElem.addEventListener('click', onGuestsElemClickHandler);
+
+    let guestsValue = document.querySelector('.content__booking__guests__value');
+    let guestsBabies = localStorage.getItem('guestsBabies');
+    let guestsChildren = localStorage.getItem('guestsChildren');
+    let guestsAdult = localStorage.getItem('guestsAdult');
+
+    if (guestsBabies != null && guestsChildren != null && guestsAdult != null) {
+        guestsValue.innerHTML = guestsAdult + ' гостя';
+        if (guestsChildren != 0) {
+            guestsValue.innerHTML += ', ' + guestsChildren + ' детей';
+        }
+
+        if (guestsBabies != 0) {
+            guestsValue.innerHTML += ', ' + guestsBabies + ' младенцев';
+        }
+    }
+}
+
+function onGuestsElemClickHandler() {
+    let guestsForm = document.querySelector('.guests-dropdown');
+
+    if (guestsForm.style.display == '') {
+        guestsForm.style.display = 'block';
+        onGuestsDropdaunLoad();
+    } else {
+        guestsForm.style.display = '';
+    }
+}
+
+function loadCalendar() {
+    let arriveElem = document.querySelector('.content__booking__date__arrive');
+    arriveElem.addEventListener('click', showCalendar);
+
+    let departureElem = document.querySelector('.content__booking__date__departure');
+    departureElem.addEventListener('click', showCalendar);
+}
+
+function showCalendar() {
+    let calendar = document.querySelector('.content__booking__calendar');
+
+    if (calendar.style.display == '') {
+        calendar.style.display = 'block';
+        
+    } else {
+        calendar.style.display = '';
+
+        let days = document.querySelector('#days');
+        let body = days.querySelector('.body');
+        body.dataset.dot1 = '';
+        body.dataset.dot2 = '';
+    }
+}
+
+function loadBooking(roomData) {
+    let numberElem = document.querySelector('.content__booking__number');
+    numberElem.innerHTML = '<span style="font-size: 10px">№ </span>' + roomData.room;
+
+    let luxElem = document.querySelector('.content__booking__lux');
+    if (roomData.isLux == 'true') {
+        luxElem.innerHTML = 'люкс';
+    }
+
+    let priceElem = document.querySelector('.content__booking__price');
+    priceElem.innerHTML = roomData.price + '\u20bd <span style="font-size: 11px; opacity: 0.4">в сутки</span>';
+
+    let arriveDate = getValidDate(localStorage.getItem('dateArrive'));
+    let departureDate = getValidDate(localStorage.getItem('dateDeparture'));
+    let arriveElem = document.querySelector('.arrive-date');
+    arriveElem.innerHTML = arriveDate;
+    let departureElem = document.querySelector('.departure-date');
+    departureElem.innerHTML = departureDate;
+}
+
+function getValidDate(date) {
+    let arr = date.split('.');
+    let month = +arr[1] + 1;
+    if (month > 12) {
+        month = 1;
+    }
+    if (month < 10) {
+        month = '0' + String(month);
+    }
+    date = arr[2] + '.' + month + '.' + arr[0]
+    return date;
+}
+
+function loadCounts() {
+    let count = roomsDataParth[0].reviews.length;
+    let container = document.querySelector('.content__details__reviews__count');
+    container.innerHTML = count + ' отзыва';
+}
+
+function loadReviews() {
+    let container = document.querySelector('.content__details__reviews__container');
+
+    let count = roomsDataParth[0].reviews.length;
+
+    for (let i = 0; i < count; i++) {
+        let review = document.createElement('div');
+        review.classList.add('content__details__reviews__container__review');
+
+        let userPhoto = document.createElement('div');
+        userPhoto.classList.add('content__details__reviews__container__review__photo');
+        let userID = roomsDataParth[0].reviews[i].user;
+        userPhoto.style.background = 'url("media/images/users/' + userID + '.png")';
+        review.appendChild(userPhoto);
+
+        let user = users.find(user => user.id === userID);
+
+        let name = document.createElement('div');
+        name.classList.add('content__details__reviews__container__review__name');
+        name.innerHTML = user.name + ' ' + user.lastName;
+        review.appendChild(name);
+
+        let dateElement = document.createElement('div');
+        dateElement.classList.add('content__details__reviews__container__review__date');
+        let date = new Date(roomsDataParth[0].reviews[i].date);
+        let now = new Date();
+        let diff = Math.round((now - date) / (60 * 60 * 24 * 1000));
+        dateElement.innerHTML = diff + ' дней назад';
+        review.appendChild(dateElement);
+
+        let text = document.createElement('div');
+        text.classList.add('content__details__reviews__container__review__text');
+        text.innerHTML = roomsDataParth[0].reviews[i].text;
+        review.appendChild(text);
+
+        let likeContainer = document.createElement('div');
+        likeContainer.classList.add('content__details__reviews__container__review__likeContainer');
+        likeContainer.addEventListener('click', onLikeClickHandler);
+        review.appendChild(likeContainer);
+
+        let heart = document.createElement('div');
+        heart.classList.add('content__details__reviews__container__review__likeContainer__heart');
+        heart.innerHTML = 'favorite_border';
+        likeContainer.appendChild(heart);
+
+        let count = document.createElement('div');
+        count.classList.add('content__details__reviews__container__review__likeContainer__count');
+        count.innerHTML = String(roomsDataParth[0].reviews[i].likes);
+        likeContainer.appendChild(count);
+
+        container.appendChild(review);
+    }
+}
+
+function onLikeClickHandler(e) {
+    if (!e.target.classList.contains('content__details__reviews__container__review__likeContainer')) {
+        let container = e.target.parentElement;
+        container.classList.toggle('content__details__reviews__container__review__likeContainer__checkked');
+        let heart = container.querySelector('.content__details__reviews__container__review__likeContainer__heart');
+        heart.classList.toggle('content__details__reviews__container__review__likeContainer__heart__checked');
+        if (heart.innerHTML == 'favorite_border') {
+            heart.innerHTML = 'favorite';
+        } else {
+            heart.innerHTML = 'favorite_border';
+        }
+        let count = container.querySelector('.content__details__reviews__container__review__likeContainer__count');
+        count.classList.toggle('content__details__reviews__container__review__likeContainer__count__checked');
+        if (count.classList.contains('content__details__reviews__container__review__likeContainer__count__checked')) {
+            count.innerHTML++;
+        } else {
+            count.innerHTML--;
+        }
+    }
+    
 }
 
 function loadDiagramm() {
+    // get from localStorage or search from DB wrigth now
     let dataImpression = {
         impressions: 260,
         magnificently: 120,
