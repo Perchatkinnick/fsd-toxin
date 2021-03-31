@@ -51,6 +51,7 @@ let users = [
 
 function onLoad() {
     let roomData = JSON.parse(localStorage.getItem("roomData"));
+    onHeaderLoad();
 
     loadPhoto(roomData);
 

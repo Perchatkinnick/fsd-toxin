@@ -1,6 +1,8 @@
 //@ts-check
 
 function onLoad() {
+    onHeaderLoad();
+
     let contentDateRect = document.querySelector('.content__date__rect');
     contentDateRect.addEventListener('click', addCalendar);
     let contentDateTitle = document.querySelector('.content__date__title');
