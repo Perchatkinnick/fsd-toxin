@@ -1,36 +1,21 @@
 ﻿
-
-.header {
-	position: relative;
+header {
+	flex: 1 0 auto;
 	width: 1440px;
 	height: 70px;
-	left: 0px;
-	top: 0px;
-}
-
-.rectangle {
-	position: absolute;
-	width: 1440px;
-	height: 70px;
-	left: 0px;
-	top: 0px;
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
-.header-logo {
+.header__logo {
 	position: relative;
 	left: 140px;
 	top: 15px;
-}
-
-.logo {
-	position: relative;
 	width: 105.69px;
 	height: 40px;
 }
 
-.round-gradient {
+.header__logo__round-gradient {
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -40,7 +25,7 @@
 	border-radius: 100px;
 }
 
-.round-background {
+.header__logo__round-background {
 	position: absolute;
 	width: 34px;
 	height: 34px;
@@ -50,7 +35,7 @@
 	border-radius: 100%;
 }
 
-.vector1 {
+.header__logo__vector1 {
 	position: absolute;
 	width: 11.76px;
 	height: 11.76px;
@@ -59,7 +44,7 @@
 	background-image: url('../media/svg/vector.svg');
 }
 
-.vector2 {
+.header__logo__vector2 {
 	position: absolute;
 	width: 9.12px;
 	height: 5.91px;
@@ -68,7 +53,7 @@
 	background-image: url('../media/svg/vector2.svg');
 }
 
-.title {
+.header__logo__title {
 	position: absolute;
 	width: 53.9px;
 	height: 13.5px;
@@ -77,7 +62,7 @@
 	background-image: url('../media/svg/toxin.svg');
 }
 
-.registration-button {
+.header__registration {
 	position: absolute;
 	width: 196px;
 	height: 34px;
@@ -85,7 +70,6 @@
 	top: 18px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
-
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -97,164 +81,121 @@
 	cursor: pointer;
 }
 
-.expand-services{
-	position: absolute;
-	width: 24px;
-	height: 21px;
-	left: 643px;
-	top: 25px;
-	
-	font-family: Material Icons;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24px;
-	line-height: 20px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: rgba(31, 32, 65, 0.5);
-	
-	background-image: url('../media/svg/expand_more.svg');
-	background-position: center;
-	background-repeat: no-repeat;
-		
-	}
-
-.login{
-	position: absolute;
-	width: 47px;
-	height: 15px;
-	left: 1017px;
-	top: 27px;
-	
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color: #BC9CFF;
-}
-
-.login-button-border{
+.header__login {
 	position: absolute;
 	width: 87px;
 	height: 34px;
 	left: 995px;
 	top: 16px;
-	
-	border-radius: 22px;	
+	border-radius: 22px;
 	background: linear-gradient(to right, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-	
 	padding: 2px;
 }
 
-.login-button-background{
-	
+.header__login__background {
 	width: 83px;
 	height: 30px;
-	
 	border-radius: 22px;
-
 	background: white;
-	
 	padding: 2px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #BC9CFF;
+	cursor: pointer;
 }
-	
-.expand-agreements{
-	position: absolute;
+
+.expand-more {
+	display: inline-block;
+	float: right;
 	width: 24px;
 	height: 21px;
-	left: 953px;
-	top: 25px;
-	
 	font-family: Material Icons;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 20px;
-	display: flex;
 	align-items: center;
 	text-align: center;
 	color: rgba(31, 32, 65, 0.5);
-	
-	background-image: url('../media/svg/expand_more.svg');
-	background-position: center;
-	background-repeat: no-repeat;
-
+	cursor: pointer;
 }
 
-.agreements{
+.header__agreements {
 	position: absolute;
-	width: 92px;
+	width: 116px;
 	height: 18px;
 	left: 861px;
 	top: 26px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
 }
 
-.news{
+.header__news {
 	position: absolute;
 	width: 62px;
 	height: 18px;
 	left: 779px;
 	top: 26px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
 }
 
-.vacancies{
+.header__vacancies {
 	position: absolute;
 	width: 72px;
 	height: 18px;
 	left: 687px;
 	top: 26px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
 }
 
-.services{
+.header__services {
 	position: absolute;
-	width: 50px;
+	width: 74px;
 	height: 18px;
 	left: 593px;
 	top: 26px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
 }
 
-.about{
+.header__about {
 	position: absolute;
 	width: 42px;
 	height: 18px;
 	left: 531px;
 	top: 26px;
-	
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
 	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
 }

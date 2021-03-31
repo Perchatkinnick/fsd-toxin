@@ -37,33 +37,32 @@
 </head>
 <body onload="onLoad()">
     <div class="wrapper">
-        <div class="header">
-            <div class="rectangle"></div>
-            <a href="index.html">
-                <div class="header-logo">
-                    <div class="logo">
-                        <div class="round-gradient"></div>
-                        <div class="round-background"></div>
-                        <div class="vector1"></div>
-                        <div class="vector2"></div>
-                        <div class="title"></div>
-                    </div>
-                </div>
-            </a>
-            <div class="about">О нас</div>
-            <div class="services">Услуги</div>
-            <div class="expand-services"></div>
-            <div class="vacancies">Вакансии</div>
-            <div class="news">Новости</div>
-            <div class="agreements">Соглашения</div>
-            <div class="expand-agreements"></div>
+        <header onload="onHeaderLoad()">
+			<div class="header__logo">
+				<a href="index.html">
+					<div class="header__logo__round-gradient"></div>
+					<div class="header__logo__round-background"></div>
+					<div class="header__logo__vector1"></div>
+					<div class="header__logo__vector2"></div>
+					<div class="header__logo__title"></div>
+				</a>
+			</div>
 
-            <div class="login-button-border">
-                <div class="login-button-background"></div>
-            </div>
-            <div class="login">войти</div>
-            <div class="registration-button">зарегистрироваться</div>
-        </div>
+			<div class="header__about">О нас</div>
+			<div class="header__services">Услуги
+				<div class="expand-more">expand_more</div>
+			</div>
+			<div class="header__vacancies">Вакансии</div>
+			<div class="header__news">Новости</div>
+			<div class="header__agreements">Соглашения
+				<div class="expand-more">expand_more</div>
+			</div>
+
+			<div class="header__login">
+				<div class="header__login__background">войти</div>
+			</div>
+			<div class="header__registration">зарегистрироваться</div>
+		</header>
 
 
             <div class="content">

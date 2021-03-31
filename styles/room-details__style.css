@@ -19,6 +19,7 @@ body {
 .content {
     flex: 1 0 auto;
     background: #FFFFFF;
+    box-shadow: inset 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .content__booking {
