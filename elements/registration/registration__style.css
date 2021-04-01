@@ -12,13 +12,83 @@
     border-radius: 4px;
 }
 
-.registration__sex {
+.registration__login {
     position: absolute;
-    width: 220.74px;
-    height: 24.44px;
+    width: 320px;
+    height: 44px;
     left: 30px;
-    top: 198px;
+    top: 572px;
+}
 
+.registration__login__button {
+    float: right;
+    width: 99px;
+    height: 44px;
+    
+}
+
+.registration__login__note {
+    position: absolute;
+    width: 186px;
+    height: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.registration__button {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 30px;
+    top: 498px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.registration__button__arrow {
+    float: right;
+    width: 44px;
+    height: 44px;
+
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.registration__mailing {
+    position: absolute;
+    width: 290px;
+    height: 24px;
+    left: 30px;
+    top: 454px;
+}
+
+.registration__mailing__title {
+    position: absolute;
+    width: 210px;
+    height: 24px;
+    left: 50px;
+    top: 0;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -27,10 +97,87 @@
     color: rgba(31, 32, 65, 0.75);
 }
 
+.registration__mailing__switcher {
+    width: 40px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.registration__mailing__switcher__active {
+    border: 1px solid #BC9CFF;
+}
+
+    .registration__mailing__switcher__active div {
+        float: right;
+        background: #BC9CFF;
+    }
+
+.registration__mailing__switcher__round {
+    width: 12px;
+    height: 12px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+}
+
+.registration__addData {
+    position: absolute;
+    width: 320px;
+    height: 118px;
+    left: 30px;
+    top: 326px;
+}
+
+.registration__birthday {
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    left: 30px;
+    top: 242px;
+}
+
+.registration__name {
+    position: relative;
+    width: 320px;
+    height: 103px;
+    left: 30px;
+    top: 90px;
+}
+
+.registration__sex {
+    position: absolute;
+    width: 220.74px;
+    height: 24.44px;
+    left: 30px;
+    top: 198px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.registration__sex__checked {
+    color: rgba(31, 32, 65, 0.75);
+}
+
+    .registration__sex__checked .registration__sex__check-box {
+        border: 1px solid #BC9CFF;
+    }
+
+        .registration__sex__checked .registration__sex__check-box div {
+            display: block;
+        }
+
 .registration__sex__value {
     position: absolute;
     top: 0;
-    margin: 0 10px;
+    margin: 0 30px;
     height: 24.44px;
     line-height: 24px;
     display: inline-block;
@@ -42,6 +189,20 @@
     height: 20px;
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration__sex__check-box__marker {
+    display: none;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 10px;
 }
 
@@ -68,27 +229,6 @@
     line-height: 29px;
     color: #1F2041;
 }
-
-.registration__input {
-    padding: 0 15px;
-    position: absolute;
-    width: 290px;
-    height: 44px;
-    left: 30px;
-    top: 90px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 1);
-}
-
-    .registration__input:nth-child(2) {
-        top: 144px;
-    }
 
 input::-moz-placeholder {
     color: rgba(31, 32, 65, 0.25);

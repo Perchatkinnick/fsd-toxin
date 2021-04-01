@@ -32,32 +32,12 @@ header {
 	cursor: pointer;
 }
 
-.header__login {
+.header__login__container {
 	position: absolute;
 	width: 87px;
 	height: 34px;
 	left: 995px;
 	top: 16px;
-	border-radius: 22px;
-	background: linear-gradient(to right, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
-	padding: 2px;
-}
-
-.header__login__background {
-	width: 83px;
-	height: 30px;
-	border-radius: 22px;
-	background: white;
-	padding: 2px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 30px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #BC9CFF;
-	cursor: pointer;
 }
 
 .expand-more {
