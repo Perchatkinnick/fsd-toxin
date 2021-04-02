@@ -30,17 +30,4 @@ body {
     background: no-repeat url(../media/images/bgrd_login.png);
 }
 
-.content__container__login {
-    position: absolute;
-    width: 380px;
-    height: 358px;
-    left: 530px;
-    top: 242px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
 

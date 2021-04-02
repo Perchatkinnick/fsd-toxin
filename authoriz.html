@@ -16,6 +16,9 @@
     <link type="text/css" rel="stylesheet" media="all" href="elements/title/title__style.css" />
     <link type="text/css" rel="stylesheet" media="all" href="elements/input/input__style.css" />
     <link type="text/css" rel="stylesheet" media="all" href="elements/login-button/login-button__style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="elements/login/login__style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="elements/go-button/go-button__style.css" />
+
 
     <link type="text/css" rel="stylesheet" media="all" href="styles/authoriz__style.css" />
     <link href="fonts/iconfont/material-icons.css" rel="stylesheet">
@@ -28,6 +31,7 @@
     <script src="scripts/authoriz__script.js" charset="utf-8" type="text/javascript"></script>
     <script src="header/header__script.js" charset="utf-8" type="text/javascript"></script>
     <script src="elements/login-button/login-button__script.js" charset="utf-8" type="text/javascript"></script>
+    <script src="elements/login/login__script.js" charset="utf-8" type="text/javascript"></script>
 
 
     <title>Toxin</title>
@@ -61,7 +65,7 @@
             </div>
             <div class="header__login__container">
                 <div class="login-button">
-                    <div class="login-button__background">войти</div>
+                    <div class="login-button__background login-event">войти</div>
                 </div>
             </div>
             <div class="header__registration">зарегистрироваться</div>
@@ -69,8 +73,26 @@
 
         <div class="content">
             <div class="content__container">
-                <div class="content__container__login">
-
+                <div class="login">
+                    <div class="registration__title">Войти</div>
+                    <div class="login__input-container">
+                        <input class="input" type="text" style="top: 0px" placeholder="Email" />
+                        <input class="input" type="text" style="top: 54px" placeholder="Пароль" />
+                    </div>
+                    <div class="login__button-container">
+                        <div class="go-button">
+                            войти
+                            <div class="go-button__arrow material-icons">arrow_forward</div>
+                        </div>
+                    </div>
+                    <div class="login__toRegistration">
+                        <div class="registration__login__note">Нет аккаунта на Toxin?</div>
+                        <div class="login__toRegistration__button">
+                            <div class="login-button ">
+                                <div class="login-button__background">создать</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="registration">
                     <div class="registration__title">Регистрация аккаунта</div>
@@ -107,14 +129,17 @@
                         </div>
                         <div class="registration__mailing__title">Получать спецпредложения</div>
                     </div>
-                    <div class="registration__button">зарегистрироваться
-                        <div class="registration__button__arrow material-icons">arrow_forward</div>
+                    <div class="registration__button-container">
+                        <div class="go-button">
+                            зарегистрироваться
+                            <div class="go-button__arrow material-icons">arrow_forward</div>
+                        </div>
                     </div>
                     <div class="registration__login">
                         <div class="registration__login__note">Уже есть аккаунт на Toxin</div>
                         <div class="registration__login__button">
                             <div class="login-button">
-                                <div class="login-button__background">войти</div>
+                                <div class="login-button__background login-event">войти</div>
                             </div>
                         </div>
                     </div>

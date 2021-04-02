@@ -2,9 +2,10 @@
 
 function onLoad() {
     onHeaderLoad();
+    
 
     let marker = localStorage.getItem('loginOrRegistration');
-    let loginForm = document.querySelector('.content__container__login');
+    let loginForm = document.querySelector('.login');
     let regForm = document.querySelector('.registration');
 
     if (marker == 'login') {
@@ -22,6 +23,8 @@ function onLoad() {
 
     let switcher = document.querySelector('.registration__mailing__switcher');
     switcher.addEventListener('click', onSwitcherClickHandler);
+
+    onLoginLoad();
 }
 
 function onSwitcherClickHandler(e) {

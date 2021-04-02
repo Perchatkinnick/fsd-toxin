@@ -2,10 +2,18 @@
 
 function onHeaderLoad() {
 
-    onLoginButtonLoad();
+    let loginButtons = document.getElementsByClassName('login-event');
+    for (let loginButton of loginButtons) {
+        loginButton.addEventListener('click', onLoginButtonClickHandler);
+    }
 
     let regButton = document.querySelector('.header__registration');
     regButton.addEventListener('click', onRegButtonClickHandler);
+}
+
+function onLoginButtonClickHandler() {
+    localStorage.setItem('loginOrRegistration', 'login');
+    location.href = 'authoriz.html';
 }
 
 function onRegButtonClickHandler() {

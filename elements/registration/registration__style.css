@@ -12,6 +12,14 @@
     border-radius: 4px;
 }
 
+.registration__button-container {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 30px;
+    top: 498px;
+}
+
 .registration__login {
     position: absolute;
     width: 320px;
@@ -39,40 +47,6 @@
     align-items: center;
     text-align: center;
     color: #000000;
-}
-
-.registration__button {
-    position: absolute;
-    width: 320px;
-    height: 44px;
-    left: 30px;
-    top: 498px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 44px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.registration__button__arrow {
-    float: right;
-    width: 44px;
-    height: 44px;
-
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 44px;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 .registration__mailing {
