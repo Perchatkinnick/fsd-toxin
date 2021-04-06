@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\elements\\input",
-    "\\elements\\login-button"
+    "\\calendar",
+    "\\scripts",
+    "\\styles"
   ],
-  "SelectedNode": "\\header",
+  "SelectedNode": "\\scripts\\room-details__script.js",
   "PreviewInSolutionExplorer": false
 }

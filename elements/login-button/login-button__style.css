@@ -1,23 +1,23 @@
 .login-button {
     position: absolute;
-    width: 87px;
-    height: 34px;
+    width: 83px;
+    height: 30px;
     border-radius: 22px;
     background: linear-gradient(to right, rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
     padding: 2px;
 }
 
 .login-button__background {
-    width: 83px;
-    height: 30px;
+    width: 79px;
+    height: 26px;
     border-radius: 22px;
     background: white;
     padding: 2px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 26px;
     text-align: center;
     text-transform: uppercase;
     color: #BC9CFF;

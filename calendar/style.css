@@ -11,8 +11,8 @@ body {
 }
 
 thead tr th {
-    width: 39.88px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -89,16 +89,14 @@ tbody tr td {
     position: absolute;
     width: 228px;
     height: 24px;
-    left: 44px;
-    top: 20px;
+    left: 46px;
+    top: 19px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
     line-height: 23px;
-    /* identical to box height */
     text-align: center;
-    /* Dark 100% */
     color: #1F2041;
 }
 
@@ -107,15 +105,13 @@ tbody tr td {
     width: 84px;
     height: 15px;
     left: 216px;
-    top: 334px;
+    top: 333px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    /* identical to box height */
     text-transform: uppercase;
-    /* Primary Color */
     color: #BC9CFF;
     cursor: pointer;
 }
@@ -125,13 +121,12 @@ tbody tr td {
     width: 72px;
     height: 15px;
     left: 20px;
-    top: 334px;
+    top: 333px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 12px;
     line-height: 15px;
-    /* identical to box height */
     text-transform: uppercase;
     color: #BC9CFF;
     cursor: pointer;
@@ -141,8 +136,8 @@ tbody tr td {
     position: absolute;
     width: 23.93px;
     height: 24px;
-    left: 275.4px;
-    top: 20px;
+    left: 274.4px;
+    top: 19px;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -151,7 +146,6 @@ tbody tr td {
     display: flex;
     align-items: center;
     text-align: center;
-    /* Primary Color */
     color: #BC9CFF;
     cursor: pointer;
 }
@@ -160,8 +154,8 @@ tbody tr td {
     position: absolute;
     width: 23.93px;
     height: 24px;
-    left: 20.2px;
-    top: 20px;
+    left: 19.2px;
+    top: 19px;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -170,7 +164,6 @@ tbody tr td {
     display: flex;
     align-items: center;
     text-align: center;
-    /* Primary Color */
     color: #BC9CFF;
     cursor: pointer;
 }
@@ -188,7 +181,7 @@ tbody tr td {
 #days {
     position: absolute;
     width: 279.39px;
-    height: 240px;
+    height: 238px;
     left: 20.93px;
-    top: 62px;
+    top: 73px;
 }

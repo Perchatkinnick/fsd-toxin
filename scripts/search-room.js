@@ -244,13 +244,21 @@ jQuery(document).ready(function ($) {
             var index = Math.round(values.length * l);
             if (index >= values.length)
                 index = values.length - 1;
-            $(document).find(".min").html( values[index] + "Р");
+
+            
+
+            $(document).find(".min").html(prettify(values[index]) + "\u20bd");
             index = Math.round(values.length * r);
             if (index >= values.length)
                 index = values.length - 1;
-            $(document).find(".max").html(values[index] + "P");
+            $(document).find(".max").html(prettify(values[index]) + "\u20bd");
         }
     })();
+
+    function prettify(num) {
+        var n = num.toString();
+        return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
+    }
 });
 
 
