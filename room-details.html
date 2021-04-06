@@ -103,10 +103,10 @@
                                 <circle class="donut-hole" cx="17" cy="17" r="15.91549430918954" fill="#fff"></circle>
                                 <circle class="donut-ring" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="1.5"></circle>
 
-                                <circle class="donut-segment magnificently" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#magnificently-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="0"></circle>
-                                <circle class="donut-segment good" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#good-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="0"></circle>
-                                <circle class="donut-segment passably" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#passably-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
-                                <circle class="donut-segment bad" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#bad-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                                <circle id="magnificently" class="donut-segment magnificently" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#magnificently-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="0"></circle>
+                                <circle id="good" class="donut-segment good" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#good-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="0"></circle>
+                                <circle id="passably" class="donut-segment passably" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#passably-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                                <circle id="bad" class="donut-segment bad" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#bad-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
 
                                 <circle class="donut-segment magnificently__bufer" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="25.5"></circle>
                                 <circle class="donut-segment good__bufer" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="25.5"></circle>
@@ -129,6 +129,35 @@
                                     <stop offset="0%" stop-color="#919191" />
                                     <stop offset="100%" stop-color="#3D4975" />
                                 </linearGradient>
+
+                                <animate id="magnificently__anim"
+                                         xlink:href="#magnificently"
+                                         attributeName="stroke-dasharray"
+                                         from="0 100"
+                                         to="50 50"
+                                         dur="2s"
+                                         fill="freeze" />
+                                <animate id="good__anim"
+                                         xlink:href="#good"
+                                         attributeName="stroke-dasharray"
+                                         from="0 100"
+                                         to="50 50"
+                                         dur="2s"
+                                         fill="freeze" />
+                                <animate id="passably__anim"
+                                         xlink:href="#passably"
+                                         attributeName="stroke-dasharray"
+                                         from="0 100"
+                                         to="50 50"
+                                         dur="2s"
+                                         fill="freeze" />
+                                <animate id="bad__anim"
+                                         xlink:href="#bad"
+                                         attributeName="stroke-dasharray"
+                                         from="0 100"
+                                         to="50 50"
+                                         dur="2s"
+                                         fill="freeze" />
                             </svg>
                         </div>
                         <div class="content__details__impression__diagramm__vote">

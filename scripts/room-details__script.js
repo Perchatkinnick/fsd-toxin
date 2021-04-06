@@ -382,6 +382,9 @@ function sectionLoad(grade, count, total, position) {
     position += percent;
     bufer.setAttribute('stroke-dashoffset', '-' + position);
 
+    let animation = document.querySelector('#' + grade + '__anim');
+    animation.setAttribute('to', percent + ' ' + 100);
+
     return position;
 }
 
