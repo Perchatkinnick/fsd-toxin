@@ -10,13 +10,13 @@
 	<meta charset="utf-8">
 	<link type="text/css" rel="stylesheet" media="all" href="styles/reset.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="styles/index.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="header/header.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="footer/footer.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/header/header.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/footer/footer.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/menu/menu.css" />
 
 
 	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/calendar/calendar.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="guests-dropdaun/guests_dropdaun-style.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/guests-dropdaun/guests_dropdaun.css" />
 	<link href="fonts/montserrat__style.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" media="all" href="fonts/fontawesome/all.min.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/logo/logo.css" />
@@ -26,9 +26,9 @@
 
 
 	<script src="common.blocks/calendar/calendar.js" charset="utf-8" type="text/javascript"></script>
-	<script src="header/header__script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="common.blocks/header/header.js" charset="utf-8" type="text/javascript"></script>
 	<script src="scripts/index.js" charset="utf-8" type="text/javascript"></script>
-	<script src="guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="common.blocks/guests-dropdaun/guests_dropdaun.js" charset="utf-8" type="text/javascript"></script>
 	<script src="common.blocks/login-button/login-button.js" charset="utf-8" type="text/javascript"></script>
 
 	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 					<div class="logo__title"></div>
 				</a>
 			</div>
-			<div class="menu">
+			<div class="menu header__menu">
 				<div class="item menu__about">О нас</div>
 				<div class="item menu__services">
 					Услуги
@@ -60,14 +60,11 @@
 					<div class="expand-more item__expand-more">expand_more</div>
 				</div>
 			</div>
-
 			<div class="login-button header__login-button">
 				<div class="login-button__background">войти</div>
 			</div>
-
 			<div class="registration-button header__registration-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
 		</header>
-
 
 		<div class="content">
 			<div class="content__container">
@@ -77,14 +74,14 @@
 						<div class="content__search__title">прибытие</div>
 						<div class="content__search__rect">
 							ДД.ММ.ГГГГ
-							<div class="expand-more">expand_more</div>
+							<div class="expand-more search-room__expand-more">expand_more</div>
 						</div>
 					</div>
 					<div class="content__search__departure">
 						<div class="content__search__title">выезд</div>
 						<div class="content__search__rect">
 							ДД.ММ.ГГГГ
-							<div class="expand-more">expand_more</div>
+							<div class="expand-more search-room__expand-more">expand_more</div>
 						</div>
 					</div>
 					<div class="calendar-parent">
@@ -118,7 +115,7 @@
 						<div class="content__search__title">гости</div>
 						<div class="content__search__rect">
 							Сколько гостей
-							<div class="expand-more">expand_more</div>
+							<div class="expand-more search-room__expand-more">expand_more</div>
 						</div>
 					</div>
 					<div class="guests__dropdown__container">

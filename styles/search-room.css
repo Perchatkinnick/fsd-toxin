@@ -1,27 +1,24 @@
-
-
 html {
     height: 100%;
 }
 
 body {
-    position: relative;
-    width: 1440px;
     height: 100%;
     background: #E5E5E5;
-    margin: 0 auto;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 .content {
+    position: relative;
     flex: 1 0 auto;
+    width: 1440px;
     background: #FFFFFF;
-    box-shadow: inset 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .content__show__page-navigation {
@@ -97,7 +94,7 @@ body {
     width: 266px;
     height: 44px;
     left: 140px;
-    top: 795px;
+    top: 725px;
 }
 
 .content__room-settings__additional__list{
@@ -199,7 +196,7 @@ body {
     width: 266px;
     height: 64px;
     left: 140px;
-    top: 715.44px;
+    top: 645.44px;
 }
 
 .content__room-settings__facilities__dropdown {
@@ -207,7 +204,7 @@ body {
     display: block;
     width: 266px;
     height: 119px;
-    top: 777.76px;
+    top: 707.76px;
     left: 140px;
 }
 
@@ -268,7 +265,7 @@ body {
     width: 266px;
     height: 145px;
     left: 140px;
-    top: 540px;
+    top: 470px;
 }
 
 .content__room-settings__availability__disabled {
@@ -356,7 +353,7 @@ body {
     width: 222px;
     height: 129.12px;
     left: 140px;
-    top: 380px;
+    top: 310px;
 }
 
 .content__home-rules__guests {
@@ -458,7 +455,7 @@ body {
 
 .content__guests__dropdown{
     position: relative;
-    top: 211px;
+    top: 178px;
     left: 140px;
 }
 
@@ -467,7 +464,7 @@ body {
     display: none;
     width: 320px;
     height: 369px;
-    top: 163px;
+    top: 93px;
     left: 140px;
     border-radius: 4px;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -480,7 +477,7 @@ body {
     width: 266px;
     height: 65px;
     left: 140px;
-    top: 100px;
+    top: 30px;
 }
 
 .content__date__label {
@@ -540,7 +537,7 @@ body {
     width: 266px;
     height: 63.56px;
     left: 140px;
-    top: 184.44px;
+    top: 114.44px;
 }
 
 .content__guests__label {
@@ -600,7 +597,7 @@ body {
     width: 266px;
     height: 72px;
     left: 140px;
-    top: 278px;
+    top: 208px;
 }
 
 .content__price-range__label {

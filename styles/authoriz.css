@@ -3,23 +3,21 @@ html {
 }
 
 body {
-    position: relative;
-    width: 1440px;
     height: 100%;
     background: #E5E5E5;
-    margin: 0 auto;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 .content {
     flex: 1 0 auto;
+    width: 1440px;
     background: #FFFFFF;
-    box-shadow: inset 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .content__container{

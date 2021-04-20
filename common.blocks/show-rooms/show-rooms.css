@@ -12,7 +12,7 @@
     position: absolute;
     width: 834px;
     height: 1089.5px;
-    top: 81px;
+    top: 51px;
     left: 60px;
     display: grid;
     grid-template-columns: 270px 270px 270px;
@@ -36,7 +36,6 @@
     width: 529px;
     height: 51px;
     left: 59px;
-    top: 30px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;

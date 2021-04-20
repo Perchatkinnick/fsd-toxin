@@ -21,12 +21,29 @@
 	position: relative;
 	left: 140px;
 	top: 15px;
+	float: left;
+}
+
+.header__menu {
+	position: relative;
+	top: 26px;
+	float: left;
+	margin-left: 285px;
+}
+
+.header__login-button {
+	position: relative;
+	float: left;
+	top: 18px;
+	margin-left: 20px;
 }
 
 .header__registration-button {
-	position: absolute;
-	left: 1104px;
+	position: relative;
+	display: inline-block;
 	top: 18px;
+	float: left;
+	margin-left: 20px;
 }
 
 .registration-button {
@@ -45,13 +62,7 @@
 	cursor: pointer;
 }
 
-.header__login-button {
-	position: absolute;
-	width: 85px;
-	height: 32px;
-	left: 997px;
-	top: 18px;
-}
+
 
 .item__expand-more {
 	display: inline-block;
