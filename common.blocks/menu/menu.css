@@ -1,0 +1,41 @@
+﻿.menu {
+    position: absolute;
+    width: 446px;
+    height: 21px;
+    left: 531px;
+    top: 26px;
+}
+
+.menu__agreements {
+    position: absolute;
+    width: 116px;
+    height: 18px;
+    left: 330px;
+}
+
+.menu__news {
+    position: absolute;
+    width: 62px;
+    height: 18px;
+    left: 248px;
+}
+
+.menu__vacancies {
+    position: absolute;
+    width: 72px;
+    height: 18px;
+    left: 156px;
+}
+
+.menu__services {
+    position: absolute;
+    width: 74px;
+    height: 18px;
+    left: 62px;
+}
+
+.menu__about {
+    position: absolute;
+    width: 42px;
+    height: 18px;
+}

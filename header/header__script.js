@@ -2,12 +2,12 @@
 
 function onHeaderLoad() {
 
-    let loginButtons = document.getElementsByClassName('login-event');
+    let loginButtons = document.getElementsByClassName('login-button__background');
     for (let loginButton of loginButtons) {
         loginButton.addEventListener('click', onLoginButtonClickHandler);
     }
 
-    let regButton = document.querySelector('.header__registration');
+    let regButton = document.querySelector('.registration-button');
     regButton.addEventListener('click', onRegButtonClickHandler);
 }
 

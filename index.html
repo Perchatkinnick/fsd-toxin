@@ -9,25 +9,27 @@
 <head>
 	<meta charset="utf-8">
 	<link type="text/css" rel="stylesheet" media="all" href="styles/reset.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="styles/index__style.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="styles/index.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="header/header.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="footer/footer.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/menu/menu.css" />
 
-	<link type="text/css" rel="stylesheet" media="all" href="calendar/style.css" />
+
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/calendar/calendar.css" />
 	<link type="text/css" rel="stylesheet" media="all" href="guests-dropdaun/guests_dropdaun-style.css" />
 	<link href="fonts/montserrat__style.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" media="all" href="fontawesome/all.min.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="elements/logo/logo__style.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="elements/login-button/login-button__style.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="elements/go-button/go-button__style.css" />
-	<link type="text/css" rel="stylesheet" media="all" href="elements/input/input__style.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="fonts/fontawesome/all.min.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/logo/logo.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/login-button/login-button.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/go-button/go-button.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="common.blocks/input/input.css" />
 
 
-	<script src="calendar/script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="common.blocks/calendar/calendar.js" charset="utf-8" type="text/javascript"></script>
 	<script src="header/header__script.js" charset="utf-8" type="text/javascript"></script>
-	<script src="scripts/index__script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="scripts/index.js" charset="utf-8" type="text/javascript"></script>
 	<script src="guests-dropdaun/guests_dropdaun-script.js" charset="utf-8" type="text/javascript"></script>
-	<script src="elements/login-button/login-button__script.js" charset="utf-8" type="text/javascript"></script>
+	<script src="common.blocks/login-button/login-button.js" charset="utf-8" type="text/javascript"></script>
 
 	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
 	<title>Toxin</title>
@@ -35,37 +37,35 @@
 	
 <body onload="onLoad()">
 	<div class="wrapper">
-		<header>
-			<div class="header__logo">
-				<div class="logo">
-					<a href="index.html">
-						<div class="logo__round-gradient"></div>
-						<div class="logo__round-background"></div>
-						<div class="logo__vector1"></div>
-						<div class="logo__vector2"></div>
-						<div class="logo__title"></div>
-					</a>
+		<header class="header">
+			<div class="logo header__logo">
+				<a href="index.html">
+					<div class="logo__round-gradient"></div>
+					<div class="logo__round-background"></div>
+					<div class="logo__vector1"></div>
+					<div class="logo__vector2"></div>
+					<div class="logo__title"></div>
+				</a>
+			</div>
+			<div class="menu">
+				<div class="item menu__about">О нас</div>
+				<div class="item menu__services">
+					Услуги
+					<div class="expand-more item__expand-more">expand_more</div>
+				</div>
+				<div class="item menu__vacancies">Вакансии</div>
+				<div class="item menu__news">Новости</div>
+				<div class="item menu__agreements">
+					Соглашения
+					<div class="expand-more item__expand-more">expand_more</div>
 				</div>
 			</div>
 
-			<div class="header__about">О нас</div>
-			<div class="header__services">
-				Услуги
-				<div class="expand-more">expand_more</div>
-			</div>
-			<div class="header__vacancies">Вакансии</div>
-			<div class="header__news">Новости</div>
-			<div class="header__agreements">
-				Соглашения
-				<div class="expand-more">expand_more</div>
+			<div class="login-button header__login-button">
+				<div class="login-button__background">войти</div>
 			</div>
 
-			<div class="header__login__container">
-				<div class="login-button">
-					<div class="login-button__background login-event">войти</div>
-				</div>
-			</div>
-			<div class="header__registration">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+			<div class="registration-button header__registration-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
 		</header>
 
 

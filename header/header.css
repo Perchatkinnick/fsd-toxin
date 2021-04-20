@@ -1,10 +1,20 @@
 ﻿
-header {
+.header {
 	flex: 1 0 auto;
 	width: 1440px;
 	height: 70px;
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.item {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
 }
 
 .header__logo {
@@ -13,12 +23,15 @@ header {
 	top: 15px;
 }
 
-.header__registration {
+.header__registration-button {
 	position: absolute;
-	width: 196px;
-	height: 34px;
 	left: 1104px;
 	top: 18px;
+}
+
+.registration-button {
+	width: 196px;
+	height: 34px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
 	font-family: Montserrat;
@@ -32,7 +45,7 @@ header {
 	cursor: pointer;
 }
 
-.header__login__container {
+.header__login-button {
 	position: absolute;
 	width: 85px;
 	height: 32px;
@@ -40,9 +53,12 @@ header {
 	top: 18px;
 }
 
-.expand-more {
+.item__expand-more {
 	display: inline-block;
 	float: right;
+}
+
+.expand-more {
 	width: 24px;
 	height: 21px;
 	font-family: Material Icons;
@@ -52,81 +68,6 @@ header {
 	line-height: 19px;
 	align-items: center;
 	text-align: center;
-	color: rgba(31, 32, 65, 0.5);
-	cursor: pointer;
-}
-
-.header__agreements {
-	position: absolute;
-	width: 116px;
-	height: 18px;
-	left: 861px;
-	top: 27px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	color: rgba(31, 32, 65, 0.5);
-	cursor: pointer;
-}
-
-.header__news {
-	position: absolute;
-	width: 62px;
-	height: 18px;
-	left: 779px;
-	top: 27px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	color: rgba(31, 32, 65, 0.5);
-	cursor: pointer;
-}
-
-.header__vacancies {
-	position: absolute;
-	width: 72px;
-	height: 18px;
-	left: 687px;
-	top: 27px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	color: rgba(31, 32, 65, 0.5);
-	cursor: pointer;
-}
-
-.header__services {
-	position: absolute;
-	width: 74px;
-	height: 18px;
-	left: 593px;
-	top: 27px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
-	color: rgba(31, 32, 65, 0.5);
-	cursor: pointer;
-}
-
-.header__about {
-	position: absolute;
-	width: 42px;
-	height: 18px;
-	left: 531px;
-	top: 27px;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
 	color: rgba(31, 32, 65, 0.5);
 	cursor: pointer;
 }
