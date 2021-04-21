@@ -1,5 +1,5 @@
 
-function func() {
+export default function func() {
 	let backArrow = document.querySelector('.arrow-back');
 
 	backArrow.addEventListener('click', function () {

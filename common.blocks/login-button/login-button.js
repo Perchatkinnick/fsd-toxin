@@ -1,7 +1,0 @@
-//@ts-check
-
-function onLoginButtonLoad() {
-    
-    
-}
-

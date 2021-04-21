@@ -1,5 +1,5 @@
 
-function onGuestsDropdaunLoad() {
+export default function onGuestsDropdaunLoad() {
     let adultPlus = document.querySelector('#guests-adult-plus');
     adultPlus.addEventListener('click', onAdultPlusClick);
 
@@ -34,7 +34,7 @@ function onGuestsDropdaunLoad() {
     let apply = document.querySelector('.guests-apply');
     apply.addEventListener('click', function () {
 
-        let guestsTitle = document.querySelector('.guests-title');
+        let guestsTitle = document.querySelector('.guests__rect');
         if (guestsTitle != null) {
             guestsTitle.innerHTML = +(gestsBabies.innerHTML) + +(gestsChildrenElem.innerHTML) + +(gestsAdultElem.innerHTML);
         }

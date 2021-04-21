@@ -1,6 +1,5 @@
-//@ts-check
 
-function onHeaderLoad() {
+export default function onHeaderLoad() {
 
     let loginButtons = document.getElementsByClassName('login-button__background');
     for (let loginButton of loginButtons) {

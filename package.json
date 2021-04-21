@@ -1,0 +1,26 @@
+{
+  "name": "fsd-toxin",
+  "version": "1.0.0",
+  "description": "web-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Perchatkinnick/fsd-toxin.git"
+  },
+  "keywords": [
+    "toxin"
+  ],
+  "author": "perchatkin <perchatkinnick@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Perchatkinnick/fsd-toxin/issues"
+  },
+  "homepage": "https://github.com/Perchatkinnick/fsd-toxin#readme",
+  "devDependencies": {
+    "webpack": "^5.34.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
