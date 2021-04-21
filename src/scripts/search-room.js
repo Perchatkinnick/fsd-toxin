@@ -1,55 +1,61 @@
-//@ts-check
+import * as $ from 'jquery';
 
-function onLoad() {
-    onHeaderLoad();
+const calendar = require('../common.blocks/calendar/calendar');
+const header = require('../common.blocks/header/header');
+const guestsDropdown = require('../common.blocks/guests-dropdaun/guests-dropdaun');
+const facilitiesDropdown = require('../common.blocks/facilities-dropdown/facilities-dropdown');
+const showRooms = require('../common.blocks/show-rooms/show-rooms');
+const roomsData = require('../common.blocks/show-rooms/data');
 
-    let contentDateRect = document.querySelector('.content__date__rect');
-    contentDateRect.addEventListener('click', addCalendar);
-    let contentDateTitle = document.querySelector('.content__date__title');
-    contentDateTitle.addEventListener('click', addCalendar);
-    let contentDateArrow = document.querySelector('.content__date__arrow');
-    contentDateArrow.addEventListener('click', addCalendar);
+header.onHeaderLoad();
 
-    let contentGuestsRect = document.querySelector('.content__guests__rect');
-    contentGuestsRect.addEventListener('click', addGuestsForm);
-    let contentGuestsTitle = document.querySelector('.content__guests__title');
-    contentGuestsTitle.addEventListener('click', addGuestsForm);
-    let contentGuestsArrow = document.querySelector('.content__guests__arrow');
-    contentGuestsArrow.addEventListener('click', addGuestsForm);
+let contentDateRect = document.querySelector('.content__date__rect');
+contentDateRect.addEventListener('click', addCalendar);
+let contentDateTitle = document.querySelector('.content__date__title');
+contentDateTitle.addEventListener('click', addCalendar);
+let contentDateArrow = document.querySelector('.content__date__arrow');
+contentDateArrow.addEventListener('click', addCalendar);
 
-    let contentFacilitiesRect = document.querySelector('.content__room-settings__facilities__rect');
-    contentFacilitiesRect.addEventListener('click', addFacilitiesDropdown);
-    let contentFacilitiesTitle = document.querySelector('.content__room-settings__facilities__title');
-    contentFacilitiesTitle.addEventListener('click', addFacilitiesDropdown);
-    let contentFacilitiesArrow = document.querySelector('.content__room-settings__facilities__arrow');
-    contentFacilitiesArrow.addEventListener('click', addFacilitiesDropdown);
+let contentGuestsRect = document.querySelector('.content__guests__rect');
+contentGuestsRect.addEventListener('click', addGuestsForm);
+let contentGuestsTitle = document.querySelector('.content__guests__title');
+contentGuestsTitle.addEventListener('click', addGuestsForm);
+let contentGuestsArrow = document.querySelector('.content__guests__arrow');
+contentGuestsArrow.addEventListener('click', addGuestsForm);
 
-    
+let contentFacilitiesRect = document.querySelector('.content__room-settings__facilities__rect');
+contentFacilitiesRect.addEventListener('click', facilitiesDropdown.addFacilitiesDropdown);
+let contentFacilitiesTitle = document.querySelector('.content__room-settings__facilities__title');
+contentFacilitiesTitle.addEventListener('click', facilitiesDropdown.addFacilitiesDropdown);
+let contentFacilitiesArrow = document.querySelector('.content__room-settings__facilities__arrow');
+contentFacilitiesArrow.addEventListener('click', facilitiesDropdown.addFacilitiesDropdown);
 
-    let additionalArrow = document.querySelector('.content__room-settings__additional__arrow');
-    additionalArrow.addEventListener('click', onAdditionalArrowClick);
 
-    let checkBoxes = document.getElementsByClassName('content__home-rules__checkbox');
-    for (let checkBox of checkBoxes) {
-        checkBox.addEventListener('click', function () {
-            if (checkBox.dataset.checked == 'checked') {
-                checkBox.dataset.checked = 'none';
-            } else {
-                checkBox.dataset.checked = 'checked';
-            }
-        });
-    }
 
-    loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
+let additionalArrow = document.querySelector('.content__room-settings__additional__arrow');
+additionalArrow.addEventListener('click', onAdditionalArrowClick);
 
-    loadRooms(1);
-
-    createPageMarkers();
-
-    createShowVariants(1);
-
-    func();
+let checkBoxes = document.getElementsByClassName('content__home-rules__checkbox');
+for (let checkBox of checkBoxes) {
+    checkBox.addEventListener('click', function () {
+        if (checkBox.dataset.checked == 'checked') {
+            checkBox.dataset.checked = 'none';
+        } else {
+            checkBox.dataset.checked = 'checked';
+        }
+    });
 }
+
+loadDataFromLocalStorage(contentDateTitle, contentGuestsTitle);
+
+showRooms.loadRooms(1);
+
+createPageMarkers();
+
+createShowVariants(1);
+
+calendar.func();
+
 
 function createPageMarkers() {
     let len = roomsData.length;
@@ -160,7 +166,7 @@ function addGuestsForm() {
 
     if (guestsForm.style.display == '') {
         guestsForm.style.display = 'block';
-        onGuestsDropdaunLoad();
+        guestsDropdown.onGuestsDropdaunLoad();
     } else {
         guestsForm.style.display = '';
     }
@@ -171,8 +177,8 @@ function loadDataFromLocalStorage(elemDate, elemGuests) {
     let departureDate = localStorage.getItem('dateDeparture');
 
     if (arriveDate != null && departureDate != null) {
-        let complexArriveDate = getComplexDate(arriveDate);
-        let complexDepartureDate = getComplexDate(departureDate);
+        let complexArriveDate = calendar.getComplexDate(arriveDate);
+        let complexDepartureDate = calendar.getComplexDate(departureDate);
 
         elemDate.innerHTML = complexArriveDate + ' - ' + complexDepartureDate;
     }
@@ -194,7 +200,7 @@ function loadDataFromLocalStorage(elemDate, elemGuests) {
     
 }
 
-jQuery(document).ready(function ($) {
+$(function ($) {
     var twobombSlider = (function () {
         var drag = false;
         var values = [];

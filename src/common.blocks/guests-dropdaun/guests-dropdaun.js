@@ -1,5 +1,8 @@
+module.exports = {
+	onGuestsDropdaunLoad
+}
 
-export default function onGuestsDropdaunLoad() {
+function onGuestsDropdaunLoad() {
     let adultPlus = document.querySelector('#guests-adult-plus');
     adultPlus.addEventListener('click', onAdultPlusClick);
 
@@ -111,8 +114,5 @@ function onAdultMinusClick() {
         count.innerHTML = 1;
     }
 }
-
-
-
 
 

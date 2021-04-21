@@ -1,6 +1,5 @@
 
-
-let roomsData = [
+const roomsData = [
     {
         room: '888',
         price: '9990',
@@ -142,3 +141,7 @@ let roomsData = [
         review: '59'
     },
 ]
+
+module.exports = {
+	roomsData
+}

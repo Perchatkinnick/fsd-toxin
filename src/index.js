@@ -1,16 +1,8 @@
-import Calendar from './common.blocks/calendar/calendar';
-const calendar = new Calendar();
+const calendar = require('./common.blocks/calendar/calendar');
+const header = require('./common.blocks/header/header');
+const guestsDropdown = require('./common.blocks/guests-dropdaun/guests-dropdaun')
 
-import Header from './common.blocks/header/header';
-const header = new Header();
-
-import GuestsDropdaun from './common.blocks/guests-dropdaun/guests_dropdaun';
-const guestsDropdaun = new GuestsDropdaun();
-
-import LoginButton from './common.blocks/login-button/login-button';
-const loginButton = new LoginButton();
-
-//header.onHeaderLoad();
+header.onHeaderLoad();
 
 let arriveForm = document.querySelector('.content__search__arrive');
 arriveForm.addEventListener('click', addCalendar);
@@ -27,7 +19,7 @@ searchButton.addEventListener('click', function () {
     location.href = 'search-room.html';
 });
 
-//calendar.func();
+calendar.func();
 
 
 function addGuestsForm() {
@@ -37,6 +29,7 @@ function addGuestsForm() {
     calendar.style.display = '';
     if (guestsForm.style.display == '') {
         guestsForm.style.display = 'block';
+        guestsDropdown.onGuestsDropdaunLoad();
         
     } else {
         guestsForm.style.display = '';
@@ -44,15 +37,15 @@ function addGuestsForm() {
 }
 
 function addCalendar() {
-    let calendar = document.querySelector('.calendar-parent');
+    let calendarElem = document.querySelector('.calendar-parent');
     let guestsForm = document.querySelector('.guests-dropdown');
     
     guestsForm.style.display = '';
-    if (calendar.style.display == '') {
-        calendar.style.display = 'block';
-        //func();
+    if (calendarElem.style.display == '') {
+        calendarElem.style.display = 'block';
+        calendar.func();
     } else {
-        calendar.style.display = '';
+        calendarElem.style.display = '';
 
         let days = document.querySelector('#days');
         let body = days.querySelector('.body');

@@ -1,4 +1,6 @@
-//@ts-check
+module.exports = {
+	addFacilitiesDropdown
+}
 
 function addFacilitiesDropdown() {
     let facilitiesDropdown = document.querySelector('.facilities__dropdown');

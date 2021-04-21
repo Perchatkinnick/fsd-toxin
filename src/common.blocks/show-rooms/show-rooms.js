@@ -1,7 +1,11 @@
-//@ts-check
+const data = require('./data');
+
+module.exports = {
+	loadRooms
+}
 
 function loadRooms(page) {
-    buildGrid(sort(roomsData), page);
+    buildGrid(sort(data.roomsData), page);
 }
 
 function buildGrid(rooms, page) {
@@ -9,12 +13,12 @@ function buildGrid(rooms, page) {
     container.innerHTML = '';
 
     for (let i = 12 * (page - 1); i < 12 * page; i++) {
-        if (i < roomsData.length) {
+        if (i < data.roomsData.length) {
             let div = document.createElement('div');
             div.classList.add('room');
             div.addEventListener('click', onRoomClickHandler);
             div.dataset.room = rooms[i].room;
-            div.style.background = 'no-repeat url("media/images/rooms/' + rooms[i].room + '/icon.png")';
+            div.style.background = 'no-repeat url("../src/media/images/rooms/' + rooms[i].room + '/icon.png")';
             container.appendChild(div);
 
             for (let k = 0; k < 4; k++) {
@@ -106,7 +110,7 @@ function onEllipsClickHandler(e) {
 }
 
 function sort(rooms) {
-    var byPrice = rooms.slice(0);
+    let byPrice = rooms.slice(0);
     byPrice.sort(function (a, b) {
         return b.price - a.price;
     });

@@ -1,4 +1,4 @@
-﻿//@ts-check
+﻿
 let roomsDataParth = [
     {
 
@@ -48,31 +48,29 @@ let users = [
     },
 ];
 
+let roomData = JSON.parse(localStorage.getItem("roomData"));
+onHeaderLoad();
 
-function onLoad() {
-    let roomData = JSON.parse(localStorage.getItem("roomData"));
-    onHeaderLoad();
+loadPhoto(roomData);
 
-    loadPhoto(roomData);
+loadDiagramm();
+loadCounts();
+loadReviews();
+loadBooking(roomData);
+func();
+loadCalendar();
+loadGuestsDropdaun();
+loadCalculator(roomData);
 
-    loadDiagramm();
-    loadCounts();
-    loadReviews();
-    loadBooking(roomData);
-    func();
-    loadCalendar();
-    loadGuestsDropdaun();
+
+document.addEventListener("changeDate", function (event) {
     loadCalculator(roomData);
+});
 
+document.addEventListener("changeGuests", function (event) {
 
-    document.addEventListener("changeDate", function (event) {
-        loadCalculator(roomData);
-    });
+});
 
-    document.addEventListener("changeGuests", function (event) {
-        
-    });
-}
 
 function loadCalculator(roomData) {
     loadMainString(roomData);

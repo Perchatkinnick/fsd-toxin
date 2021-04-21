@@ -1,5 +1,8 @@
+module.exports = {
+	onHeaderLoad
+}
 
-export default function onHeaderLoad() {
+function onHeaderLoad() {
 
     let loginButtons = document.getElementsByClassName('login-button__background');
     for (let loginButton of loginButtons) {
@@ -20,12 +23,3 @@ function onRegButtonClickHandler() {
 
     location.href = 'authoriz.html';
 }
-
-
-
-
-
-
-
-
-

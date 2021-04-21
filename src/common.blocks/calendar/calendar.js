@@ -1,5 +1,9 @@
+module.exports = {
+	func,
+	getComplexDate
+}
 
-export default function func() {
+function func() {
 	let backArrow = document.querySelector('.arrow-back');
 
 	backArrow.addEventListener('click', function () {
@@ -321,11 +325,13 @@ function createTable(parent, arr, isFuture) {
 }
 
 function eraseZero(str) {
-	if (str.split('')[0] == '0') {
+	if(!!str){
+		if (str.split('')[0] == '0') {
 		str = str.split('')[1]
 	}
 
 	return str;
+	}
 }
 
 function addZero(num) {
@@ -437,11 +443,6 @@ function getMonth(num) {
 function cursorChange(event) {
 	this.style.cursor = 'pointer';
 }
-
-
-
-
-
 
 
 
