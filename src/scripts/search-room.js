@@ -1,5 +1,20 @@
 import * as $ from 'jquery';
 
+import '../styles/search-room.css';
+import '../styles/reset.css';
+import '../fonts/montserrat.css';
+import '../fonts/fontawesome/all.min.css';
+import '../fonts/iconfont/material-icons.css';
+import '../common.blocks/guests-dropdown/guests-dropdown.css';
+import '../common.blocks/calendar/calendar.css';
+import '../common.blocks/header/header.css';
+import '../common.blocks/footer/footer.css';
+import '../common.blocks/logo/logo.css';
+import '../common.blocks/login-button/login-button.css';
+import '../common.blocks/menu/menu.css';
+import '../common.blocks/show-rooms/show-rooms.css';
+import '../common.blocks/facilities-dropdown/facilities-dropdown.css';
+
 const calendar = require('../common.blocks/calendar/calendar');
 const header = require('../common.blocks/header/header');
 const guestsDropdown = require('../common.blocks/guests-dropdown/guests-dropdown');
