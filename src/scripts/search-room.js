@@ -2,7 +2,7 @@ import * as $ from 'jquery';
 
 const calendar = require('../common.blocks/calendar/calendar');
 const header = require('../common.blocks/header/header');
-const guestsDropdown = require('../common.blocks/guests-dropdaun/guests-dropdaun');
+const guestsDropdown = require('../common.blocks/guests-dropdown/guests-dropdown');
 const facilitiesDropdown = require('../common.blocks/facilities-dropdown/facilities-dropdown');
 const showRooms = require('../common.blocks/show-rooms/show-rooms');
 const roomsData = require('../common.blocks/show-rooms/data');

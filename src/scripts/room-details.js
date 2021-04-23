@@ -1,5 +1,5 @@
 ﻿const calendar = require('../common.blocks/calendar/calendar');
-const guestsDropdown = require('../common.blocks/guests-dropdaun/guests-dropdaun');
+const guestsDropdown = require('../common.blocks/guests-dropdown/guests-dropdown');
 const header = require('../common.blocks/header/header');
 const roomsData = require('../common.blocks/show-rooms/data');
 

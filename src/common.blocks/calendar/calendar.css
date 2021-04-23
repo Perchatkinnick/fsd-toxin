@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url(fonts/Montserrat-Regular.ttf) format('ttf'), url(fonts/Montserrat-Regular.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 body {
     position: relative;
 }
