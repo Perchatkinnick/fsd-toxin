@@ -1,0 +1,226 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "../node_modules/css-loader/dist/cjs.js!./styles/index.css":
+/*!*****************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js!./styles/index.css ***!
+  \*****************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"../node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _media_images_bgrd_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../media/images/bgrd.png */ \"./media/images/bgrd.png\");\n// Imports\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_media_images_bgrd_png__WEBPACK_IMPORTED_MODULE_2__.default);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\r\\n\\theight: 100%;\\r\\n}\\r\\n\\r\\nbody {\\r\\n\\theight: 1343px;\\r\\n\\tbackground: #E5E5E5;\\r\\n}\\r\\n\\r\\n.wrapper {\\r\\n\\tdisplay: flex;\\r\\n\\tflex-direction: column;\\r\\n\\tmargin: 0 auto;\\r\\n\\twidth: 1440px;\\r\\n}\\r\\n\\r\\n.content {\\r\\n\\tflex: 1 0 auto;\\r\\n\\twidth: 1440px;\\r\\n\\tbackground: #FFFFFF;\\r\\n}\\r\\n\\r\\n.content__container {\\r\\n\\tposition: relative;\\r\\n\\twidth: 100%;\\r\\n\\theight: 829px;\\r\\n\\tbackground: no-repeat center url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\r\\n\\tbackground-position: 0 -70px;\\r\\n}\\r\\n\\r\\n.calendar-parent {\\r\\n\\tposition: absolute;\\r\\n\\tdisplay: none;\\r\\n\\twidth: 318px;\\r\\n\\theight: 367px;\\r\\n\\ttop: 189px;\\r\\n\\tleft: 29px;\\r\\n\\tborder-radius: 4px;\\r\\n\\tborder: 1px solid rgba(31, 32, 65, 0.25);\\r\\n\\tbackground: white;\\r\\n\\tz-index: 100;\\r\\n}\\r\\n\\r\\n.guests__dropdown__container {\\r\\n\\tposition: relative;\\r\\n\\tleft: 29px;\\r\\n\\ttop: 204px;\\r\\n}\\r\\n\\r\\n.content__search__button {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 320px;\\r\\n\\theight: 44px;\\r\\n\\tleft: 29px;\\r\\n\\ttop: 299px;\\r\\n}\\r\\n\\r\\n.content__search__guests {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 320px;\\r\\n\\theight: 64.56px;\\r\\n\\tleft: 29px;\\r\\n\\ttop: 204px;\\r\\n}\\r\\n\\r\\n.content__search__departure {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 150px;\\r\\n\\theight: 64.44px;\\r\\n\\tleft: 199px;\\r\\n\\ttop: 119px;\\r\\n}\\r\\n\\r\\n.content__search__arrive {\\r\\n\\tposition: relative;\\r\\n\\twidth: 150px;\\r\\n\\theight: 64.44px;\\r\\n\\tleft: 29px;\\r\\n\\ttop: 119px;\\r\\n}\\r\\n\\r\\n.content__search__title {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 83px;\\r\\n\\theight: 15px;\\r\\n\\tfont-family: Montserrat;\\r\\n\\tfont-style: normal;\\r\\n\\tfont-weight: bold;\\r\\n\\tfont-size: 12px;\\r\\n\\tline-height: 15px;\\r\\n\\ttext-transform: uppercase;\\r\\n\\tcolor: #1F2041;\\r\\n}\\r\\n\\r\\n.content__search__rect {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 100%;\\r\\n\\theight: 44px;\\r\\n\\ttop: 20.44px;\\r\\n\\tbackground: #FFFFFF;\\r\\n\\tborder: 1px solid rgba(31, 32, 65, 0.25);\\r\\n\\tbox-sizing: border-box;\\r\\n\\tborder-radius: 4px;\\r\\n\\tpadding-left: 14px;\\r\\n\\tfont-family: Montserrat;\\r\\n\\tfont-style: normal;\\r\\n\\tfont-weight: normal;\\r\\n\\tfont-size: 14px;\\r\\n\\tline-height: 40px;\\r\\n\\tcolor: rgba(31, 32, 65, 0.75);\\r\\n\\tcursor: pointer;\\r\\n}\\r\\n\\r\\n\\t.content__search__rect div{\\r\\n\\t\\tposition:absolute;\\r\\n\\t\\twidth: 44px;\\r\\n\\t\\theight: 44px;\\r\\n\\t\\tline-height: 44px;\\r\\n\\t\\tright: -1px;\\r\\n\\t}\\r\\n\\r\\n.content__search {\\r\\n\\tposition: relative;\\r\\n\\twidth: 380px;\\r\\n\\theight: 374px;\\r\\n\\tleft: 140px;\\r\\n\\ttop: 70px;\\r\\n\\tbackground: #FFFFFF;\\r\\n\\tborder: 1px solid rgba(0, 0, 0, 0.12);\\r\\n\\tbox-sizing: border-box;\\r\\n\\tbox-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\\r\\n\\tborder-radius: 4px;\\r\\n}\\r\\n\\r\\n.content__search__slogan {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 320px;\\r\\n\\theight: 59px;\\r\\n\\tleft: 29px;\\r\\n\\ttop: 39px;\\r\\n\\tfont-family: Montserrat;\\r\\n\\tfont-style: normal;\\r\\n\\tfont-weight: bold;\\r\\n\\tfont-size: 24px;\\r\\n\\tline-height: 29px;\\r\\n\\tcolor: #1F2041;\\r\\n\\tz-index: 10000;\\r\\n}\\r\\n\\r\\n.content__slogan {\\r\\n\\tposition: absolute;\\r\\n\\twidth: 297px;\\r\\n\\theight: 48px;\\r\\n\\tleft: 1009px;\\r\\n\\ttop: 764px;\\r\\n\\tfont-family: Montserrat;\\r\\n\\tfont-style: normal;\\r\\n\\tfont-weight: normal;\\r\\n\\tfont-size: 14px;\\r\\n\\tline-height: 24px;\\r\\n\\ttext-align: right;\\r\\n\\tcolor: rgba(31, 32, 65, 0.75);\\r\\n}\\r\\n\\r\\n.search-room__expand-more {\\r\\n\\tdisplay: inline-block;\\r\\n\\tfloat: right;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./styles/index.css?../node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "../node_modules/css-loader/dist/runtime/api.js":
+/*!******************************************************!*\
+  !*** ../node_modules/css-loader/dist/runtime/api.js ***!
+  \******************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack:///../node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "../node_modules/css-loader/dist/runtime/getUrl.js":
+/*!*********************************************************!*\
+  !*** ../node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== \"string\") {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///../node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
+/***/ "./media/images/bgrd.png":
+/*!*******************************!*\
+  !*** ./media/images/bgrd.png ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"7b6bd7bea593a0d9bcf49ad0629ff11f.png\");\n\n//# sourceURL=webpack:///./media/images/bgrd.png?");
+
+/***/ }),
+
+/***/ "./styles/index.css":
+/*!**************************!*\
+  !*** ./styles/index.css ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./index.css */ \"../node_modules/css-loader/dist/cjs.js!./styles/index.css\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_1__.default, options);\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});\n\n//# sourceURL=webpack:///./styles/index.css?");
+
+/***/ }),
+
+/***/ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!*****************************************************************************!*\
+  !*** ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \*****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function memorize() {\n    if (typeof memo === 'undefined') {\n      // Test for IE <= 9 as proposed by Browserhacks\n      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805\n      // Tests for existence of standard globals is to allow style-loader\n      // to operate correctly into non-standard environments\n      // @see https://github.com/webpack-contrib/style-loader/issues/177\n      memo = Boolean(window && document && document.all && !window.atob);\n    }\n\n    return memo;\n  };\n}();\n\nvar getTarget = function getTarget() {\n  var memo = {};\n  return function memorize(target) {\n    if (typeof memo[target] === 'undefined') {\n      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself\n\n      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n        try {\n          // This will throw an exception if access to iframe is blocked\n          // due to cross-origin restrictions\n          styleTarget = styleTarget.contentDocument.head;\n        } catch (e) {\n          // istanbul ignore next\n          styleTarget = null;\n        }\n      }\n\n      memo[target] = styleTarget;\n    }\n\n    return memo[target];\n  };\n}();\n\nvar stylesInDom = [];\n\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n\n  for (var i = 0; i < stylesInDom.length; i++) {\n    if (stylesInDom[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n\n  return result;\n}\n\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var index = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3]\n    };\n\n    if (index !== -1) {\n      stylesInDom[index].references++;\n      stylesInDom[index].updater(obj);\n    } else {\n      stylesInDom.push({\n        identifier: identifier,\n        updater: addStyle(obj, options),\n        references: 1\n      });\n    }\n\n    identifiers.push(identifier);\n  }\n\n  return identifiers;\n}\n\nfunction insertStyleElement(options) {\n  var style = document.createElement('style');\n  var attributes = options.attributes || {};\n\n  if (typeof attributes.nonce === 'undefined') {\n    var nonce =  true ? __webpack_require__.nc : 0;\n\n    if (nonce) {\n      attributes.nonce = nonce;\n    }\n  }\n\n  Object.keys(attributes).forEach(function (key) {\n    style.setAttribute(key, attributes[key]);\n  });\n\n  if (typeof options.insert === 'function') {\n    options.insert(style);\n  } else {\n    var target = getTarget(options.insert || 'head');\n\n    if (!target) {\n      throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n    }\n\n    target.appendChild(style);\n  }\n\n  return style;\n}\n\nfunction removeStyleElement(style) {\n  // istanbul ignore if\n  if (style.parentNode === null) {\n    return false;\n  }\n\n  style.parentNode.removeChild(style);\n}\n/* istanbul ignore next  */\n\n\nvar replaceText = function replaceText() {\n  var textStore = [];\n  return function replace(index, replacement) {\n    textStore[index] = replacement;\n    return textStore.filter(Boolean).join('\\n');\n  };\n}();\n\nfunction applyToSingletonTag(style, index, remove, obj) {\n  var css = remove ? '' : obj.media ? \"@media \".concat(obj.media, \" {\").concat(obj.css, \"}\") : obj.css; // For old IE\n\n  /* istanbul ignore if  */\n\n  if (style.styleSheet) {\n    style.styleSheet.cssText = replaceText(index, css);\n  } else {\n    var cssNode = document.createTextNode(css);\n    var childNodes = style.childNodes;\n\n    if (childNodes[index]) {\n      style.removeChild(childNodes[index]);\n    }\n\n    if (childNodes.length) {\n      style.insertBefore(cssNode, childNodes[index]);\n    } else {\n      style.appendChild(cssNode);\n    }\n  }\n}\n\nfunction applyToTag(style, options, obj) {\n  var css = obj.css;\n  var media = obj.media;\n  var sourceMap = obj.sourceMap;\n\n  if (media) {\n    style.setAttribute('media', media);\n  } else {\n    style.removeAttribute('media');\n  }\n\n  if (sourceMap && typeof btoa !== 'undefined') {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  } // For old IE\n\n  /* istanbul ignore if  */\n\n\n  if (style.styleSheet) {\n    style.styleSheet.cssText = css;\n  } else {\n    while (style.firstChild) {\n      style.removeChild(style.firstChild);\n    }\n\n    style.appendChild(document.createTextNode(css));\n  }\n}\n\nvar singleton = null;\nvar singletonCounter = 0;\n\nfunction addStyle(obj, options) {\n  var style;\n  var update;\n  var remove;\n\n  if (options.singleton) {\n    var styleIndex = singletonCounter++;\n    style = singleton || (singleton = insertStyleElement(options));\n    update = applyToSingletonTag.bind(null, style, styleIndex, false);\n    remove = applyToSingletonTag.bind(null, style, styleIndex, true);\n  } else {\n    style = insertStyleElement(options);\n    update = applyToTag.bind(null, style, options);\n\n    remove = function remove() {\n      removeStyleElement(style);\n    };\n  }\n\n  update(obj);\n  return function updateStyle(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {\n        return;\n      }\n\n      update(obj = newObj);\n    } else {\n      remove();\n    }\n  };\n}\n\nmodule.exports = function (list, options) {\n  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>\n  // tags it will allow on a page\n\n  if (!options.singleton && typeof options.singleton !== 'boolean') {\n    options.singleton = isOldIE();\n  }\n\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n\n    if (Object.prototype.toString.call(newList) !== '[object Array]') {\n      return;\n    }\n\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDom[index].references--;\n    }\n\n    var newLastIdentifiers = modulesToDom(newList, options);\n\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n\n      var _index = getIndexByIdentifier(_identifier);\n\n      if (stylesInDom[_index].references === 0) {\n        stylesInDom[_index].updater();\n\n        stylesInDom.splice(_index, 1);\n      }\n    }\n\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack:///../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+/***/ }),
+
+/***/ "./common.blocks/calendar/calendar.js":
+/*!********************************************!*\
+  !*** ./common.blocks/calendar/calendar.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+eval("module.exports = {\r\n\tfunc,\r\n\tgetComplexDate\r\n}\r\n\r\nfunction func() {\r\n\tlet backArrow = document.querySelector('.arrow-back');\r\n\r\n\tbackArrow.addEventListener('click', function () {\r\n\t\tisFuture = false;\r\n\t\tdraw(body, getPrevYear(body), getPrevMonth(body), isFuture);\r\n\t\tshowCurrentMonth(body);\r\n\t});\r\n\r\n\tlet forwardArrow = document.querySelector('.arrow-forward');\r\n\r\n\tforwardArrow.addEventListener('click', function () {\r\n\t\tif (body.dataset.year >= year && body.dataset.month >= month) {\r\n\t\t\tisFuture = true;\r\n\t\t} else {\r\n\t\t\tisFuture = false;\r\n\t\t}\r\n\r\n\t\tdraw(body, getNextYear(body), getNextMonth(body), isFuture);\r\n\t\tshowCurrentMonth(body);\r\n\t});\r\n\r\n\tlet clear = document.querySelector('.clear');\r\n\r\n\tclear.addEventListener('click', function () {\r\n\t\tbody.dataset.month = month;\r\n\t\tbody.dataset.year = year;\r\n\t\tisFuture = false;\r\n\t\tbody.dataset.dot1 = '';\r\n\t\tbody.dataset.dot2 = '';\r\n\t\tdraw(body, year, month, isFuture);\r\n\t\tshowCurrentMonth(body);\r\n\t});\r\n\r\n\tlet event = new Event(\"changeDate\", { bubbles: true }); ///\r\n\r\n\tlet apply = document.querySelector('.apply');\r\n\tapply.addEventListener('click', function () {\r\n\r\n\t\tlet currentPage = document.location.href;\r\n\r\n\t\tlet dot1 = body.dataset.dot1;\r\n\t\tlet dot2 = body.dataset.dot2;\r\n\r\n\t\tif (currentPage.split('/').pop() != 'search-room.html') {\r\n\t\t\tlet arriveDate = document.querySelector('.content__search__arrive');\r\n\t\t\tlet departureDate = document.querySelector('.content__search__departure');\r\n\r\n\t\t\tdateLoad(arriveDate, dot1);\r\n\t\t\tdateLoad(departureDate, dot2);\r\n\t\t}\r\n\r\n\t\tlocalStorage.setItem('dateArrive', dot1);\r\n\t\tlocalStorage.setItem('dateDeparture', dot2);\r\n\r\n\r\n\r\n\t\t// for search-room\r\n\t\tlet contentDateTitle = document.querySelector('.content__date__title');\r\n\t\tif (contentDateTitle != null) {\r\n\t\t\tif (dot1 != '' && dot2 != '')\r\n\t\t\t\tcomplexDateLoad(contentDateTitle, dot1, dot2);\r\n\t\t}\r\n\r\n\r\n\t\tbody.dataset.dot1 = '';\r\n\t\tbody.dataset.dot2 = '';\r\n\r\n\t\tlet calendar = document.querySelector('.calendar-parent');\r\n\t\tcalendar.style.display = '';\r\n\r\n\t\tcalendar.dispatchEvent(event); ///\r\n\t});\r\n\r\n\tlet days = document.querySelector('#days');\r\n\tlet body = days.querySelector('.body');\r\n\r\n\tlet date = new Date();\r\n\tlet year = date.getFullYear();\r\n\tlet month = date.getMonth();\r\n\r\n\tbody.dataset.month = month;\r\n\tbody.dataset.year = year;\r\n\r\n\tlet isFuture = false;\r\n\r\n\tdraw(body, year, month, isFuture);\r\n\r\n\tshowCurrentMonth(body);\r\n\r\n}\r\n\r\nfunction complexDateLoad(elem, arriveDate, departureDate) {\r\n\tlet complexArriveDate = getComplexDate(arriveDate);\r\n\tlet complexDepartureDate = getComplexDate(departureDate);\r\n\r\n\telem.innerHTML = complexArriveDate + ' - ' + complexDepartureDate;\r\n}\r\n\r\nfunction getComplexDate(date) {\r\n\tlet arr = date.split('.');\r\n\tdate = arr[2] + ' ' + getShortMonth(arr[1]);\r\n\r\n\treturn date;\r\n}\r\n\r\nfunction getShortMonth(num) {\r\n\r\n\tlet months = ['янв', 'фев', 'мар', 'апр', 'май', 'июнь', 'июль', 'авг', 'сен', 'окт', 'ноя', 'дек'];\r\n\tlet str = '';\r\n\r\n\tfor (let i = 0; i < 12; i++) {\r\n\t\tif (eraseZero(num) == i) {\r\n\t\t\tstr = months[i];\r\n\t\t}\r\n\t}\r\n\r\n\treturn str;\r\n}\r\n\r\nfunction dateLoad(elem, text) {\r\n\tlet node = elem.querySelector('.content__search__rect').firstChild;\r\n\r\n\tif (node != null) {\r\n\t\tif (text != '') {\r\n\t\t\tlet arr = text.split('.');\r\n\r\n\t\t\tlet content = arr[2] + '.' + monthForShow(arr[1]) + '.' + arr[0];\r\n\r\n\t\t\tnode.textContent = content;\r\n\t\t} else {\r\n\t\t\t//alert('Выберите дату прибытия и дату отъезда');\r\n\t\t}\r\n\t}\r\n\r\n}\r\n\r\nfunction monthForShow(number) {\r\n\tif (number == 11) {\r\n\t\tnumber = 0;\r\n\t}\r\n\tnumber++;\r\n\r\n\r\n\treturn addZero(number);\r\n}\r\n\r\nfunction getNextMonth(body) {\r\n\tlet month = body.dataset.month;\r\n\r\n\tif (month == 11) {\r\n\t\tmonth = 0\r\n\t} else {\r\n\t\tmonth++;\r\n\t}\r\n\r\n\tbody.dataset.month = month;\r\n\r\n\treturn month;\r\n}\r\n\r\nfunction getNextYear(body) {\r\n\tlet year = body.dataset.year;\r\n\tlet month = body.dataset.month;\r\n\r\n\tif (month == 11) {\r\n\t\tyear++;\r\n\t\tbody.dataset.year = year;\r\n\t}\r\n\r\n\treturn year;\r\n}\r\n\r\nfunction getPrevMonth(body) {\r\n\tlet month = body.dataset.month;\r\n\r\n\tif (month == 0) {\r\n\t\tmonth = 11\r\n\t} else {\r\n\t\tmonth--;\r\n\r\n\t}\r\n\r\n\tbody.dataset.month = month;\r\n\r\n\treturn month;\r\n}\r\n\r\nfunction getPrevYear(body) {\r\n\tlet year = body.dataset.year;\r\n\tlet month = body.dataset.month;\r\n\r\n\tif (month == 0) {\r\n\t\tyear--;\r\n\t\tbody.dataset.year = year;\r\n\t}\r\n\r\n\treturn year;\r\n}\r\n\r\nfunction draw(body, year, month, isFuture) {\r\n\tlet days = range(getLastDay(year, month));\r\n\r\n\tlet firstWeekDay = getFirstWeekDay(year, month);\r\n\tlet lastWeekDay = getLastWeekDay(year, month);\r\n\r\n\tlet res = chunk(normalize(days, firstWeekDay, 7 - lastWeekDay), 7);\r\n\tcreateTable(body, res, isFuture);\r\n}\r\n\r\nfunction createTable(parent, arr, isFuture) {\r\n\tparent.innerHTML = '';\r\n\tlet nextMonthDays = 1;\r\n\tlet prevMonthDays = getLastDay(parent.dataset.year, parent.dataset.month - 1);\r\n\r\n\tlet emptyCells = -1;\r\n\tfor (let j = 0; j < arr[0].length; j++) {\r\n\t\tif (arr[0][j] == '') {\r\n\t\t\temptyCells++;\r\n\t\t}\r\n\t}\r\n\r\n\tfor (let i = 0; i < arr.length; i++) {\r\n\t\tlet row = document.createElement('tr');\r\n\t\tparent.appendChild(row);\r\n\r\n\t\tfor (let k = 0; k < 7; k++) {\r\n\t\t\tlet cell = document.createElement('td');\r\n\t\t\tcell.innerHTML = arr[i][k];\r\n\t\t\tif (isToday(cell, parent)) {\r\n\t\t\t\tcell.classList.add('today');\r\n\t\t\t\tisFuture = true;\r\n\t\t\t}\r\n\r\n\t\t\tif (parent.dataset.dot1 != '') {\r\n\t\t\t\tlet dot1ARR = parent.dataset.dot1.split('.');\r\n\t\t\t\tlet dayDot1 = eraseZero(dot1ARR[2]);\r\n\t\t\t\tif (dot1ARR[0] == parent.dataset.year && dot1ARR[1] == parent.dataset.month && dayDot1 == cell.innerHTML) {\r\n\t\t\t\t\tcell.classList.add('parentDotLeft');\r\n\t\t\t\t\tlet parentDiv = document.createElement('div');\r\n\t\t\t\t\tparentDiv.innerHTML = cell.innerHTML;\r\n\t\t\t\t\tcell.innerHTML = '';\r\n\t\t\t\t\tparentDiv.classList.add('dot');\r\n\t\t\t\t\tcell.appendChild(parentDiv);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tif (parent.dataset.dot2 != '') {\r\n\t\t\t\tlet dot2ARR = parent.dataset.dot2.split('.');\r\n\t\t\t\tlet dayDot2 = eraseZero(dot2ARR[2]);\r\n\t\t\t\tif (dot2ARR[0] == parent.dataset.year && dot2ARR[1] == parent.dataset.month && dayDot2 == cell.innerHTML) {\r\n\t\t\t\t\tcell.classList.add('parentDotRight');\r\n\t\t\t\t\tlet parentDiv = document.createElement('div');\r\n\t\t\t\t\tparentDiv.innerHTML = cell.innerHTML;\r\n\t\t\t\t\tcell.innerHTML = '';\r\n\t\t\t\t\tparentDiv.classList.add('dot');\r\n\t\t\t\t\tcell.appendChild(parentDiv);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tlet dot1 = parent.dataset.dot1.split('.');\r\n\t\t\t\t\tlet dot2 = parent.dataset.dot2.split('.');\r\n\r\n\t\t\t\t\tif (dot2[0] == dot1[0]) {\r\n\t\t\t\t\t\tif (eraseZero(dot2[1]) == eraseZero(dot1[1])) {\r\n\t\t\t\t\t\t\tif (+cell.innerHTML > eraseZero(dot1[2]) && +cell.innerHTML < eraseZero(dot2[2]) && eraseZero(parent.dataset.month) == eraseZero(dot1[1]) && parent.dataset.year == dot1[0]) {\r\n\t\t\t\t\t\t\t\tcell.classList.add('period');\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\tif (+cell.innerHTML > eraseZero(dot1[2]) && eraseZero(dot1[1]) == parent.dataset.month) {\r\n\t\t\t\t\t\t\t\tcell.classList.add('period');\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\tif (+cell.innerHTML < eraseZero(dot2[2]) && eraseZero(dot2[1]) == parent.dataset.month) {\r\n\t\t\t\t\t\t\t\tcell.classList.add('period');\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\r\n\t\t\tif (cell.innerHTML == '' && i > 0) {\r\n\t\t\t\tcell.innerHTML = nextMonthDays;\r\n\t\t\t\tcell.classList.add('anotherMonthDays');\r\n\t\t\t\tcell.classList.remove('period');\r\n\t\t\t\tisFuture = false;\r\n\t\t\t\tnextMonthDays++;\r\n\t\t\t}\r\n\r\n\t\t\tif (cell.innerHTML == '' && i == 0) {\r\n\t\t\t\tcell.innerHTML = prevMonthDays - emptyCells;\r\n\t\t\t\temptyCells--;\r\n\t\t\t\tcell.classList.add('anotherMonthDays');\r\n\t\t\t\tcell.classList.remove('period');\r\n\t\t\t\tisFuture = false;\r\n\r\n\t\t\t}\r\n\r\n\t\t\tlet currentDate = new Date();\r\n\t\t\tif (currentDate.getFullYear() <= parent.dataset.year && currentDate.getMonth() < parent.dataset.month) {\r\n\t\t\t\tisFuture = true;\r\n\t\t\t}\r\n\r\n\t\t\tif (isFuture && !cell.classList.contains('anotherMonthDays')) {\r\n\t\t\t\tcell.addEventListener('mouseover', cursorChange);\r\n\t\t\t\tcell.addEventListener('click', function () {\r\n\t\t\t\t\tif (parent.dataset.dot1 == '') {\r\n\t\t\t\t\t\tcell.classList.add('dot');\r\n\t\t\t\t\t\tparent.dataset.dot1 = parent.dataset.year + '.' + parent.dataset.month + '.' + addZero(cell.innerHTML);\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tlet dot2 = parent.dataset.year + '.' + parent.dataset.month + '.' + addZero(cell.innerHTML)\r\n\t\t\t\t\t\tif (parent.dataset.dot2 == '' && parent.dataset.dot1 < dot2) {\r\n\t\t\t\t\t\t\tcell.classList.add('dot');\r\n\t\t\t\t\t\t\tparent.dataset.dot2 = dot2;\r\n\t\t\t\t\t\t\tcreateTable(parent, arr, isFuture)\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\t\t\t}\r\n\t\t\trow.appendChild(cell);\r\n\t\t}\r\n\t}\r\n}\r\n\r\nfunction eraseZero(str) {\r\n\tif(!!str){\r\n\t\tif (str.split('')[0] == '0') {\r\n\t\tstr = str.split('')[1]\r\n\t}\r\n\r\n\treturn str;\r\n\t}\r\n}\r\n\r\nfunction addZero(num) {\r\n\tif (num < 10) {\r\n\t\tnum = '0' + num;\r\n\t}\r\n\r\n\treturn num;\r\n}\r\n\r\nfunction isToday(cell, body) {\r\n\tlet date = new Date();\r\n\tlet year = date.getFullYear();\r\n\tlet month = date.getMonth();\r\n\r\n\tif (body.dataset.month == month && body.dataset.year == year && cell.innerHTML == date.getDate()) {\r\n\t\treturn true;\r\n\t} else {\r\n\t\treturn false;\r\n\t}\r\n}\r\n\r\nfunction normalize(arr, left, right) {\r\n\t// left\r\n\tif (left != 0) {\r\n\t\tfor (let i = 0; i < left - 1; i++) {\r\n\t\t\tarr.unshift('');\r\n\t\t}\r\n\t} else {\r\n\t\tfor (let i = 0; i < 6; i++) {\r\n\t\t\tarr.unshift('');\r\n\t\t}\r\n\t}\r\n\t//right\r\n\tfor (let k = 0; k < right; k++) {\r\n\t\tarr.push('');\r\n\t}\r\n\r\n\treturn arr;\r\n}\r\n\r\nfunction chunk(arr, n) {\r\n\r\n\tlet result = [];\r\n\tlet countWeeks = Math.ceil(arr.length / n);\r\n\r\n\tfor (let i = 0; i < countWeeks; i++) {\r\n\t\tlet week = arr.splice(0, n);\r\n\t\tresult.push(week);\r\n\t}\r\n\r\n\treturn result;\r\n}\r\n\r\nfunction getLastWeekDay(year, month) {\r\n\tlet date = new Date(year, month + 1, 0);\r\n\tlet lastWeekDay = date.getDay();\r\n\r\n\treturn lastWeekDay;\r\n}\r\n\r\nfunction getFirstWeekDay(year, month) {\r\n\tlet date = new Date(year, month, 1);\r\n\tlet firstWeekDay = date.getDay();\r\n\r\n\treturn firstWeekDay;\r\n}\r\n\r\nfunction range(count) {\r\n\tlet arr = [];\r\n\r\n\tfor (let i = 1; i <= count; i++) {\r\n\t\tarr.push(i);\r\n\t}\r\n\r\n\treturn arr;\r\n}\r\n\r\nfunction getLastDay(year, month) {\r\n\tlet date = new Date(year, month + 1, 0);\r\n\tlet lastDay = date.getDate();\r\n\r\n\treturn lastDay;\r\n}\r\n\r\n\r\nfunction showCurrentMonth(body) {\r\n\tlet month = body.dataset.month;\r\n\tlet year = body.dataset.year;\r\n\r\n\tlet info = document.querySelector('.info');\r\n\tlet text = getMonth(+month) + ' ' + year;\r\n\tinfo.innerHTML = text;\r\n}\r\n\r\nfunction getMonth(num) {\r\n\tlet months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];\r\n\tlet str = '';\r\n\r\n\tfor (let i = 0; i < 12; i++) {\r\n\t\tif (num == i) {\r\n\t\t\tstr = months[i];\r\n\t\t}\r\n\t}\r\n\r\n\treturn str;\r\n}\r\n\r\nfunction cursorChange(event) {\r\n\tthis.style.cursor = 'pointer';\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./common.blocks/calendar/calendar.js?");
+
+/***/ }),
+
+/***/ "./common.blocks/guests-dropdaun/guests-dropdaun.js":
+/*!**********************************************************!*\
+  !*** ./common.blocks/guests-dropdaun/guests-dropdaun.js ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+eval("module.exports = {\r\n\tonGuestsDropdaunLoad\r\n}\r\n\r\nfunction onGuestsDropdaunLoad() {\r\n    let adultPlus = document.querySelector('#guests-adult-plus');\r\n    adultPlus.addEventListener('click', onAdultPlusClick);\r\n\r\n    let adultMinus = document.querySelector('#guests-adult-minus');\r\n    adultMinus.addEventListener('click', onAdultMinusClick);\r\n\r\n    let childrenPlus = document.querySelector('#guests-children-plus');\r\n    childrenPlus.addEventListener('click', onChildrenPlusClick);\r\n\r\n    let childrenMinus = document.querySelector('#guests-children-minus');\r\n    childrenMinus.addEventListener('click', onChildrenMinusClick);\r\n\r\n    let babiesPlus = document.querySelector('#guests-babies-plus');\r\n    babiesPlus.addEventListener('click', onBabiesPlusClick);\r\n\r\n    let babiesMinus = document.querySelector('#guests-babies-minus');\r\n    babiesMinus.addEventListener('click', onBabiesMinusClick);\r\n\r\n    let gestsAdultElem = document.querySelector('#guests-adult');\r\n    let gestsChildrenElem = document.querySelector('#guests-children');\r\n    let gestsBabies = document.querySelector('#guests-babies');\r\n\r\n    let clear = document.querySelector('.guests-clear');\r\n    clear.addEventListener('click', function () {\r\n        gestsBabies.innerHTML = 0; \r\n        gestsChildrenElem.innerHTML = 0;\r\n        gestsAdultElem.innerHTML = 2;\r\n    });\r\n\r\n    let event = new Event(\"changeGuests\", { bubbles: true }); ///\r\n\r\n    let apply = document.querySelector('.guests-apply');\r\n    apply.addEventListener('click', function () {\r\n\r\n        let guestsTitle = document.querySelector('.guests__rect');\r\n        if (guestsTitle != null) {\r\n            guestsTitle.innerHTML = +(gestsBabies.innerHTML) + +(gestsChildrenElem.innerHTML) + +(gestsAdultElem.innerHTML);\r\n        }\r\n\r\n        // for search-room\r\n        let contentGuestsTitle = document.querySelector('.content__guests__title');\r\n        if (contentGuestsTitle != null) {\r\n            contentGuestsTitle.innerHTML = gestsAdultElem.innerHTML + ' гостя';\r\n            if (gestsChildrenElem.innerHTML != 0) {\r\n                contentGuestsTitle.innerHTML += ', ' + gestsChildrenElem.innerHTML + ' детей';\r\n            }\r\n\r\n            if (gestsBabies.innerHTML != 0) {\r\n                contentGuestsTitle.innerHTML += ', ' + gestsBabies.innerHTML + ' младенцев';\r\n            }\r\n        }\r\n\r\n\r\n        localStorage.setItem('guestsBabies', gestsBabies.innerHTML);\r\n        localStorage.setItem('guestsChildren', gestsChildrenElem.innerHTML);\r\n        localStorage.setItem('guestsAdult', gestsAdultElem.innerHTML);\r\n\r\n        let guestsForm = document.querySelector('.guests-dropdown');\r\n        guestsForm.style.display = '';\r\n\r\n        guestsForm.dispatchEvent(event);\r\n    });\r\n}\r\n\r\nfunction onBabiesMinusClick() {\r\n    let count = document.querySelector('#guests-babies');\r\n\r\n    count.innerHTML = +count.innerHTML - 1;\r\n\r\n    if (count.innerHTML < 0) {\r\n        count.innerHTML = 0;\r\n    }\r\n}\r\n\r\nfunction onBabiesPlusClick() {\r\n    let count = document.querySelector('#guests-babies');\r\n\r\n    count.innerHTML = +count.innerHTML + 1;\r\n}\r\n\r\nfunction onChildrenMinusClick() {\r\n    let count = document.querySelector('#guests-children');\r\n\r\n    count.innerHTML = +count.innerHTML - 1;\r\n\r\n    if (count.innerHTML < 0) {\r\n        count.innerHTML = 0;\r\n    }\r\n}\r\n\r\nfunction onChildrenPlusClick() {\r\n    let count = document.querySelector('#guests-children');\r\n\r\n    count.innerHTML = +count.innerHTML + 1;\r\n}\r\n\r\nfunction onAdultPlusClick() {\r\n    let count = document.querySelector('#guests-adult');\r\n\r\n    count.innerHTML = +count.innerHTML + 1;\r\n}\r\n\r\nfunction onAdultMinusClick() {\r\n    let count = document.querySelector('#guests-adult');\r\n\r\n    count.innerHTML = +count.innerHTML - 1;\r\n\r\n    if (count.innerHTML < 1) {\r\n        count.innerHTML = 1;\r\n    }\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./common.blocks/guests-dropdaun/guests-dropdaun.js?");
+
+/***/ }),
+
+/***/ "./common.blocks/header/header.js":
+/*!****************************************!*\
+  !*** ./common.blocks/header/header.js ***!
+  \****************************************/
+/***/ ((module) => {
+
+eval("module.exports = {\r\n\tonHeaderLoad\r\n}\r\n\r\nfunction onHeaderLoad() {\r\n\r\n    let loginButtons = document.getElementsByClassName('login-button__background');\r\n    for (let loginButton of loginButtons) {\r\n        loginButton.addEventListener('click', onLoginButtonClickHandler);\r\n    }\r\n\r\n    let regButton = document.querySelector('.registration-button');\r\n    regButton.addEventListener('click', onRegButtonClickHandler);\r\n}\r\n\r\nfunction onLoginButtonClickHandler() {\r\n    localStorage.setItem('loginOrRegistration', 'login');\r\n    location.href = 'authoriz.html';\r\n}\r\n\r\nfunction onRegButtonClickHandler() {\r\n    localStorage.setItem('loginOrRegistration', 'registration');\r\n\r\n    location.href = 'authoriz.html';\r\n}\n\n//# sourceURL=webpack:///./common.blocks/header/header.js?");
+
+/***/ }),
+
+/***/ "./scripts/index.js":
+/*!**************************!*\
+  !*** ./scripts/index.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/index.css */ \"./styles/index.css\");\n\r\n\r\n\r\nconst calendar = __webpack_require__(/*! ../common.blocks/calendar/calendar */ \"./common.blocks/calendar/calendar.js\");\r\nconst header = __webpack_require__(/*! ../common.blocks/header/header */ \"./common.blocks/header/header.js\");\r\nconst guestsDropdown = __webpack_require__(/*! ../common.blocks/guests-dropdaun/guests-dropdaun */ \"./common.blocks/guests-dropdaun/guests-dropdaun.js\")\r\n\r\nheader.onHeaderLoad();\r\n\r\nlet arriveForm = document.querySelector('.content__search__arrive');\r\narriveForm.addEventListener('click', addCalendar);\r\n\r\nlet departureForm = document.querySelector('.content__search__departure');\r\ndepartureForm.addEventListener('click', addCalendar);\r\n\r\nlet guestsForm = document.querySelector('.content__search__guests');\r\nguestsForm.addEventListener('click', addGuestsForm);\r\n\r\n\r\nlet searchButton = document.querySelector('.content__search__button');\r\nsearchButton.addEventListener('click', function () {\r\n    location.href = 'search-room.html';\r\n});\r\n\r\ncalendar.func();\r\n\r\n\r\nfunction addGuestsForm() {\r\n    let calendar = document.querySelector('.calendar-parent');\r\n    let guestsForm = document.querySelector('.guests-dropdown');\r\n\r\n    calendar.style.display = '';\r\n    if (guestsForm.style.display == '') {\r\n        guestsForm.style.display = 'block';\r\n        guestsDropdown.onGuestsDropdaunLoad();\r\n        \r\n    } else {\r\n        guestsForm.style.display = '';\r\n    }\r\n}\r\n\r\nfunction addCalendar() {\r\n    let calendarElem = document.querySelector('.calendar-parent');\r\n    let guestsForm = document.querySelector('.guests-dropdown');\r\n    \r\n    guestsForm.style.display = '';\r\n    if (calendarElem.style.display == '') {\r\n        calendarElem.style.display = 'block';\r\n        calendar.func();\r\n    } else {\r\n        calendarElem.style.display = '';\r\n\r\n        let days = document.querySelector('#days');\r\n        let body = days.querySelector('.body');\r\n        body.dataset.dot1 = '';\r\n        body.dataset.dot2 = '';\r\n    }\r\n    \r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./scripts/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./scripts/index.js");
+/******/ 	
+/******/ })()
+;

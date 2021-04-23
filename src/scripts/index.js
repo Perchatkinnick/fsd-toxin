@@ -1,6 +1,9 @@
-const calendar = require('./common.blocks/calendar/calendar');
-const header = require('./common.blocks/header/header');
-const guestsDropdown = require('./common.blocks/guests-dropdaun/guests-dropdaun')
+import '../styles/index.css'
+
+
+const calendar = require('../common.blocks/calendar/calendar');
+const header = require('../common.blocks/header/header');
+const guestsDropdown = require('../common.blocks/guests-dropdaun/guests-dropdaun')
 
 header.onHeaderLoad();
 
