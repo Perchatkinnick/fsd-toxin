@@ -1,5 +1,7 @@
+const header = require('../common.blocks/header/header');
+const login = require('../common.blocks/login/login');
 
-onHeaderLoad();
+header.onHeaderLoad();
 
 
 let marker = localStorage.getItem('loginOrRegistration');
@@ -22,7 +24,7 @@ for (let checkBox of checkBoxes) {
 let switcher = document.querySelector('.registration__mailing__switcher');
 switcher.addEventListener('click', onSwitcherClickHandler);
 
-onLoginLoad();
+login.onLoginLoad();
 
 
 function onSwitcherClickHandler(e) {

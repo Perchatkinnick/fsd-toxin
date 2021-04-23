@@ -1,4 +1,6 @@
-//@ts-check
+module.exports = {
+	onLoginLoad
+}
 
 function onLoginLoad() {
     let toRegistrationButton = document.querySelector('.login__toRegistration__button');
