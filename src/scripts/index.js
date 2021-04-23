@@ -1,22 +1,22 @@
-import '../styles/index.css';
-import '../styles/reset.css';
-import '../fonts/montserrat.css';
-import '../fonts/fontawesome/all.min.css';
-import '../fonts/iconfont/material-icons.css';
-import '../common.blocks/header/header.css';
-import '../common.blocks/footer/footer.css';
-import '../common.blocks/menu/menu.css';
-import '../common.blocks/calendar/calendar.css';
-import '../common.blocks/guests-dropdown/guests-dropdown.css';
-import '../common.blocks/logo/logo.css';
-import '../common.blocks/login-button/login-button.css';
-import '../common.blocks/go-button/go-button.css';
-import '../common.blocks/input/input.css';
+import '@styles/index.css';
+import '@styles/reset.css';
+import '@fonts/montserrat.css';
+import '@fonts/fontawesome/all.min.css';
+import '@fonts/iconfont/material-icons.css';
+import '@blocks/header/header.css';
+import '@blocks/footer/footer.css';
+import '@blocks/menu/menu.css';
+import '@blocks/calendar/calendar.css';
+import '@blocks/guests-dropdown/guests-dropdown.css';
+import '@blocks/logo/logo.css';
+import '@blocks/login-button/login-button.css';
+import '@blocks/go-button/go-button.css';
+import '@blocks/input/input.css';
 
 
-const calendar = require('../common.blocks/calendar/calendar');
-const header = require('../common.blocks/header/header');
-const guestsDropdown = require('../common.blocks/guests-dropdown/guests-dropdown')
+const calendar = require('@blocks/calendar/calendar');
+const header = require('@blocks/header/header');
+const guestsDropdown = require('@blocks/guests-dropdown/guests-dropdown')
 
 header.onHeaderLoad();
 

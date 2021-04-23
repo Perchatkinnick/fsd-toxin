@@ -1,21 +1,21 @@
-﻿import '../styles/room-details.css';
-import '../styles/reset.css';
-import '../common.blocks/header/header.css';
-import '../common.blocks/footer/footer.css';
-import '../common.blocks/calendar/calendar.css';
-import '../common.blocks/guests-dropdown/guests-dropdown.css';
-import '../common.blocks/logo/logo.css';
-import '../common.blocks/login-button/login-button.css';
-import '../common.blocks/menu/menu.css';
-import '../fonts/montserrat.css';
-import '../fonts/fontawesome/all.min.css';
-import '../fonts/iconfont/material-icons.css';
+﻿import '@styles/room-details.css';
+import '@styles/reset.css';
+import '@blocks/header/header.css';
+import '@blocks/footer/footer.css';
+import '@blocks/calendar/calendar.css';
+import '@blocks/guests-dropdown/guests-dropdown.css';
+import '@blocks/logo/logo.css';
+import '@blocks/login-button/login-button.css';
+import '@blocks/menu/menu.css';
+import '@fonts/montserrat.css';
+import '@fonts/fontawesome/all.min.css';
+import '@fonts/iconfont/material-icons.css';
 
 
-const calendar = require('../common.blocks/calendar/calendar');
-const guestsDropdown = require('../common.blocks/guests-dropdown/guests-dropdown');
-const header = require('../common.blocks/header/header');
-const roomsData = require('../common.blocks/show-rooms/data');
+const calendar = require('@blocks/calendar/calendar');
+const guestsDropdown = require('@blocks/guests-dropdown/guests-dropdown');
+const header = require('@blocks/header/header');
+const roomsData = require('@blocks/show-rooms/data');
 
 
 let roomsDataParth = [

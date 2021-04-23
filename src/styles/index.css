@@ -1,4 +1,6 @@
-﻿html {
+﻿@import "~normalize.css";
+
+html {
 	height: 100%;
 }
 

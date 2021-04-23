@@ -1,22 +1,22 @@
-import '../styles/authoriz.css';
-import '../styles/reset.css';
-import '../fonts/montserrat.css';
-import '../fonts/fontawesome/all.min.css';
-import '../fonts/iconfont/material-icons.css';
-import '../common.blocks/header/header.css';
-import '../common.blocks/footer/footer.css';
-import '../common.blocks/menu/menu.css';
-import '../common.blocks/logo/logo.css';
-import '../common.blocks/login-button/login-button.css';
-import '../common.blocks/login/login.css';
-import '../common.blocks/go-button/go-button.css';
-import '../common.blocks/input/input.css';
-import '../common.blocks/registration/registration.css';
-import '../common.blocks/title/title.css';
+import '@styles/authoriz.css';
+import '@styles/reset.css';
+import '@fonts/montserrat.css';
+import '@fonts/fontawesome/all.min.css';
+import '@fonts/iconfont/material-icons.css';
+import '@blocks/header/header.css';
+import '@blocks/footer/footer.css';
+import '@blocks/menu/menu.css';
+import '@blocks/logo/logo.css';
+import '@blocks/login-button/login-button.css';
+import '@blocks/login/login.css';
+import '@blocks/go-button/go-button.css';
+import '@blocks/input/input.css';
+import '@blocks/registration/registration.css';
+import '@blocks/title/title.css';
 
 
-const header = require('../common.blocks/header/header');
-const login = require('../common.blocks/login/login');
+const header = require('@blocks/header/header');
+const login = require('@blocks/login/login');
 
 header.onHeaderLoad();
 
