@@ -1,4 +1,9 @@
-﻿
+﻿const calendar = require('../common.blocks/calendar/calendar');
+const guestsDropdown = require('../common.blocks/guests-dropdaun/guests-dropdaun');
+const header = require('../common.blocks/header/header');
+const roomsData = require('../common.blocks/show-rooms/data');
+
+
 let roomsDataParth = [
     {
 
@@ -49,7 +54,7 @@ let users = [
 ];
 
 let roomData = JSON.parse(localStorage.getItem("roomData"));
-onHeaderLoad();
+header.onHeaderLoad();
 
 loadPhoto(roomData);
 
@@ -57,7 +62,7 @@ loadDiagramm();
 loadCounts();
 loadReviews();
 loadBooking(roomData);
-func();
+calendar.func();
 loadCalendar();
 loadGuestsDropdaun();
 loadCalculator(roomData);
@@ -280,7 +285,7 @@ function loadReviews() {
         let userPhoto = document.createElement('div');
         userPhoto.classList.add('content__details__reviews__container__review__photo');
         let userID = roomsDataParth[0].reviews[i].user;
-        userPhoto.style.background = 'url("media/images/users/' + userID + '.png")';
+        userPhoto.style.background = 'url("../src/media/images/users/' + userID + '.png")'; 
         review.appendChild(userPhoto);
 
         let user = users.find(user => user.id === userID);
@@ -388,11 +393,11 @@ function sectionLoad(grade, count, total, position) {
 
 function loadPhoto(roomData) {
     let mainPhoto = document.querySelector('.content__gallery__main');
-    mainPhoto.style.background = 'no-repeat url("media/images/rooms/' + roomData.room + '/main.png")';
+    mainPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/main.png")';
 
     let secPhoto = document.querySelector('.content__gallery__2');
-    secPhoto.style.background = 'no-repeat url("media/images/rooms/' + roomData.room + '/image 2.png")';
+    secPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 2.png")';
 
     let thrdPhoto = document.querySelector('.content__gallery__3');
-    thrdPhoto.style.background = 'no-repeat url("media/images/rooms/' + roomData.room + '/image 3.png")';
+    thrdPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 3.png")';
 }

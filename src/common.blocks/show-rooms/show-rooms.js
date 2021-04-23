@@ -89,7 +89,7 @@ function buildGrid(rooms, page) {
 function onRoomClickHandler(e) {
     let number = e.target.dataset.room;
     let roomData;
-    for (let room of roomsData) {
+    for (let room of data.roomsData) {
         if (room.room == number) {
             roomData = room;
         }
