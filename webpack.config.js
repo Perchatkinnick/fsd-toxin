@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -12,56 +13,38 @@ const isProd = !isDev;
 console.log('isDev: ', isDev);
 console.log('NODE_ENV: <', process.env.NODE_ENV, '>');
 
-const optimization = () => {
-    const config = {
-        splitChunks: {
-            chunks: 'all'
-        }
-    };
-
-    if (isProd) {
-        config.minimizer = [
-            new OptimizeCssAssetsWebpackPlugin(),
-            new TerserWebpackPlugin()
+const babelOptions = preset => {
+    const opts = {
+        presets: [
+            '@babel/preset-env',
+        ],
+        plugins: [
+            '@babel/plugin-proposal-class-properties'
         ]
     }
 
-    return config;
+    if (preset) {
+        opts.presets.push(preset);
+    }
+
+    return opts;
 }
 
-const fileName = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
+const jsLoaders = () => {
+    const loaders = [{
+        loader: 'babel-loader',
+        options: babelOptions(),
+    }]
 
+    if (isDev) {
+        //loaders.push('eslint-loader');
+    }
 
-module.exports = {
-    context: path.resolve(__dirname, 'src'),
-    mode: 'development',
-    entry: {
-        main: './scripts/index',
-        authoriz: './scripts/authoriz',
-        roomDetails: './scripts/room-details',
-        searchRoom: './scripts/search-room',
-    },
-    output: {
-        filename: fileName('js'),
-        path: path.resolve(__dirname, 'dist')
-    },
-    resolve: {
-        alias: {
-            '@blocks' : path.resolve(__dirname, 'src/common.blocks'),
-            '@fonts' : path.resolve(__dirname, 'src/fonts'),
-            '@styles' : path.resolve(__dirname, 'src/styles'),
-            '@' : path.resolve(__dirname, 'src')
-        }
-    },
+    return loaders;
+}
 
-    optimization: optimization(),
-    devServer: {
-        port: 4200,
-        open: isDev,
-        watchContentBase: isDev,
-        hot: isDev
-    },
-    plugins: [
+const plugins = () => {
+    const base = [
         new HTMLWebpackPlugin({
             filename: 'index.html',
             chunks: ['main'],
@@ -94,7 +77,66 @@ module.exports = {
             filename: fileName('css'),
             ignoreOrder: true,
         })
-    ],
+    ];
+
+    if (isProd) {
+        base.push(new BundleAnalyzerPlugin);
+    }
+
+    return base;
+}
+
+const optimization = () => {
+    const config = {
+        splitChunks: {
+            chunks: 'all'
+        }
+    };
+
+    if (isProd) {
+        config.minimizer = [
+            new OptimizeCssAssetsWebpackPlugin(),
+            new TerserWebpackPlugin()
+        ]
+    }
+
+    return config;
+}
+
+const fileName = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
+
+
+module.exports = {
+    context: path.resolve(__dirname, 'src'),
+    mode: 'development',
+    entry: {
+        main: ['@babel/polyfill', './scripts/index'],
+        authoriz: './scripts/authoriz',
+        roomDetails: './scripts/room-details',
+        searchRoom: './scripts/search-room',
+    },
+    output: {
+        filename: fileName('js'),
+        path: path.resolve(__dirname, 'dist')
+    },
+    resolve: {
+        alias: {
+            '@blocks' : path.resolve(__dirname, 'src/common.blocks'),
+            '@fonts' : path.resolve(__dirname, 'src/fonts'),
+            '@styles' : path.resolve(__dirname, 'src/styles'),
+            '@' : path.resolve(__dirname, 'src')
+        }
+    },
+
+    optimization: optimization(),
+    devServer: {
+        port: 4200,
+        open: isDev,
+        watchContentBase: isDev,
+        hot: isDev
+    },
+    devtool: isDev ? 'source-map' : false,
+    plugins: plugins(),
     module: {
         rules: [
             {
@@ -125,25 +167,25 @@ module.exports = {
             //     test: /\.csv$/,
             //     use: ['csv-loader']
             // },
-            // {
-            //     test: /\.js$/,
-            //     exclude: /node_modules/,
-            //     use: jsLoaders(),
-            //     //loader: 'babel-loader',
-            //     //options: babelOptions()
-            // },
-            // {
-            //     test: /\.ts$/,
-            //     exclude: /node_modules/,
-            //     loader: 'babel-loader',
-            //     options: babelOptions('@babel/preset-typescript')
-            // },
-            // {
-            //     test: /\.jsx$/,
-            //     exclude: /node_modules/,
-            //     loader: 'babel-loader',
-            //     options: babelOptions('@babel/preset-react')
-            // }
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: jsLoaders(),
+                //loader: 'babel-loader',
+                //options: babelOptions()
+            },
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: babelOptions('@babel/preset-typescript')
+            },
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: babelOptions('@babel/preset-react')
+            }
         ]
     } 
 }
