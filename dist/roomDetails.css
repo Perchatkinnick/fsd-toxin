@@ -1,0 +1,1139 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    background: #E5E5E5;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    background: #FFFFFF;
+    box-shadow: inset 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.content__booking {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 380px;
+    height: 511px;
+    left: 920px;
+    top: 625px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.content__booking__button {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 30px;
+    top: 437px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content__booking__button__arrow {
+    width: 44px;
+    height: 44px;
+    float: right;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.content__booking__calculator {
+    position: absolute;
+    width: 320px;
+    height: 158px;
+    left: 30px;
+    top: 251px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__calculator__separator__body {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 22px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__booking__calculator__total {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 134px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__booking__calculator__total__separator__body {
+    position: absolute;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    height: 18px;
+}
+
+.content__booking__calculator__extrafee {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 68px;
+}
+
+.content__booking__calculator__fee {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 34px;
+}
+
+.content__booking__calculator__main {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+}
+
+.content__booking__calculator__value {
+    float: left;
+}
+
+.content__booking__calculator__price {
+    float: right;
+}
+
+.content__booking__guests-dropdown {
+    position: absolute;
+    top: 228.44px;
+    left: 30px;
+}
+
+.content__booking__guests {
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    left: 30px;
+    top: 164.44px;
+    cursor: pointer;
+}
+
+.content__booking__guests__value {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    top: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__guests__title {
+    position: absolute;
+    width: 43px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__booking__calendar {
+    position: absolute;
+    display: none;
+    width: 320px;
+    height: 369px;
+    left: 30px;
+    top: 144px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: white;
+    z-index: 100;
+}
+
+.content__booking__date {
+    position: absolute;
+    width: 320px;
+    height: 65px;
+    left: 30px;
+    top: 80px;
+}
+
+.content__booking__arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0;
+    top: 20.44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__booking__date__value {
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    top: 20.44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__date__title {
+    position: absolute;
+    width: 83px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__booking__date__arrive {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.content__booking__date__departure {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    left: 170px;
+    cursor: pointer;
+}
+
+.content__booking__price {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 250px;
+    top: 41px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__booking__lux {
+    position: absolute;
+    width: 41px;
+    height: 17px;
+    left: 80px;
+    top: 43px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
+
+.content__booking__number {
+    position: absolute;
+    width: 47px;
+    height: 17px;
+    left: 30px;
+    top: 41px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+   
+}
+
+.content__details {
+    float: left;
+    width: 100%;
+    height: 939px;
+}
+
+.content__details__cancel {
+    position: absolute;
+    width: 341px;
+    height: 140px;
+    left: 501px;
+    top: 1300px;
+}
+
+.content__details__cancel__text {
+    position: absolute;
+    width: 341px;
+    height: 96px;
+    top: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__cancel__title {
+    position: absolute;
+    width: 91.77px;
+    height: 24px;
+    left: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__details__rules {
+    position: absolute;
+    width: 292px;
+    height: 160px;
+    left: 139px;
+    top: 1300px;
+}
+
+.content__details__rules__list {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 44px;
+    list-style: none;
+    height: 100%;
+}
+
+.content__details__rules__list__item {
+    position: relative;
+    padding-left: 30px;
+    height: 24px;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+    .content__details__rules__list__item::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(31, 32, 65, 0.25);
+    }
+
+.content__details__rules__title {
+    position: absolute;
+    width: 91.77px;
+    height: 24px;
+    left: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__details__reviews {
+    position: absolute;
+    width: 712px;
+    left: 139px;
+    top: 958px;
+}
+
+.content__details__reviews__container {
+    position: absolute;
+    display: grid;
+    grid-row-gap: 22px;
+    top: 44px;
+    width: 711px;
+    height: 289px;
+}
+
+.content__details__reviews__container__review {
+    width: 711px;
+    height: 133px;
+}
+
+.content__details__reviews__container__review__likeContainer {
+    position: relative;
+    width: 39.72px;
+    height: 20px;
+    left: 4px;
+    top: -35px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.content__details__reviews__container__review__likeContainer__checkked {
+    border: 1px solid #BC9CFF;
+}
+
+.content__details__reviews__container__review__likeContainer__heart__checked {
+    content: 'favorite';
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content__details__reviews__container__review__likeContainer__count {
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    left: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__details__reviews__container__review__likeContainer__heart {
+    position: absolute;
+    width: 19.86px;
+    height: 20px;
+    left: 5px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 19px;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__details__reviews__container__review__text {
+    position: relative;
+    width: 653px;
+    height: 72px;
+    left: 57.6px;
+    top: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__reviews__container__review__date {
+    position: relative;
+    width: 220.45px;
+    height: 24px;
+    left: 57.6px;
+    top: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__reviews__container__review__name {
+    position: absolute;
+    width: 220.45px;
+    height: 24px;
+    left: 57.6px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__reviews__container__review__photo {
+    position: absolute;
+    width: 47.67px;
+    height: 48px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    border-radius: 32px;
+}
+
+.content__details__reviews__count {
+    position: absolute;
+    width: 62px;
+    height: 14px;
+    top: 10px;
+    left: 649px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__details__reviews__title {
+    position: absolute;
+    width: 302px;
+    height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__details__impression {
+    position: absolute;
+    width: 311px;
+    height: 170px;
+    left: 501px;
+    top: 625px;
+}
+
+.content__details__impression__legend {
+    position: absolute;
+    width: 161px;
+    height: 96px;
+    left: 150px;
+    top: 74px;
+}
+
+.content__details__impression__legend__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.content__details__impression__legend__item {
+    position: relative;
+    padding-left: 30px;
+    margin: 8px 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+    .content__details__impression__legend__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+    }
+
+    .content__details__impression__legend__item:nth-child(1)::before {
+        background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    }
+
+    .content__details__impression__legend__item:nth-child(2)::before {
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
+
+    .content__details__impression__legend__item:nth-child(3)::before {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+
+    .content__details__impression__legend__item:nth-child(4)::before {
+        background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+    }
+
+.content__details__impression__diagramm {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    top: 44px;
+}
+
+.content__details__impression__diagramm__body {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+.content__details__impression__diagramm__vote {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.content__details__impression__diagramm__vote__title {
+    display: block;
+    width: 100%;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
+
+.content__details__impression__diagramm__vote__count {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #BC9CFF;
+}
+
+.content__details__impression__title {
+    position: absolute;
+    width: 247px;
+    height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__details__info {
+    position: absolute;
+    width: 291px;
+    height: 273px;
+    left: 140px;
+    top: 625px;
+}
+
+.content__details__info__cosiness {
+    position: absolute;
+    width: 291px;
+    height: 91px;
+    top: 218px;
+}
+
+.content__details__info__convenience {
+    position: absolute;
+    width: 291px;
+    height: 91px;
+    top: 112px;
+    border: 1px rgba(31, 32, 65, 0.1);
+    border-style: solid none;
+    
+}
+
+.content__details__info__comfort {
+    position: absolute;
+    width: 291px;
+    height: 91px;
+    top: 24px;
+}
+
+.content__details__info__content {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    left: 58px;
+    top: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__info__subtitle {
+    position: absolute;
+    width: 233px;
+    height: 24px;
+    left: 58px;
+    top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    
+}
+
+.content__details__info__icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 20px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content__details__info__title {
+    position: absolute;
+    width: 204px;
+    height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__gallery {
+    display: grid;
+    width: 100%;
+    height: 485px;
+
+}
+
+.content__gallery__main {
+    width: 981px;
+    height: 485px;
+    
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+.content__gallery__2 {
+    height: 243px;
+    width: 459px;
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+.content__gallery__3 {
+    height: 243px;
+    width: 459px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+body {
+    position: relative;
+}
+
+thead tr th {
+    width: 39px;
+    height: 39px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    color: #BC9CFF;
+}
+
+tbody tr td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    /* Dark 50% */
+    color: rgba(31, 32, 65, 0.5);
+    width: 39.88px;
+    height: 40px;
+}
+
+.today {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+}
+
+.parentDotLeft {
+    background: linear-gradient(to right, white 50%, #eae7ff 50%);
+}
+
+.parentDotRight {
+    background: linear-gradient(to right, #eae7ff 50%, white 50%);
+}
+
+.dot {
+    width: 39.88px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+}
+
+.anotherMonthDays {
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.period {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+}
+
+.info {
+    position: absolute;
+    width: 228px;
+    height: 24px;
+    left: 46px;
+    top: 19px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #1F2041;
+}
+
+.apply {
+    position: absolute;
+    width: 84px;
+    height: 15px;
+    left: 216px;
+    top: 333px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.clear {
+    position: absolute;
+    width: 72px;
+    height: 15px;
+    left: 20px;
+    top: 333px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.arrow-forward {
+    position: absolute;
+    width: 23.93px;
+    height: 24px;
+    left: 274.4px;
+    top: 19px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.arrow-back {
+    position: absolute;
+    width: 23.93px;
+    height: 24px;
+    left: 19.2px;
+    top: 19px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+#calendar {
+    position: relative;
+    width: 320px;
+    height: 369px;
+    top: 330px;
+    left: 170px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+#days {
+    position: absolute;
+    width: 279.39px;
+    height: 238px;
+    left: 20.93px;
+    top: 73px;
+}
+
+.guests-dropdown {
+    position: relative;
+    display: none;
+    z-index: 100;
+    width: 320px;
+    height: 159px;
+    
+    background: #FFFFFF;
+    /* Dark 50% */
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+}
+
+.guests-apply {
+    position: absolute;
+    width: 84px;
+    height: 15px;
+    left: 229px;
+    top: 131px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Primary Color */
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.guests-clear {
+    position: absolute;
+    width: 72px;
+    height: 15px;
+    left: 14px;
+    top: 131px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.guests-babies {
+    position: absolute;
+    height: 40px;
+    width: 320px;
+    top: 80px;
+}
+
+.guests-children {
+    position: absolute;
+    height: 40px;
+    width: 320px;
+    top: 40px;
+}
+
+.guests-adult {
+    position: absolute;
+    height: 40px;
+    width: 320px;
+}
+
+.guests-minus {
+    position: absolute;
+    left: 283px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
+.guests-count {
+    position: absolute;
+    left: 251px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    /* Dark 100% */
+    color: #1F2041;
+}
+
+.guests-plus {
+    position: absolute;
+    left: 221px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
+.guests-note {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 40px;
+    left: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Dark 100% */
+    color: #1F2041;
+}
+
+
+/*# sourceMappingURL=roomDetails.css.map*/

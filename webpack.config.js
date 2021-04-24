@@ -49,22 +49,22 @@ const plugins = () => {
             filename: 'index.html',
             chunks: ['main'],
             //template: path.resolve(__dirname, 'src') + '/index.pug'
-            template: './index.html'
+            template: './pages/index/index.html'
         }),
         new HTMLWebpackPlugin({
             filename: 'room-details.html',
             chunks: ['roomDetails'],
-            template: './room-details.html'
+            template: './pages/room-details/room-details.html'
         }),
         new HTMLWebpackPlugin({
             filename: 'search-room.html',
             chunks: ['searchRoom'],
-            template: './search-room.html'
+            template: './pages/search-room/search-room.html'
         }),
         new HTMLWebpackPlugin({
             filename: 'authoriz.html',
             chunks: ['authoriz'],
-            template: './authoriz.html'
+            template: './pages/authoriz/authoriz.html'
         }),
          new CleanWebpackPlugin(),
         //  new CopyWebpackPlugin({
@@ -142,6 +142,13 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
             },
             // {
             //     test: /\.less$/,
