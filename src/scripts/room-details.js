@@ -1,4 +1,6 @@
-﻿import '@styles/room-details.css';
+﻿import * as $ from 'jquery';
+
+import '@styles/room-details.css';
 import '@styles/reset.css';
 import '@blocks/header/header.css';
 import '@blocks/footer/footer.css';

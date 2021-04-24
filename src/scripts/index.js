@@ -1,3 +1,5 @@
+import * as $ from 'jquery';
+
 import '@styles/index.css';
 import '@styles/reset.css';
 import '@fonts/montserrat.css';
