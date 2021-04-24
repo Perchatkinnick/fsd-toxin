@@ -48,8 +48,8 @@ const plugins = () => {
         new HTMLWebpackPlugin({
             filename: 'index.html',
             chunks: ['main'],
-            //template: path.resolve(__dirname, 'src') + '/index.pug'
-            template: './pages/index/index.html'
+            template: path.resolve(__dirname, 'src/pages/index') + '/index.pug'
+            //template: './pages/index/index.html'
         }),
         new HTMLWebpackPlugin({
             filename: 'room-details.html',
