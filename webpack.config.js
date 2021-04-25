@@ -54,7 +54,7 @@ const plugins = () => {
         new HTMLWebpackPlugin({
             filename: 'room-details.html',
             chunks: ['roomDetails'],
-            template: './pages/room-details/room-details.html'
+            template: path.resolve(__dirname, 'src/pages/room-details') + '/room-details.pug'
         }),
         new HTMLWebpackPlugin({
             filename: 'search-room.html',

@@ -1,22 +1,60 @@
-<!-- Perchatkin Nick perchatkinnick@mail.ru -->
-<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
-doctype html
-<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
-<!--[if lt IE 9]> 
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
-<![endif]-->
-html 
-    head 
-    meta(charset="utf-8")
-    title Toxin
-    body 
-        div(class='wrapper')
-            header(class="header")
-                div(class="logo header__logo")
-                    a(href="index.html")
-                        div(class="logo__round-gradient")
-                        div(class="logo__round-background")
-                        div(class="logo__vector1")
-                        div(class="logo__vector2")
-                        div(class="logo__title")
+extends ../base.pug
+block content
+
+    div(class="content__container")
+        div(class="content__search")
+            div(class="content__search__slogan") Найдём номера под ваши пожелания
+            div(class="content__search__arrive")
+                div(class="content__search__title") прибытие
+                div(class="content__search__rect") ДД.ММ.ГГГГ
+                    div(class="expand-more search-room__expand-more") expand_more
+            div(class="content__search__departure")
+                div(class="content__search__title") выезд
+                div(class="content__search__rect") ДД.ММ.ГГГГ
+                    div(class="expand-more search-room__expand-more") expand_more
+            div(class="calendar-parent")
+                div(id="days")
+                    table
+                        thead
+                            tr
+                                th Пн
+                                th Вт
+                                th Ср
+                                th Чт
+                                th Пт
+                                th Сб
+                                th Вс
+                        tbody(class="body" data-dot1="" data-dot2="")
+                div(class="info") Август
+                i(class="material-icons arrow-back") arrow_back
+                i(class="material-icons arrow-forward") arrow_forward
+                span(class="clear") очистить
+                span(class="apply") применить
+            div(class="content__search__guests")
+                div(class="content__search__title") гости
+                div(class="content__search__rect  guests__rect") Сколько гостей
+                    div(class="expand-more search-room__expand-more") expand_more
+            div(class="guests__dropdown__container")
+                div(class="guests-dropdown")
+                    div(class="guests-adult")
+                        div(class="guests-note") взрослые
+                        div(id="guests-adult-plus" class="guests-plus") +
+                        div(id="guests-adult" class="guests-count") 2
+                        div(id="guests-adult-minus" class="guests-minus") -
+                    div(class="guests-children")
+                        div(class="guests-note") дети
+                        div(id="guests-children-plus" class="guests-plus") +
+                        div(id="guests-children" class="guests-count") 0
+                        div(id="guests-children-minus" class="guests-minus") -
+                    div(class="guests-babies")
+                        div(class="guests-note") младенцы
+                        div(id="guests-babies-plus" class="guests-plus") +
+                        div(id="guests-babies" class="guests-count") 0
+                        div(id="guests-babies-minus" class="guests-minus") -
+                    span(class="guests-clear") очистить
+                    span(class="guests-apply") применить
+            div(class="content__search__button")
+                div(class="go-button") подобрать номер
+                    div(class="go-button__arrow material-icons") arrow_forward
+        div(class="content__slogan") Лучшие номера для вашей работы, отдыха и просто вдохновения
 
