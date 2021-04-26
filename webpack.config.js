@@ -59,20 +59,29 @@ const plugins = () => {
         new HTMLWebpackPlugin({
             filename: 'search-room.html',
             chunks: ['searchRoom'],
-            template: './pages/search-room/search-room.html'
+            template: path.resolve(__dirname, 'src/pages/search-room') + '/search-room.pug'
         }),
         new HTMLWebpackPlugin({
             filename: 'authoriz.html',
             chunks: ['authoriz'],
-            template: './pages/authoriz/authoriz.html'
+            template: path.resolve(__dirname, 'src/pages/authoriz') + '/authoriz.pug'
         }),
          new CleanWebpackPlugin(),
-        //  new CopyWebpackPlugin({
-        //     patterns: [{
-        //          from: path.resolve(__dirname, './src/favicon.ico'),
-        //          to: path.resolve(__dirname, 'dist/favicon.ico')
-        //     }]
-        // }),
+         new CopyWebpackPlugin({
+            patterns: [{
+                 from: path.resolve(__dirname, 'src/common.blocks/logo/toxin.svg'),
+                 to: path.resolve(__dirname, 'dist/media/svg/toxin.svg')
+            },
+            {
+                from: path.resolve(__dirname, 'src/common.blocks/logo/vector.svg'),
+                to: path.resolve(__dirname, 'dist/media/svg/vector.svg')
+           },
+           {
+            from: path.resolve(__dirname, 'src/common.blocks/logo/vector2.svg'),
+            to: path.resolve(__dirname, 'dist/media/svg/vector2.svg')
+       },
+        ]
+        }),
         new MiniCssExtractPlugin({
             filename: fileName('css'),
             ignoreOrder: true,

@@ -1,0 +1,63 @@
+extends ../base.pug
+block content
+
+    div(class="content__container")
+        div(class="login")
+            div(class="registration__title" ) Войти
+            div(class="login__input-container")
+                input(class="input" type="text" style="top: 0px" placeholder="Email") 
+                input(class="input" type="text" style="top: 54px" placeholder="Пароль")
+
+            div(class="login__button-container")
+                div(class="go-button") войти
+                    div(class="go-button__arrow material-icons") arrow_forward
+
+            div(class="login__toRegistration")
+                div(class="registration__login__note") Нет аккаунта на Toxin?
+                div(class="login__toRegistration__button")
+                    div(class="login-button ")
+                        div(class="login-button__background") создать
+
+        div(class="registration")
+            div(class="registration__title") Регистрация аккаунта
+            div(class="registration__name")
+                input(class="input" type="text" style="top: 0" placeholder="Фамилия")
+                input(class="input" type="text" style="top: 54px" placeholder="Имя")
+
+            div(class="registration__sex")
+                div(class="registration__sex__male registration__sex__checked")
+                    div(class="registration__sex__check-box")
+                        div(class="registration__sex__check-box__marker")
+
+                    div(class="registration__sex__value") Мужчина
+
+                div(class="registration__sex__female")
+                    div(class="registration__sex__check-box")
+                        div(class="registration__sex__check-box__marker")
+
+                    div(class="registration__sex__value") Женщина
+
+            div(class="registration__birthday")
+                div(class="title") дата рождения
+                input(class="input" type="date" style="top: 20px")
+
+            div(class="registration__addData")
+                div(class="title") данные для входа в сервис
+                input(class="input" type="text" style="top: 20px" placeholder="Email")
+                input(class="input" type="text" style="top: 74px" placeholder="Пароль")
+
+            div(class="registration__mailing")
+                div(class="registration__mailing__switcher")
+                    div(class="registration__mailing__switcher__round")
+
+                div(class="registration__mailing__title") Получать спецпредложения
+
+            div(class="registration__button-container")
+                div(class="go-button") зарегистрироваться
+                    div(class="go-button__arrow material-icons") arrow_forward
+
+            div(class="registration__login")
+                div(class="registration__login__note") Уже есть аккаунт на Toxin
+                div(class="registration__login__button")
+                    div(class="login-button")
+                        div(class="login-button__background login-event") войти

@@ -2,11 +2,11 @@
 
 import '@styles/room-details.css';
 import '@styles/reset.css';
-import '@blocks/header/header.css';
+//import '@blocks/header/header.css';
 import '@blocks/footer/footer.css';
 import '@blocks/calendar/calendar.css';
 import '@blocks/guests-dropdown/guests-dropdown.css';
-import '@blocks/logo/logo.css';
+//import '@blocks/logo/logo.css';
 import '@blocks/login-button/login-button.css';
 import '@blocks/menu/menu.css';
 import '@fonts/montserrat.css';

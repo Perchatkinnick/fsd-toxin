@@ -1,0 +1,18 @@
+style
+    include ./header.css
+
+header(class="header")
+
+    include ../logo/logo.pug
+
+    div(class="menu header__menu")
+        div(class="item menu__about") О нас
+        div(class="item menu__services") Услуги
+            div(class="expand-more item__expand-more") expand_more
+        div(class="item menu__vacancies") Вакансии
+        div(class="item menu__news") Новости
+        div(class="item menu__agreements") Соглашения
+            div(class="expand-more item__expand-more") expand_more
+    div(class="login-button header__login-button")
+        div(class="login-button__background") войти
+    div(class="registration-button header__registration-button") ЗАРЕГИСТРИРОВАТЬСЯ

@@ -1,0 +1,9 @@
+.logo__round-background {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 2px;
+    top: 2px;
+    background: white;
+    border-radius: 100%;
+}
