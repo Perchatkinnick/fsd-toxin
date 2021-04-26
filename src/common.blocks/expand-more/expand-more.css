@@ -1,0 +1,13 @@
+.expand-more {
+	width: 24px;
+	height: 21px;
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 19px;
+	align-items: center;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
+}

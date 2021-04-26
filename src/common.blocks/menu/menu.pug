@@ -1,0 +1,16 @@
+style
+    include ./menu.css
+
+include ../item/item.pug 
+
+div(class="menu")
+    div(class="menu__about") 
+        +item('О нас')         
+    div(class="menu__services")
+        +item('Услуги', true)
+    div(class="menu__vacancies")
+        +item('Вакансии')
+    div(class="menu__news")
+        +item('Новости')
+    div(class="menu__agreements")
+        +item('Соглашения', true)

@@ -1,0 +1,7 @@
+style
+    include ./item.css
+
+mixin item(content, isExpand)
+    div(class="item") #{content}
+        if(isExpand) 
+            include ./__expand-more/__expand-more.pug 

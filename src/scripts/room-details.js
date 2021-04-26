@@ -1,14 +1,11 @@
 ﻿import * as $ from 'jquery';
 
+import '@styles/main.css';
 import '@styles/room-details.css';
 import '@styles/reset.css';
-//import '@blocks/header/header.css';
 import '@blocks/footer/footer.css';
 import '@blocks/calendar/calendar.css';
 import '@blocks/guests-dropdown/guests-dropdown.css';
-//import '@blocks/logo/logo.css';
-import '@blocks/login-button/login-button.css';
-import '@blocks/menu/menu.css';
 import '@fonts/montserrat.css';
 import '@fonts/fontawesome/all.min.css';
 import '@fonts/iconfont/material-icons.css';
@@ -271,15 +268,18 @@ function loadBooking(roomData) {
 }
 
 function getValidDate(date) {
-    let arr = date.split('.');
-    let month = +arr[1] + 1;
-    if (month > 12) {
-        month = 1;
+    if(!!date){
+        let arr = date.split('.');
+        let month = +arr[1] + 1;
+        if (month > 12) {
+            month = 1;
+        }
+        if (month < 10) {
+            month = '0' + String(month);
+        }
+        date = arr[2] + '.' + month + '.' + arr[0]
     }
-    if (month < 10) {
-        month = '0' + String(month);
-    }
-    date = arr[2] + '.' + month + '.' + arr[0]
+
     return date;
 }
 

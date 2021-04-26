@@ -1,0 +1,16 @@
+.login-button__background {
+    width: 79px;
+    height: 26px;
+    border-radius: 22px;
+    background: white;
+    padding: 2px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}

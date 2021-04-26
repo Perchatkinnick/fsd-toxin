@@ -1,5 +1,6 @@
 import * as $ from 'jquery';
 
+import '@styles/main.css';
 import '@styles/search-room.css';
 import '@styles/reset.css';
 import '@fonts/montserrat.css';
@@ -7,11 +8,7 @@ import '@fonts/fontawesome/all.min.css';
 import '@fonts/iconfont/material-icons.css';
 import '@blocks/guests-dropdown/guests-dropdown.css';
 import '@blocks/calendar/calendar.css';
-//import '@blocks/header/header.css';
 import '@blocks/footer/footer.css';
-//import '@blocks/logo/logo.css';
-import '@blocks/login-button/login-button.css';
-import '@blocks/menu/menu.css';
 import '@blocks/show-rooms/show-rooms.css';
 import '@blocks/facilities-dropdown/facilities-dropdown.css';
 

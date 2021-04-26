@@ -1,15 +1,12 @@
 import * as $ from 'jquery';
 
+import '@styles/main.css';
 import '@styles/authoriz.css';
 import '@styles/reset.css';
 import '@fonts/montserrat.css';
 import '@fonts/fontawesome/all.min.css';
 import '@fonts/iconfont/material-icons.css';
-//import '@blocks/header/header.css';
 import '@blocks/footer/footer.css';
-import '@blocks/menu/menu.css';
-//import '@blocks/logo/logo.css';
-import '@blocks/login-button/login-button.css';
 import '@blocks/login/login.css';
 import '@blocks/go-button/go-button.css';
 import '@blocks/input/input.css';

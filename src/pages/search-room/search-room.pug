@@ -7,7 +7,6 @@ block content
             div(class="content__date__rect")
             div(class="content__date__title") ДД.ММ.ГГГГ
             div(class="content__date__arrow")
-
         div(class="calendar-parent")
             div(id="days")
                 table
@@ -22,21 +21,16 @@ block content
                             th Вс
 
                     tbody(class="body" data-dot1="" data-dot2="")            
-
             div(class="info") Август
-
             i(class="material-icons arrow-back") arrow_back
             i(class="material-icons arrow-forward") arrow_forward
-
             span(class="clear") очистить
             span(class="apply") применить
-
         div(class="content__guests")
             div(class="content__guests__label") гости
             div(class="content__guests__rect")
             div(class="content__guests__title") Сколько гостей
             div(class="content__guests__arrow")
-
         div(class="content__guests__dropdown")
             div(class="guests-dropdown")
                 div(class="guests-adult")
@@ -44,22 +38,18 @@ block content
                     div(id="guests-adult-plus" class="guests-plus") +
                     div(id="guests-adult" class="guests-count") 2
                     div(id="guests-adult-minus" class="guests-minus") -
-
                 div(class="guests-children")
                     div(class="guests-note") дети
                     div(id="guests-children-plus" class="guests-plus") +
                     div(id="guests-children" class="guests-count") 0
                     div(id="guests-children-minus" class="guests-minus") -
-
                 div(class="guests-babies")
                     div(class="guests-note") младенцы
                     div(id="guests-babies-plus" class="guests-plus") +
                     div(id="guests-babies" class="guests-count") 0
                     div(id="guests-babies-minus" class="guests-minus") -
-
                 span(class="guests-clear") очистить
                 span(class="guests-apply") применить
-
         div(class="content__price-range")
             div(class="content__price-range__label") диапазон цены
             div(class="content__price-range__value")
@@ -71,91 +61,72 @@ block content
                     div(class="bar")
                         div(class="lp" data-pos="0.285")
                         div(class="rp" data-pos="0.64")
-
             div(class="content__price-range__remark") Стоимость за сутки пребывания в номере
-
-    div(class="content__home-rules")
-        div(class="content__home-rules__title") правила дома
-        div(class="content__home-rules__smoke")
-            div(class="content__home-rules__checkbox" data-checked="none")
-            div(class="content__home-rules__smoke__title") Можно курить
-
-        div(class="content__home-rules__pets")
-            div(class="content__home-rules__checkbox" data-checked="checked")
-            div(class="content__home-rules__pets__title") Можно с питомцами
-
-        div(class="content__home-rules__guests")
-            div(class="content__home-rules__checkbox" data-checked="checked")
-            div(class="content__home-rules__guests__title") Можно пригласить гостей (до 10 человек)
-
-
-    div(class="content__room-settings__availability")
-        div(class="content__room-settings__availability__title") доступность
-        div(class="content__room-settings__availability__hallway")
-            div(class="content__home-rules__checkbox" data-checked="none")
-            div(class="content__room-settings__availability__hallway__title") Широкий коридор
-            div(class="content__room-settings__availability__hallway__note") Ширина коридоров в номере не менее 91 см.
-
-        div(class="content__room-settings__availability__disabled")
-            div(class="content__home-rules__checkbox" data-checked="none")
-            div(class="content__room-settings__availability__disabled__title") Помощник для инвалидов
-            div(class="content__room-settings__availability__disabled__note") На 1 этаже вас встретит специалист и проводит до номера.
-
-
-    div(class="content__room-settings__facilities")
-        div(class="content__room-settings__facilities__label") удобства номера
-        div(class="content__room-settings__facilities__rect")
-        div(class="content__room-settings__facilities__title") 1 спальня, 1 кровать, ...
-        div(class="content__room-settings__facilities__arrow")
-
-    div(class="content__room-settings__facilities__dropdown")
-        div(class="facilities__dropdown")
-            div(class="facilities__dropdown__bedrooms")
-                div(class="facilities__dropdown__note") спальни
-                div(id="facilities__dropdown__bedrooms__minus" class="facilities__minus") -
-                div(id="bedrooms__count" class="facilities__dropdown__count") 1
-                div(id="facilities__dropdown__bedrooms__plus" class="facilities__plus") +
-
-            div(class="facilities__dropdown__beds")
-                div(class="facilities__dropdown__note") кровати
-                div(id="facilities__dropdown__beds__minus" class="facilities__minus") -
-                div(id="beds__count" class="facilities__dropdown__count") 1
-                div(id="facilities__dropdown__beds__plus" class="facilities__plus") +
-
-            div(class="facilities__dropdown__bathrooms")
-                div(class="facilities__dropdown__note") ванные комнаты
-                div(id="facilities__dropdown__bathrooms__minus" class="facilities__minus") -
-                div(id="beds__count" class="facilities__dropdown__count") 1
-                div(id="facilities__dropdown__bathrooms__plus" class="facilities__plus") +
-
-    div(class="content__room-settings__additional")
-        div(class="content__room-settings__additional__title") дополнительные удобства
-        div(class="content__room-settings__additional__arrow" data-checked="none")
-        div(class="content__room-settings__additional__list")
-            div(class="content__room-settings__additional__breakfast")
+        div(class="content__home-rules")
+            div(class="content__home-rules__title") правила дома
+            div(class="content__home-rules__smoke")
                 div(class="content__home-rules__checkbox" data-checked="none")
-                div(class="content__room-settings__additional__elem__title") Завтрак
-
-            div(class="content__room-settings__additional__desk")
+                div(class="content__home-rules__smoke__title") Можно курить
+            div(class="content__home-rules__pets")
+                div(class="content__home-rules__checkbox" data-checked="checked")
+                div(class="content__home-rules__pets__title") Можно с питомцами
+            div(class="content__home-rules__guests")
+                div(class="content__home-rules__checkbox" data-checked="checked")
+                div(class="content__home-rules__guests__title") Можно пригласить гостей (до 10 человек)
+        div(class="content__room-settings__availability")
+            div(class="content__room-settings__availability__title") доступность
+            div(class="content__room-settings__availability__hallway")
                 div(class="content__home-rules__checkbox" data-checked="none")
-                div(class="content__room-settings__additional__elem__title") Письменный стол
-
-            div(class="content__room-settings__additional__feeding-chair")
+                div(class="content__room-settings__availability__hallway__title") Широкий коридор
+                div(class="content__room-settings__availability__hallway__note") Ширина коридоров в номере не менее 91 см.
+            div(class="content__room-settings__availability__disabled")
                 div(class="content__home-rules__checkbox" data-checked="none")
-                div(class="content__room-settings__additional__elem__title") Cтул для кормления
-
-            div(class="content__room-settings__additional__crib")
-                div(class="content__home-rules__checkbox" data-checked="none")
-                div(class="content__room-settings__additional__elem__title") Kроватка
-
-            div(class="content__room-settings__additional__tv")
-                div(class="content__home-rules__checkbox" data-checked="none")
-                div(class="content__room-settings__additional__elem__title") Телевизор
-
-            div(class="content__room-settings__additional__shampoo")
-                div(class="content__home-rules__checkbox" data-checked="none")
-                div(class="content__room-settings__additional__elem__title") Шампунь
-
+                div(class="content__room-settings__availability__disabled__title") Помощник для инвалидов
+                div(class="content__room-settings__availability__disabled__note") На 1 этаже вас встретит специалист и проводит до номера.
+        div(class="content__room-settings__facilities")
+            div(class="content__room-settings__facilities__label") удобства номера
+            div(class="content__room-settings__facilities__rect")
+            div(class="content__room-settings__facilities__title") 1 спальня, 1 кровать, ...
+            div(class="content__room-settings__facilities__arrow")
+        div(class="content__room-settings__facilities__dropdown")
+            div(class="facilities__dropdown")
+                div(class="facilities__dropdown__bedrooms")
+                    div(class="facilities__dropdown__note") спальни
+                    div(id="facilities__dropdown__bedrooms__minus" class="facilities__minus") -
+                    div(id="bedrooms__count" class="facilities__dropdown__count") 1
+                    div(id="facilities__dropdown__bedrooms__plus" class="facilities__plus") +
+                div(class="facilities__dropdown__beds")
+                    div(class="facilities__dropdown__note") кровати
+                    div(id="facilities__dropdown__beds__minus" class="facilities__minus") -
+                    div(id="beds__count" class="facilities__dropdown__count") 1
+                    div(id="facilities__dropdown__beds__plus" class="facilities__plus") +
+                div(class="facilities__dropdown__bathrooms")
+                    div(class="facilities__dropdown__note") ванные комнаты
+                    div(id="facilities__dropdown__bathrooms__minus" class="facilities__minus") -
+                    div(id="beds__count" class="facilities__dropdown__count") 1
+                    div(id="facilities__dropdown__bathrooms__plus" class="facilities__plus") +
+        div(class="content__room-settings__additional")
+            div(class="content__room-settings__additional__title") дополнительные удобства
+            div(class="content__room-settings__additional__arrow" data-checked="none")
+            div(class="content__room-settings__additional__list")
+                div(class="content__room-settings__additional__breakfast")
+                    div(class="content__home-rules__checkbox" data-checked="none")
+                    div(class="content__room-settings__additional__elem__title") Завтрак
+                div(class="content__room-settings__additional__desk")
+                    div(class="content__home-rules__checkbox" data-checked="none")
+                    div(class="content__room-settings__additional__elem__title") Письменный стол
+                div(class="content__room-settings__additional__feeding-chair")
+                    div(class="content__home-rules__checkbox" data-checked="none")
+                    div(class="content__room-settings__additional__elem__title") Cтул для кормления
+                div(class="content__room-settings__additional__crib")
+                    div(class="content__home-rules__checkbox" data-checked="none")
+                    div(class="content__room-settings__additional__elem__title") Kроватка
+                div(class="content__room-settings__additional__tv")
+                    div(class="content__home-rules__checkbox" data-checked="none")
+                    div(class="content__room-settings__additional__elem__title") Телевизор
+                div(class="content__room-settings__additional__shampoo")
+                    div(class="content__home-rules__checkbox" data-checked="none")
+                    div(class="content__room-settings__additional__elem__title") Шампунь
     div(class="content__show")
         div(class="content__show__label") Номера, которые мы для вас подобрали
         div(class="content__show__rooms" data-page="0")
