@@ -1,0 +1,16 @@
+style
+    include ./footer.css
+
+include ../footer-menu-column/footer-menu-column.pug
+include ../description/description.pug
+
+footer
+    div(class="footer")
+        include ./__logo/__logo.pug
+        +description('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»')(class="footer__description1")
+        +footer-menu-column('навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги')(class="footer__navigation")
+        +footer-menu-column('o нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')(class="footer__about")
+        +footer-menu-column('служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами')(class="footer__support")
+
+        include ./__subscription/__subscription.pug
+        include ../copyrightbar/copyrightbar.pug

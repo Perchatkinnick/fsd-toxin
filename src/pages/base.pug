@@ -16,44 +16,5 @@ html
 
             div(class="content")
                 block content 
-            footer
-                div(class="footer")
-                    div(class="footer-logo")
-                        div(class="logo")
-                            a(href="index.html")
-                                div(class="logo__round-gradient")
-                                div(class="logo__round-background")
-                                div(class="logo__vector1")
-                                div(class="logo__vector2")
-                                div(class="logo__title")
-                    div(class="footer-slogan") Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-                    div(class="footer-navigation")
-                        div(class="footer_navigation_title") навигация
-                        div(class="footer_navigation_about") О нас
-                        div(class="footer_navigation_news") Новости
-                        div(class="footer_navigation_support") Служба поддержки
-                        div(class="footer_navigation_services") Услуги
-                    div(class="footer_about")
-                        div(class="footer_about_title") о нас
-                        div(class="footer_about_about") О сервисе
-                        div(class="footer_about_team") Наша команда
-                        div(class="footer_about_vacancies") Вакансии
-                        div(class="footer_about_investors") Инвесторы
-                    div(class="footer_support")
-                        div(class="footer_support_title") служба поддержки
-                        div(class="footer_support_agreements") Соглашения
-                        div(class="footer_support_communities") Сообщества
-                        div(class="footer_support_connection") Связь с нами
-                    div(class="footer_subscription")
-                        div(class="footer_subscription_title") подписка
-                        div(class="footer_subscription_notation") Получайте специальные предложения и новости сервиса
-                        input(class="input" type="text" placeholder="Email" style="width: 260px; color: rgba(31, 32, 65, 0.25);")
-                        div(class="footer_subscription_arrow") arrow_forward
-                    div(class="copyrightbar")
-                        div(class="copyrightbar_copiright") Copyright © 2018 Toxin отель. Все права защищены.
-                        div(class="twitter") 
-                            i(class="fab fa-twitter")
-                        div(class="facebook") 
-                            i(class="fab fa-facebook-square")
-                        div(class="insta") 
-                            i(class="fab fa-instagram")
+            
+            include ../common.blocks/footer/footer.pug

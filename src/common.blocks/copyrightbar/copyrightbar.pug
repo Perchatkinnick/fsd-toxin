@@ -1,0 +1,13 @@
+style
+    include ./copyrightbar.css
+    include ./__socials/__socials.css
+    include ./__description/__description.css
+
+include ../description/description.pug
+include ../socials-button/socials-button.pug
+
+div(class="copyrightbar")
+    +description('Copyright © 2018 Toxin отель. Все права защищены.')(class="copyrightbar__description")
+    include ./__twitter/__twitter.pug
+    include ./__facebook/__facebook.pug
+    include ./__insta/__insta.pug

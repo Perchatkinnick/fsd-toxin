@@ -1,0 +1,16 @@
+style
+    include ./footer-menu-column.css
+
+mixin footer-menu-column(title, item1, item2, item3, item4)
+
+    div(class!=attributes.class)
+        .footer-menu-column__title
+            +item(title, false, true)
+        .footer-menu-column__item1
+            +item(item1) 
+        .footer-menu-column__item2
+            +item(item2)
+        .footer-menu-column__item3
+            +item(item3)
+        .footer-menu-column__item4
+            +item(item4) 

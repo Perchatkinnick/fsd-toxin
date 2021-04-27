@@ -67,6 +67,7 @@ const plugins = () => {
             template: path.resolve(__dirname, 'src/pages/authoriz') + '/authoriz.pug'
         }),
          new CleanWebpackPlugin(),
+
          new CopyWebpackPlugin({
             patterns: [{
                  from: path.resolve(__dirname, 'src/common.blocks/logo/toxin.svg'),
@@ -75,11 +76,11 @@ const plugins = () => {
             {
                 from: path.resolve(__dirname, 'src/common.blocks/logo/vector.svg'),
                 to: path.resolve(__dirname, 'dist/media/svg/vector.svg')
-           },
-           {
-            from: path.resolve(__dirname, 'src/common.blocks/logo/vector2.svg'),
-            to: path.resolve(__dirname, 'dist/media/svg/vector2.svg')
-       },
+            },
+            {
+                from: path.resolve(__dirname, 'src/common.blocks/logo/vector2.svg'),
+                to: path.resolve(__dirname, 'dist/media/svg/vector2.svg')
+            },
         ]
         }),
         new MiniCssExtractPlugin({
@@ -141,8 +142,7 @@ module.exports = {
     devServer: {
         port: 4200,
         open: isDev,
-        watchContentBase: isDev,
-        hot: isDev
+        hot: true,
     },
     devtool: isDev ? 'source-map' : false,
     plugins: plugins(),
