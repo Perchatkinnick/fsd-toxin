@@ -15,6 +15,8 @@ const calendar = require('@blocks/calendar/calendar');
 const guestsDropdown = require('@blocks/guests-dropdown/guests-dropdown');
 const header = require('@blocks/header/header');
 const roomsData = require('@blocks/show-rooms/data');
+const collage = require('@blocks/collage/collage');
+const booking = require('@blocks/booking/booking');
 
 
 let roomsDataParth = [
@@ -69,16 +71,16 @@ let users = [
 let roomData = JSON.parse(localStorage.getItem("roomData"));
 header.onHeaderLoad();
 
-loadPhoto(roomData);
+collage.loadPhoto(roomData);
 
 loadDiagramm();
 loadCounts();
 loadReviews();
-loadBooking(roomData);
+booking.loadBooking(roomData);
 calendar.func();
 loadCalendar();
 loadGuestsDropdaun();
-loadCalculator(roomData);
+booking.loadCalculator(roomData);
 
 
 document.addEventListener("changeDate", function (event) {
@@ -88,108 +90,6 @@ document.addEventListener("changeDate", function (event) {
 document.addEventListener("changeGuests", function (event) {
 
 });
-
-
-function loadCalculator(roomData) {
-    loadMainString(roomData);
-    loadFee();
-    loadExtraFee();
-    loadTotal();
-}
-
-function loadTotal() {
-    let parent = document.querySelector('.content__booking__calculator__total');
-    let priceElem = parent.children[2];
-
-    let roomPrice = +document.querySelector('.content__booking__calculator__main').children[2].innerHTML.split('\u20bd')[0];
-
-    let total = roomPrice + +roomsDataParth[0].serviceFee + +roomsDataParth[0].extraFee;
-
-    priceElem.innerHTML = total + '\u20bd';
-    loadSeparatorForTotal(parent.children[1]);
-}
-
-function loadSeparatorForTotal(parent) {
-    let separator = document.createElement('div');
-    separator.classList.add('content__booking__calculator__total__separator__body');
-
-    let previousSibling = parent.previousElementSibling;
-    let left = previousSibling.offsetWidth;
-    separator.style.left = left + 8 + 'px';
-
-    let containerWidth = parent.parentElement.offsetWidth;
-    separator.style.width = containerWidth - parent.parentElement.children[2].offsetWidth - left - 16 + 'px';
-
-    parent.appendChild(separator);
-}
-
-function loadExtraFee() {
-    let parent = document.querySelector('.content__booking__calculator__extrafee');
-    let valueElem = parent.children[0];
-    let priceElem = parent.children[2];
-
-    valueElem.innerHTML = 'Сбор за доп. услуги';
-    priceElem.innerHTML = roomsDataParth[0].extraFee + '\u20bd';
-    loadSeparator(parent.children[1]);
-}
-
-function loadFee() {
-    let parent = document.querySelector('.content__booking__calculator__fee');
-    let valueElem = parent.children[0];
-    let priceElem = parent.children[2];
-
-    let valueFee = +roomsDataParth[0].serviceFee;
-    let textValue = 'Сбор за услуги: ';
-    let textPrice = '\u20bd';
-    if (valueFee < 0) {
-        textValue += 'скидка ';
-        textPrice = '0' + textPrice;
-    } else {
-        textPrice = valueFee + textPrice;
-    }
-
-    textValue += Math.abs(valueFee) + '\u20bd';
-    valueElem.innerHTML = textValue;
-
-    priceElem.innerHTML = textPrice;
-
-    loadSeparator(parent.children[1]);
-}
-
-function loadSeparator(parent) {
-    let separator = document.createElement('div');
-    separator.classList.add('content__booking__calculator__separator__body');
-    separator.innerHTML = 'i'
-    let previousSibling = parent.previousElementSibling;
-    let left = previousSibling.offsetWidth;
-    separator.style.left = left + 8 + 'px';
-
-
-    parent.appendChild(separator);
-}
-
-function loadMainString(roomData) {
-    let parent = document.querySelector('.content__booking__calculator__main');
-    let valueElem = parent.children[0];
-    let priceElem = parent.children[2];
-
-    let period = countDays();
-    let coast = roomData.price;
-
-    valueElem.innerHTML = coast + '\u20bd x ' + period + ' суток';
-    priceElem.innerHTML = String(coast * period) + '\u20bd';
-}
-
-function countDays() {
-    let f = localStorage.getItem('dateArrive');
-    if (f != '') {
-        let arriveDate = new Date(localStorage.getItem('dateArrive'));
-        let departureDate = new Date(localStorage.getItem('dateDeparture'));
-
-        let period = Math.round((departureDate - arriveDate) / (60 * 60 * 24 * 1000)) + 1;
-        return period;
-    }
-}
 
 function loadGuestsDropdaun() {
     let guestsElem = document.querySelector('.content__booking__guests');
@@ -245,42 +145,6 @@ function showCalendar() {
         body.dataset.dot1 = '';
         body.dataset.dot2 = '';
     }
-}
-
-function loadBooking(roomData) {
-    let numberElem = document.querySelector('.content__booking__number');
-    numberElem.innerHTML = '<span style="font-size: 10px">№ </span>' + roomData.room;
-
-    let luxElem = document.querySelector('.content__booking__lux');
-    if (roomData.isLux == 'true') {
-        luxElem.innerHTML = 'люкс';
-    }
-
-    let priceElem = document.querySelector('.content__booking__price');
-    priceElem.innerHTML = roomData.price + '\u20bd <span style="font-size: 11px; opacity: 0.4">в сутки</span>';
-
-    let arriveDate = getValidDate(localStorage.getItem('dateArrive'));
-    let departureDate = getValidDate(localStorage.getItem('dateDeparture'));
-    let arriveElem = document.querySelector('.arrive-date');
-    arriveElem.innerHTML = arriveDate;
-    let departureElem = document.querySelector('.departure-date');
-    departureElem.innerHTML = departureDate;
-}
-
-function getValidDate(date) {
-    if(!!date){
-        let arr = date.split('.');
-        let month = +arr[1] + 1;
-        if (month > 12) {
-            month = 1;
-        }
-        if (month < 10) {
-            month = '0' + String(month);
-        }
-        date = arr[2] + '.' + month + '.' + arr[0]
-    }
-
-    return date;
 }
 
 function loadCounts() {
@@ -407,13 +271,3 @@ function sectionLoad(grade, count, total, position) {
     return position;
 }
 
-function loadPhoto(roomData) {
-    let mainPhoto = document.querySelector('.content__gallery__main');
-    mainPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/main.png")';
-
-    let secPhoto = document.querySelector('.content__gallery__2');
-    secPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 2.png")';
-
-    let thrdPhoto = document.querySelector('.content__gallery__3');
-    thrdPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 3.png")';
-}

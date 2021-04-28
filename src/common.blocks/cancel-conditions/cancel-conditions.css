@@ -1,0 +1,33 @@
+.cancel-conditions {
+    position: absolute;
+    width: 341px;
+    height: 140px;
+    left: 360px;
+    top: 639px;
+}
+
+.content__details__cancel__text {
+    position: absolute;
+    width: 341px;
+    height: 96px;
+    top: 44px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__details__cancel__title {
+    position: absolute;
+    width: 91.77px;
+    height: 24px;
+    left: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}

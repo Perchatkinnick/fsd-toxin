@@ -21,11 +21,3 @@ body {
 	width: 1440px;
 	background: #FFFFFF;
 }
-
-.content__container {
-	position: relative;
-	width: 100%;
-	height: 829px;
-	background: no-repeat center url(../media/images/bgrd.png);
-	background-position: 0 -70px;
-}

@@ -1,0 +1,52 @@
+.room-rules {
+    position: absolute;
+    width: 292px;
+    height: 160px;
+    top: 639px;
+}
+
+.content__details__rules__list {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 44px;
+    list-style: none;
+    height: 100%;
+}
+
+.content__details__rules__list__item {
+    position: relative;
+    padding-left: 30px;
+    height: 24px;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+    .content__details__rules__list__item::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(31, 32, 65, 0.25);
+    }
+
+.content__details__rules__title {
+    position: absolute;
+    width: 91.77px;
+    height: 24px;
+    left: 21px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}

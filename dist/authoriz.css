@@ -1,4 +1,5 @@
 .content__container{
+    position: relative;
     width: 100%;
     height: 752px;
     background: no-repeat url(9a3cf795c81aac43448c3437d19fc5af.png);

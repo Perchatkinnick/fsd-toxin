@@ -1,0 +1,76 @@
+style
+    include ./booking.css
+
+div(class="booking")
+    div(class="content__booking__number")
+    div(class="content__booking__lux")
+    div(class="content__booking__price")
+    div(class="content__booking__date")
+        div(class="content__booking__date__arrive")
+            div(class="content__booking__date__title") прибытие
+            div(class="content__booking__date__value arrive-date") ДД.ММ.ГГГГ
+            div(class="content__booking__arrow") expand_more
+        div(class="content__booking__date__departure")
+            div(class="content__booking__date__title") выезд
+            div(class="content__booking__date__value departure-date") ДД.ММ.ГГГГ
+            div(class="content__booking__arrow") expand_more
+    div(class="content__booking__calendar calendar-parent")
+        div(id="days")
+            table
+                thead
+                    tr
+                        th Пн
+                        th Вт
+                        th Ср
+                        th Чт
+                        th Пт
+                        th Сб
+                        th Вс
+                tbody(class="body" data-dot1="" data-dot2="")
+        div(class="info") Август
+        i(class="material-icons arrow-back") arrow_back
+        i(class="material-icons arrow-forward") arrow_forward
+        span(class="clear") очистить
+        span(class="apply") применить
+    div(class="content__booking__guests")
+        div(class="content__booking__guests__title") гости
+        div(class="content__booking__guests__value content__guests__title") Сколько гостей
+        div(class="content__booking__arrow") expand_more
+    div(class="content__booking__guests-dropdown")
+        div(class="guests-dropdown")
+            div(class="guests-adult")
+                div(class="guests-note") взрослые
+                div(id="guests-adult-plus" class="guests-plus") +
+                div(id="guests-adult" class="guests-count") 2
+                div(id="guests-adult-minus" class="guests-minus") -
+            div(class="guests-children")
+                div(class="guests-note") дети
+                div(id="guests-children-plus" class="guests-plus") +
+                div(id="guests-children" class="guests-count") 0
+                div(id="guests-children-minus" class="guests-minus") -
+            div(class="guests-babies")
+                div(class="guests-note") младенцы
+                div(id="guests-babies-plus" class="guests-plus") +
+                div(id="guests-babies" class="guests-count") 0
+                div(id="guests-babies-minus" class="guests-minus") -
+            span(class="guests-clear") очистить
+            span(class="guests-apply") применить
+    div(class="content__booking__calculator")
+        div(class="content__booking__calculator__main")
+            div(class="content__booking__calculator__value") 1000x3
+            div(class="content__booking__calculator__separator")
+            div(class="content__booking__calculator__price") 3000
+        div(class="content__booking__calculator__fee")
+            div(class="content__booking__calculator__value") сбор за услуги
+            div(class="content__booking__calculator__separator")
+            div(class="content__booking__calculator__price") 0
+        div(class="content__booking__calculator__extrafee")
+            div(class="content__booking__calculator__value") сбор за доп. услуги
+            div(class="content__booking__calculator__separator")
+            div(class="content__booking__calculator__price") 0
+        div(class="content__booking__calculator__total")
+            div(class="content__booking__calculator__value") Итого
+            div(class="content__booking__calculator__separator")
+            div(class="content__booking__calculator__price") 000
+    div(class="content__booking__button") забронировать
+        div(class="content__booking__button__arrow material-icons") arrow_forward

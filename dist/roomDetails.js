@@ -1,6 +1,183 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./common.blocks/booking/booking.js":
+/*!******************************************!*\
+  !*** ./common.blocks/booking/booking.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+module.exports = {
+  loadBooking: loadBooking,
+  loadCalculator: loadCalculator
+};
+var roomsDataParth = [{
+  //more info about room... and than ->
+  reviews: [{
+    user: 1,
+    date: '2021.03.23',
+    text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+    likes: 12
+  }, {
+    user: 2,
+    date: '2021.03.21',
+    text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент',
+    likes: 2
+  }],
+  serviceFee: '-2179',
+  extraFee: '300'
+}, {//next room
+}];
+
+function loadBooking(roomData) {
+  var numberElem = document.querySelector('.content__booking__number');
+  numberElem.innerHTML = '<span style="font-size: 10px">№ </span>' + roomData.room;
+  var luxElem = document.querySelector('.content__booking__lux');
+
+  if (roomData.isLux == 'true') {
+    luxElem.innerHTML = 'люкс';
+  }
+
+  var priceElem = document.querySelector('.content__booking__price');
+  priceElem.innerHTML = roomData.price + "\u20BD <span style=\"font-size: 11px; opacity: 0.4\">\u0432 \u0441\u0443\u0442\u043A\u0438</span>";
+  var arriveDate = getValidDate(localStorage.getItem('dateArrive'));
+  var departureDate = getValidDate(localStorage.getItem('dateDeparture'));
+  var arriveElem = document.querySelector('.arrive-date');
+  arriveElem.innerHTML = arriveDate;
+  var departureElem = document.querySelector('.departure-date');
+  departureElem.innerHTML = departureDate;
+}
+
+function getValidDate(date) {
+  if (!!date) {
+    var arr = date.split('.');
+    var month = +arr[1] + 1;
+
+    if (month > 12) {
+      month = 1;
+    }
+
+    if (month < 10) {
+      month = '0' + String(month);
+    }
+
+    date = arr[2] + '.' + month + '.' + arr[0];
+  }
+
+  return date;
+}
+
+function loadCalculator(roomData) {
+  loadMainString(roomData);
+  loadFee();
+  loadExtraFee();
+  loadTotal();
+}
+
+function loadTotal() {
+  var parent = document.querySelector('.content__booking__calculator__total');
+  var priceElem = parent.children[2];
+  var roomPrice = +document.querySelector('.content__booking__calculator__main').children[2].innerHTML.split("\u20BD")[0];
+  var total = roomPrice + +roomsDataParth[0].serviceFee + +roomsDataParth[0].extraFee;
+  priceElem.innerHTML = total + "\u20BD";
+  loadSeparatorForTotal(parent.children[1]);
+}
+
+function loadSeparatorForTotal(parent) {
+  var separator = document.createElement('div');
+  separator.classList.add('content__booking__calculator__total__separator__body');
+  var previousSibling = parent.previousElementSibling;
+  var left = previousSibling.offsetWidth;
+  separator.style.left = left + 8 + 'px';
+  var containerWidth = parent.parentElement.offsetWidth;
+  separator.style.width = containerWidth - parent.parentElement.children[2].offsetWidth - left - 16 + 'px';
+  parent.appendChild(separator);
+}
+
+function loadExtraFee() {
+  var parent = document.querySelector('.content__booking__calculator__extrafee');
+  var valueElem = parent.children[0];
+  var priceElem = parent.children[2];
+  valueElem.innerHTML = 'Сбор за доп. услуги';
+  priceElem.innerHTML = roomsDataParth[0].extraFee + "\u20BD";
+  loadSeparator(parent.children[1]);
+}
+
+function loadFee() {
+  var parent = document.querySelector('.content__booking__calculator__fee');
+  var valueElem = parent.children[0];
+  var priceElem = parent.children[2];
+  var valueFee = +roomsDataParth[0].serviceFee;
+  var textValue = 'Сбор за услуги: ';
+  var textPrice = "\u20BD";
+
+  if (valueFee < 0) {
+    textValue += 'скидка ';
+    textPrice = '0' + textPrice;
+  } else {
+    textPrice = valueFee + textPrice;
+  }
+
+  textValue += Math.abs(valueFee) + "\u20BD";
+  valueElem.innerHTML = textValue;
+  priceElem.innerHTML = textPrice;
+  loadSeparator(parent.children[1]);
+}
+
+function loadSeparator(parent) {
+  var separator = document.createElement('div');
+  separator.classList.add('content__booking__calculator__separator__body');
+  separator.innerHTML = 'i';
+  var previousSibling = parent.previousElementSibling;
+  var left = previousSibling.offsetWidth;
+  separator.style.left = left + 8 + 'px';
+  parent.appendChild(separator);
+}
+
+function loadMainString(roomData) {
+  var parent = document.querySelector('.content__booking__calculator__main');
+  var valueElem = parent.children[0];
+  var priceElem = parent.children[2];
+  var period = countDays();
+  var coast = roomData.price;
+  valueElem.innerHTML = coast + "\u20BD x " + period + ' суток';
+  priceElem.innerHTML = String(coast * period) + "\u20BD";
+}
+
+function countDays() {
+  var f = localStorage.getItem('dateArrive');
+
+  if (f != '') {
+    var arriveDate = new Date(localStorage.getItem('dateArrive'));
+    var departureDate = new Date(localStorage.getItem('dateDeparture'));
+    var period = Math.round((departureDate - arriveDate) / (60 * 60 * 24 * 1000)) + 1;
+    return period;
+  }
+}
+
+/***/ }),
+
+/***/ "./common.blocks/collage/collage.js":
+/*!******************************************!*\
+  !*** ./common.blocks/collage/collage.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+module.exports = {
+  loadPhoto: loadPhoto
+};
+
+function loadPhoto(roomData) {
+  var mainPhoto = document.querySelector('.collage__main');
+  mainPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/main.png")';
+  var secPhoto = document.querySelector('.collage__2');
+  secPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 2.png")';
+  var thrdPhoto = document.querySelector('.collage__3');
+  thrdPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 3.png")';
+}
+
+/***/ }),
+
 /***/ "./common.blocks/show-rooms/data.js":
 /*!******************************************!*\
   !*** ./common.blocks/show-rooms/data.js ***!
@@ -172,6 +349,10 @@ var header = __webpack_require__(/*! @blocks/header/header */ "./common.blocks/h
 
 var roomsData = __webpack_require__(/*! @blocks/show-rooms/data */ "./common.blocks/show-rooms/data.js");
 
+var collage = __webpack_require__(/*! @blocks/collage/collage */ "./common.blocks/collage/collage.js");
+
+var booking = __webpack_require__(/*! @blocks/booking/booking */ "./common.blocks/booking/booking.js");
+
 var roomsDataParth = [{
   //more info about room... and than ->
   reviews: [{
@@ -210,107 +391,19 @@ var users = [{
 }];
 var roomData = JSON.parse(localStorage.getItem("roomData"));
 header.onHeaderLoad();
-loadPhoto(roomData);
+collage.loadPhoto(roomData);
 loadDiagramm();
 loadCounts();
 loadReviews();
-loadBooking(roomData);
+booking.loadBooking(roomData);
 calendar.func();
 loadCalendar();
 loadGuestsDropdaun();
-loadCalculator(roomData);
+booking.loadCalculator(roomData);
 document.addEventListener("changeDate", function (event) {
   loadCalculator(roomData);
 });
 document.addEventListener("changeGuests", function (event) {});
-
-function loadCalculator(roomData) {
-  loadMainString(roomData);
-  loadFee();
-  loadExtraFee();
-  loadTotal();
-}
-
-function loadTotal() {
-  var parent = document.querySelector('.content__booking__calculator__total');
-  var priceElem = parent.children[2];
-  var roomPrice = +document.querySelector('.content__booking__calculator__main').children[2].innerHTML.split("\u20BD")[0];
-  var total = roomPrice + +roomsDataParth[0].serviceFee + +roomsDataParth[0].extraFee;
-  priceElem.innerHTML = total + "\u20BD";
-  loadSeparatorForTotal(parent.children[1]);
-}
-
-function loadSeparatorForTotal(parent) {
-  var separator = document.createElement('div');
-  separator.classList.add('content__booking__calculator__total__separator__body');
-  var previousSibling = parent.previousElementSibling;
-  var left = previousSibling.offsetWidth;
-  separator.style.left = left + 8 + 'px';
-  var containerWidth = parent.parentElement.offsetWidth;
-  separator.style.width = containerWidth - parent.parentElement.children[2].offsetWidth - left - 16 + 'px';
-  parent.appendChild(separator);
-}
-
-function loadExtraFee() {
-  var parent = document.querySelector('.content__booking__calculator__extrafee');
-  var valueElem = parent.children[0];
-  var priceElem = parent.children[2];
-  valueElem.innerHTML = 'Сбор за доп. услуги';
-  priceElem.innerHTML = roomsDataParth[0].extraFee + "\u20BD";
-  loadSeparator(parent.children[1]);
-}
-
-function loadFee() {
-  var parent = document.querySelector('.content__booking__calculator__fee');
-  var valueElem = parent.children[0];
-  var priceElem = parent.children[2];
-  var valueFee = +roomsDataParth[0].serviceFee;
-  var textValue = 'Сбор за услуги: ';
-  var textPrice = "\u20BD";
-
-  if (valueFee < 0) {
-    textValue += 'скидка ';
-    textPrice = '0' + textPrice;
-  } else {
-    textPrice = valueFee + textPrice;
-  }
-
-  textValue += Math.abs(valueFee) + "\u20BD";
-  valueElem.innerHTML = textValue;
-  priceElem.innerHTML = textPrice;
-  loadSeparator(parent.children[1]);
-}
-
-function loadSeparator(parent) {
-  var separator = document.createElement('div');
-  separator.classList.add('content__booking__calculator__separator__body');
-  separator.innerHTML = 'i';
-  var previousSibling = parent.previousElementSibling;
-  var left = previousSibling.offsetWidth;
-  separator.style.left = left + 8 + 'px';
-  parent.appendChild(separator);
-}
-
-function loadMainString(roomData) {
-  var parent = document.querySelector('.content__booking__calculator__main');
-  var valueElem = parent.children[0];
-  var priceElem = parent.children[2];
-  var period = countDays();
-  var coast = roomData.price;
-  valueElem.innerHTML = coast + "\u20BD x " + period + ' суток';
-  priceElem.innerHTML = String(coast * period) + "\u20BD";
-}
-
-function countDays() {
-  var f = localStorage.getItem('dateArrive');
-
-  if (f != '') {
-    var arriveDate = new Date(localStorage.getItem('dateArrive'));
-    var departureDate = new Date(localStorage.getItem('dateDeparture'));
-    var period = Math.round((departureDate - arriveDate) / (60 * 60 * 24 * 1000)) + 1;
-    return period;
-  }
-}
 
 function loadGuestsDropdaun() {
   var guestsElem = document.querySelector('.content__booking__guests');
@@ -363,44 +456,6 @@ function showCalendar() {
     body.dataset.dot1 = '';
     body.dataset.dot2 = '';
   }
-}
-
-function loadBooking(roomData) {
-  var numberElem = document.querySelector('.content__booking__number');
-  numberElem.innerHTML = '<span style="font-size: 10px">№ </span>' + roomData.room;
-  var luxElem = document.querySelector('.content__booking__lux');
-
-  if (roomData.isLux == 'true') {
-    luxElem.innerHTML = 'люкс';
-  }
-
-  var priceElem = document.querySelector('.content__booking__price');
-  priceElem.innerHTML = roomData.price + "\u20BD <span style=\"font-size: 11px; opacity: 0.4\">\u0432 \u0441\u0443\u0442\u043A\u0438</span>";
-  var arriveDate = getValidDate(localStorage.getItem('dateArrive'));
-  var departureDate = getValidDate(localStorage.getItem('dateDeparture'));
-  var arriveElem = document.querySelector('.arrive-date');
-  arriveElem.innerHTML = arriveDate;
-  var departureElem = document.querySelector('.departure-date');
-  departureElem.innerHTML = departureDate;
-}
-
-function getValidDate(date) {
-  if (!!date) {
-    var arr = date.split('.');
-    var month = +arr[1] + 1;
-
-    if (month > 12) {
-      month = 1;
-    }
-
-    if (month < 10) {
-      month = '0' + String(month);
-    }
-
-    date = arr[2] + '.' + month + '.' + arr[0];
-  }
-
-  return date;
 }
 
 function loadCounts() {
@@ -514,15 +569,6 @@ function sectionLoad(grade, count, total, position) {
   var animation = document.querySelector('#' + grade + '__anim');
   animation.setAttribute('to', percent + ' ' + 100);
   return position;
-}
-
-function loadPhoto(roomData) {
-  var mainPhoto = document.querySelector('.content__gallery__main');
-  mainPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/main.png")';
-  var secPhoto = document.querySelector('.content__gallery__2');
-  secPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 2.png")';
-  var thrdPhoto = document.querySelector('.content__gallery__3');
-  thrdPhoto.style.background = 'no-repeat url("../src/media/images/rooms/' + roomData.room + '/image 3.png")';
 }
 
 /***/ }),

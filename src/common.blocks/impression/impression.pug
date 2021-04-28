@@ -1,0 +1,48 @@
+style
+    include ./impression.css
+
+div(class="impression")
+    div(class="content__details__impression__title") Впечатления от номера
+    div(class="content__details__impression__diagramm")
+        div(class="content__details__impression__diagramm__body")
+            <svg width="200" height="200" viewBox="0 0 56 56" class="donut">
+                <circle class="donut-hole" cx="17" cy="17" r="15.91549430918954" fill="#fff"></circle>
+                <circle class="donut-ring" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="1.5"></circle>
+                <circle id="magnificently" class="donut-segment magnificently" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#magnificently-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="0"></circle>
+                <circle id="good" class="donut-segment good" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#good-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="0"></circle>
+                <circle id="passably" class="donut-segment passably" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#passably-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                <circle id="bad" class="donut-segment bad" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="url(#bad-gradient)" stroke-width="1.5" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                <circle class="donut-segment magnificently__bufer" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="25.5"></circle>
+                <circle class="donut-segment good__bufer" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="25.5"></circle>
+                <circle class="donut-segment passably__bufer" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="25.5"></circle>
+                <circle class="donut-segment bad__bufer" cx="17" cy="17" r="15.91549430918954" fill="transparent" stroke="white" stroke-width="2" stroke-dasharray="1 99" stroke-dashoffset="25.5"></circle>
+                <linearGradient id="magnificently-gradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#FFE39C" />
+                    <stop offset="100%" stop-color="#FFBA9C" />
+                </linearGradient>
+                <linearGradient id="good-gradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#6FCF97" />
+                    <stop offset="100%" stop-color="#66D2EA" />
+                </linearGradient>
+                <linearGradient id="passably-gradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#BC9CFF" />
+                    <stop offset="100%" stop-color="#8BA4F9" />
+                </linearGradient>
+                <linearGradient id="bad-gradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#919191" />
+                    <stop offset="100%" stop-color="#3D4975" />
+                </linearGradient>
+                <animate id="magnificently__anim" xlink:href="#magnificently" attributeName="stroke-dasharray" from="0 100" dur="2s" fill="freeze" />
+                <animate id="good__anim" xlink:href="#good" attributeName="stroke-dasharray" from="0 100" dur="2s" fill="freeze" />
+                <animate id="passably__anim" xlink:href="#passably" attributeName="stroke-dasharray" from="0 100" dur="2s" fill="freeze" />
+                <animate id="bad__anim" xlink:href="#bad" attributeName="stroke-dasharray" from="0 100" dur="2s" fill="freeze" />
+            </svg>
+        div(class="content__details__impression__diagramm__vote")
+            div(class="content__details__impression__diagramm__vote__count") 0
+            div(class="content__details__impression__diagramm__vote__title") голосов
+    div(class="content__details__impression__legend")
+        ul(class="content__details__impression__legend__list")
+            li(class="content__details__impression__legend__item") Великолепно
+            li(class="content__details__impression__legend__item") Хорошо
+            li(class="content__details__impression__legend__item") Удовлетворительно
+            li(class="content__details__impression__legend__item") Разочарован

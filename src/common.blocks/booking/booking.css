@@ -1,0 +1,291 @@
+.booking {
+    position: absolute;
+    width: 380px;
+    height: 511px;
+    left: 920px;
+    top: 555px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.content__booking__button {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 30px;
+    top: 437px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content__booking__button__arrow {
+    width: 44px;
+    height: 44px;
+    float: right;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.content__booking__calculator {
+    position: absolute;
+    width: 320px;
+    height: 158px;
+    left: 30px;
+    top: 251px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__calculator__separator__body {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 22px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.content__booking__calculator__total {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 134px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1F2041;
+}
+
+.content__booking__calculator__total__separator__body {
+    position: absolute;
+    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    height: 18px;
+}
+
+.content__booking__calculator__extrafee {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 68px;
+}
+
+.content__booking__calculator__fee {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 34px;
+}
+
+.content__booking__calculator__main {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+}
+
+.content__booking__calculator__value {
+    float: left;
+}
+
+.content__booking__calculator__price {
+    float: right;
+}
+
+.content__booking__guests-dropdown {
+    position: absolute;
+    top: 228.44px;
+    left: 30px;
+}
+
+.content__booking__guests {
+    position: absolute;
+    width: 320px;
+    height: 64px;
+    left: 30px;
+    top: 164.44px;
+    cursor: pointer;
+}
+
+.content__booking__guests__value {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    top: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__guests__title {
+    position: absolute;
+    width: 43px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__booking__calendar {
+    position: absolute;
+    display: none;
+    width: 320px;
+    height: 369px;
+    left: 30px;
+    top: 144px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: white;
+    z-index: 100;
+}
+
+.content__booking__date {
+    position: absolute;
+    width: 320px;
+    height: 65px;
+    left: 30px;
+    top: 80px;
+}
+
+.content__booking__arrow {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0;
+    top: 20.44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 44px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__booking__date__value {
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    top: 20.44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 44px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.content__booking__date__title {
+    position: absolute;
+    width: 83px;
+    height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content__booking__date__arrive {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.content__booking__date__departure {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    left: 170px;
+    cursor: pointer;
+}
+
+.content__booking__price {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 250px;
+    top: 41px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.content__booking__lux {
+    position: absolute;
+    width: 41px;
+    height: 17px;
+    left: 80px;
+    top: 43px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+}
+
+.content__booking__number {
+    position: absolute;
+    width: 47px;
+    height: 17px;
+    left: 30px;
+    top: 41px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+}
