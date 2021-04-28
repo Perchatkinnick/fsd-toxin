@@ -1,0 +1,423 @@
+.room-details {
+	position: relative;
+    width: 100%;
+    height: 1424px;
+}
+
+.footer {
+	position: relative;
+	width: 1440px;
+	height: 443px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+	flex: 0 0 auto;
+	border-color: #E5E5E5 white white;
+	border-style: solid;
+	border-width: 1px 0 0;
+}
+
+.footer__description1{
+	position: absolute;
+	width: 260px;
+	left: 140px;
+	top: 157px;
+}
+
+.footer__description2{
+	position: absolute;
+	width: 260px;
+	height: 48px;
+	top: 33px;
+}
+
+.footer__navigation{
+	position: relative;
+	width: 143px;
+	height: 168px;
+	left: 440px;
+	top: 64px;
+}
+
+input {
+	position: absolute;
+	top: 104px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(31, 32, 65, 0.25);
+	border: none;
+	outline: none;
+	padding-bottom: 50px;
+}
+
+	input::-webkit-input-placeholder {
+		color: rgba(31, 32, 65, 0.25);
+	}
+
+	input::-moz-placeholder {
+		color: rgba(31, 32, 65, 0.25);
+	}
+/* Firefox 19+ */
+	input:-moz-placeholder {
+		color: rgba(31, 32, 65, 0.25);
+	}
+/* Firefox 18- */
+	input:-ms-input-placeholder {
+		color: rgba(31, 32, 65, 0.25);
+	}
+
+.footer_subscription_arrow {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 226.5px;
+	top: 104px;
+	font-family: Material Icons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #BC9CFF;
+}
+
+.footer__support{
+	position: absolute;
+	width: 149px;
+	height: 130px;
+	left: 840px;
+	top: 104px;
+}
+
+.footer__about{
+	position: absolute ;
+	width: 108px;
+	height: 168px;
+	left: 640px;
+	top: 104px;
+}
+body {
+    position: relative;
+}
+
+thead tr th {
+    width: 39px;
+    height: 39px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    color: #BC9CFF;
+}
+
+tbody tr td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    /* Dark 50% */
+    color: rgba(31, 32, 65, 0.5);
+    width: 39.88px;
+    height: 40px;
+}
+
+.today {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+}
+
+.parentDotLeft {
+    background: linear-gradient(to right, white 50%, #eae7ff 50%);
+}
+
+.parentDotRight {
+    background: linear-gradient(to right, #eae7ff 50%, white 50%);
+}
+
+.dot {
+    width: 39.88px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+}
+
+.anotherMonthDays {
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.period {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+}
+
+.info {
+    position: absolute;
+    width: 228px;
+    height: 24px;
+    left: 46px;
+    top: 19px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #1F2041;
+}
+
+.apply {
+    position: absolute;
+    width: 84px;
+    height: 15px;
+    left: 216px;
+    top: 333px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.clear {
+    position: absolute;
+    width: 72px;
+    height: 15px;
+    left: 20px;
+    top: 333px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.arrow-forward {
+    position: absolute;
+    width: 23.93px;
+    height: 24px;
+    left: 274.4px;
+    top: 19px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.arrow-back {
+    position: absolute;
+    width: 23.93px;
+    height: 24px;
+    left: 19.2px;
+    top: 19px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+#calendar {
+    position: relative;
+    width: 320px;
+    height: 369px;
+    top: 330px;
+    left: 170px;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+#days {
+    position: absolute;
+    width: 279.39px;
+    height: 238px;
+    left: 20.93px;
+    top: 73px;
+}
+
+.guests-dropdown {
+    position: relative;
+    display: none;
+    z-index: 100;
+    width: 320px;
+    height: 159px;
+    
+    background: #FFFFFF;
+    /* Dark 50% */
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+}
+
+.guests-apply {
+    position: absolute;
+    width: 84px;
+    height: 15px;
+    left: 229px;
+    top: 131px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Primary Color */
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.guests-clear {
+    position: absolute;
+    width: 72px;
+    height: 15px;
+    left: 14px;
+    top: 131px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}
+
+.guests-babies {
+    position: absolute;
+    height: 40px;
+    width: 320px;
+    top: 80px;
+}
+
+.guests-children {
+    position: absolute;
+    height: 40px;
+    width: 320px;
+    top: 40px;
+}
+
+.guests-adult {
+    position: absolute;
+    height: 40px;
+    width: 320px;
+}
+
+.guests-minus {
+    position: absolute;
+    left: 283px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
+.guests-count {
+    position: absolute;
+    left: 251px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    /* Dark 100% */
+    color: #1F2041;
+}
+
+.guests-plus {
+    position: absolute;
+    left: 221px;
+    top: 7px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
+.guests-note {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 40px;
+    left: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Dark 100% */
+    color: #1F2041;
+}
+
+
+/*# sourceMappingURL=roomDetails.css.map*/
