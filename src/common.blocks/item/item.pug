@@ -1,13 +1,10 @@
 style
     include ./item.css
     include ./__title/__title.css
+    include ./__form-title/__form-title.css
 
-mixin item(content, isExpand, isTitle)
-    -let title = ""
-    -if(isTitle)
-        -title = " item__title"
-
-    div(class=`item + ${title}`) #{content}
+mixin item(content, isExpand, style)
+    div(class=`item ${style}`) #{content}
         if(isExpand) 
             include ./__expand-more/__expand-more.pug 
 

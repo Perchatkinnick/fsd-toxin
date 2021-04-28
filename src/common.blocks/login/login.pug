@@ -1,0 +1,19 @@
+style
+    include ./login.css
+
+div(class="login")
+    div(class="registration__title" )
+        +item('Войти', false, 'item__form-title')
+    div(class="login__input-container")
+        input(class="input" type="text" style="top: 0px" placeholder="Email") 
+        input(class="input" type="text" style="top: 54px" placeholder="Пароль")
+
+    div(class="login__button-container")
+        div(class="go-button") войти
+            div(class="go-button__arrow material-icons") arrow_forward
+
+    div(class="login__toRegistration")
+        div(class="registration__login__note") Нет аккаунта на Toxin?
+        div(class="login__toRegistration__button")
+            div(class="login-button ")
+                div(class="login-button__background") создать

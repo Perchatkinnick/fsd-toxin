@@ -6,12 +6,10 @@ import '@styles/reset.css';
 import '@fonts/montserrat.css';
 import '@fonts/fontawesome/all.min.css';
 import '@fonts/iconfont/material-icons.css';
-import '@blocks/footer/footer.css';
 import '@blocks/login/login.css';
 import '@blocks/go-button/go-button.css';
 import '@blocks/input/input.css';
 import '@blocks/registration/registration.css';
-import '@blocks/title/title.css';
 
 
 const header = require('@blocks/header/header');

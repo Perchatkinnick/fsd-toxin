@@ -9,9 +9,12 @@ function onLoginLoad() {
 }
 
 function onToRegistrationButtonClickHandler(e) {
-    let loginForm = document.querySelector('.login');
-    let regForm = document.querySelector('.registration');
+    // let loginForm = document.querySelector('.login');
+    // let regForm = document.querySelector('.registration');
 
-    loginForm.style.display = '';
-    regForm.style.display = 'block';
+    // loginForm.style.display = '';
+    // regForm.style.display = 'block';
+
+    localStorage.setItem('loginOrRegistration', 'registration');
+    location.href = 'authoriz.html';
 }
