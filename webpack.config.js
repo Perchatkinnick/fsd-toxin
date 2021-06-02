@@ -119,6 +119,7 @@ const fileName = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
+    target: 'web',
     entry: {
         main: ['@babel/polyfill', './scripts/index'],
         authoriz: './scripts/authoriz',
@@ -143,6 +144,7 @@ module.exports = {
         port: 4200,
         open: isDev,
         hot: true,
+        watchContentBase: true
     },
     devtool: isDev ? 'source-map' : false,
     plugins: plugins(),

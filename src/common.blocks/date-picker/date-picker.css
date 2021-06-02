@@ -1,0 +1,43 @@
+.date-picker {
+    width: 320px;
+    height: 65px;
+}
+
+.search-room__expand-more {
+	display: inline-block;
+	float: right;
+}
+
+.content__search__rect {
+	position: absolute;
+	width: 100%;
+	height: 44px;
+	top: 20.44px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 14px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 40px;
+	color: rgba(31, 32, 65, 0.75);
+	cursor: pointer;
+}
+
+.date-picker__arrive {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.date-picker__departure {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+    left: 170px;
+    cursor: pointer;
+}

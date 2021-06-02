@@ -7,7 +7,6 @@ import '@fonts/montserrat.css';
 import '@fonts/fontawesome/all.min.css';
 import '@fonts/iconfont/material-icons.css';
 import '@blocks/guests-dropdown/guests-dropdown.css';
-import '@blocks/calendar/calendar.css';
 import '@blocks/footer/footer.css';
 import '@blocks/show-rooms/show-rooms.css';
 import '@blocks/facilities-dropdown/facilities-dropdown.css';
@@ -70,7 +69,7 @@ calendar.func();
 
 
 function createPageMarkers() {
-    let len = roomsData.length;
+    let len = roomsData.roomsData.length;
     let pages = Math.ceil(len / 12);
 
     let container = document.querySelector('.content__show__page-navigation');
@@ -107,18 +106,18 @@ function onMarkerClickHandler(e) {
         e.target.classList.add('content__show__page-navigation__marker__active');
 
         createShowVariants(+e.target.innerHTML);
-        loadRooms(+e.target.innerHTML);
+        showRooms.loadRooms(+e.target.innerHTML);
     }
 }
 
 function nextPage() {
-    let len = roomsData.length;
+    let len = roomsData.roomsData.length;
     let pages = Math.ceil(len / 12);
     let currentPage = document.querySelector('.content__show__page-navigation__marker__active').innerHTML;
 
     if (+currentPage < pages) {
         createShowVariants(+currentPage + 1);
-        loadRooms(+currentPage + 1);
+        showRooms.loadRooms(+currentPage + 1);
 
         let markers = document.getElementsByClassName('content__show__page-navigation__marker');
         for (let marker of markers) {
@@ -134,11 +133,11 @@ function nextPage() {
 function createShowVariants(page) {
     let container = document.querySelector('.content__show__variants');
     let totalVariants = 12 * page;
-    if (totalVariants > roomsData.length) {
-        totalVariants = roomsData.length;
+    if (totalVariants > roomsData.roomsData.length) {
+        totalVariants = roomsData.roomsData.length;
     }
 
-    container.innerHTML = (12 * (page - 1) + 1) + ' – ' + totalVariants + ' из ' + roomsData.length + ' вариантов аренды'
+    container.innerHTML = (12 * (page - 1) + 1) + ' – ' + totalVariants + ' из ' + roomsData.roomsData.length + ' вариантов аренды'
 }
 
 function onAdditionalArrowClick(e) {

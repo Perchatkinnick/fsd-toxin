@@ -164,7 +164,7 @@
     color: #1F2041;
 }
 
-.content__booking__calendar {
+.calendar-parent {
     position: absolute;
     display: none;
     width: 320px;
@@ -175,14 +175,6 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     background: white;
     z-index: 100;
-}
-
-.content__booking__date {
-    position: absolute;
-    width: 320px;
-    height: 65px;
-    left: 30px;
-    top: 80px;
 }
 
 .content__booking__arrow {
@@ -199,52 +191,6 @@
     align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
-}
-
-.content__booking__date__value {
-    position: absolute;
-    width: 150px;
-    height: 44px;
-    top: 20.44px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 0 15px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 44px;
-    color: rgba(31, 32, 65, 0.75);
-}
-
-.content__booking__date__title {
-    position: absolute;
-    width: 83px;
-    height: 15px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041;
-}
-
-.content__booking__date__arrive {
-    position: absolute;
-    width: 150px;
-    height: 65px;
-    cursor: pointer;
-}
-
-.content__booking__date__departure {
-    position: absolute;
-    width: 150px;
-    height: 65px;
-    left: 170px;
-    cursor: pointer;
 }
 
 .content__booking__price {

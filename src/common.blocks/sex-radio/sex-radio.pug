@@ -1,0 +1,16 @@
+style
+    include ./sex-radio.css
+
+mixin sex-radio(item1, item2)
+    div(class=`sex-radio ${attributes.class}`)
+        div(class="registration__sex__male registration__sex__checked")
+            div(class="registration__sex__check-box")
+                div(class="registration__sex__check-box__marker")
+
+            div(class="registration__sex__value") #{item1}
+
+        div(class="registration__sex__female")
+            div(class="registration__sex__check-box")
+                div(class="registration__sex__check-box__marker")
+
+            div(class="registration__sex__value") #{item2}

@@ -48,17 +48,17 @@ function func() {
 		let dot2 = body.dataset.dot2;
 
 		if (currentPage.split('/').pop() != 'search-room.html') {
-			let arriveDate = document.querySelector('.content__search__arrive');
-			let departureDate = document.querySelector('.content__search__departure');
+			let arriveDate = document.querySelector('.date-picker__arrive').querySelector('.content__search__rect');
+			let departureDate = document.querySelector('.date-picker__departure').querySelector('.content__search__rect');
 
 			dateLoad(arriveDate, dot1);
 			dateLoad(departureDate, dot2);
 		}
 
-		localStorage.setItem('dateArrive', dot1);
-		localStorage.setItem('dateDeparture', dot2);
-
-
+		if(dot1 != "" && dot2 != "") {
+			localStorage.setItem('dateArrive', dot1);
+			localStorage.setItem('dateDeparture', dot2);
+		}
 
 		// for search-room
 		let contentDateTitle = document.querySelector('.content__date__title');
@@ -124,20 +124,16 @@ function getShortMonth(num) {
 }
 
 function dateLoad(elem, text) {
-	let node = elem.querySelector('.content__search__rect').firstChild;
 
-	if (node != null) {
-		if (text != '') {
-			let arr = text.split('.');
+	if (text != '') {
+		let arr = text.split('.');
 
-			let content = arr[2] + '.' + monthForShow(arr[1]) + '.' + arr[0];
+		let content = arr[2] + '.' + monthForShow(arr[1]) + '.' + arr[0];
 
-			node.textContent = content;
-		} else {
-			//alert('Выберите дату прибытия и дату отъезда');
-		}
+		elem.innerHTML = content;
+	} else {
+		//alert('Выберите дату прибытия и дату отъезда');
 	}
-
 }
 
 function monthForShow(number) {

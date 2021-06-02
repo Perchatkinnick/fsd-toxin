@@ -43,9 +43,9 @@ function loadBooking(roomData) {
 
     let arriveDate = getValidDate(localStorage.getItem('dateArrive'));
     let departureDate = getValidDate(localStorage.getItem('dateDeparture'));
-    let arriveElem = document.querySelector('.arrive-date');
+    let arriveElem = document.querySelector('.date-picker__arrive').querySelector('.content__search__rect');
     arriveElem.innerHTML = arriveDate;
-    let departureElem = document.querySelector('.departure-date');
+    let departureElem = document.querySelector('.date-picker__departure').querySelector('.content__search__rect');
     departureElem.innerHTML = departureDate;
 }
 

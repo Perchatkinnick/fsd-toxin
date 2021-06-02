@@ -1,37 +1,14 @@
 style
     include ./booking.css
+    include ./__date-picker/__date-picker.css
 
 div(class="booking")
     div(class="content__booking__number")
     div(class="content__booking__lux")
     div(class="content__booking__price")
-    div(class="content__booking__date")
-        div(class="content__booking__date__arrive")
-            div(class="content__booking__date__title") прибытие
-            div(class="content__booking__date__value arrive-date") ДД.ММ.ГГГГ
-            div(class="content__booking__arrow") expand_more
-        div(class="content__booking__date__departure")
-            div(class="content__booking__date__title") выезд
-            div(class="content__booking__date__value departure-date") ДД.ММ.ГГГГ
-            div(class="content__booking__arrow") expand_more
-    div(class="content__booking__calendar calendar-parent")
-        div(id="days")
-            table
-                thead
-                    tr
-                        th Пн
-                        th Вт
-                        th Ср
-                        th Чт
-                        th Пт
-                        th Сб
-                        th Вс
-                tbody(class="body" data-dot1="" data-dot2="")
-        div(class="info") Август
-        i(class="material-icons arrow-back") arrow_back
-        i(class="material-icons arrow-forward") arrow_forward
-        span(class="clear") очистить
-        span(class="apply") применить
+    .booking__date-picker
+        include ../../common.blocks/date-picker/date-picker.pug
+    include ../../common.blocks/calendar/calendar.pug
     div(class="content__booking__guests")
         div(class="content__booking__guests__title") гости
         div(class="content__booking__guests__value content__guests__title") Сколько гостей

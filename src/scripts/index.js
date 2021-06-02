@@ -7,11 +7,9 @@ import '@fonts/montserrat.css';
 import '@fonts/fontawesome/all.min.css';
 import '@fonts/iconfont/material-icons.css';
 import '@blocks/footer/footer.css';
-import '@blocks/calendar/calendar.css';
 import '@blocks/guests-dropdown/guests-dropdown.css';
 import '@blocks/go-button/go-button.css';
 import '@blocks/input/input.css';
-
 
 const calendar = require('@blocks/calendar/calendar');
 const header = require('@blocks/header/header');
@@ -19,10 +17,10 @@ const guestsDropdown = require('@blocks/guests-dropdown/guests-dropdown')
 
 header.onHeaderLoad();
 
-let arriveForm = document.querySelector('.content__search__arrive');
+let arriveForm = document.querySelector('.date-picker__arrive');
 arriveForm.addEventListener('click', addCalendar);
 
-let departureForm = document.querySelector('.content__search__departure');
+let departureForm = document.querySelector('.date-picker__departure');
 departureForm.addEventListener('click', addCalendar);
 
 let guestsForm = document.querySelector('.content__search__guests');

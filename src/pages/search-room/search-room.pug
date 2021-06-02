@@ -1,37 +1,20 @@
 extends ../base.pug
 block content
 
-    div(class="content__room-settings")
-        div(class="content__date")
-            div(class="content__date__label") даты пребывания в отеле
-            div(class="content__date__rect")
-            div(class="content__date__title") ДД.ММ.ГГГГ
-            div(class="content__date__arrow")
-        div(class="calendar-parent")
-            div(id="days")
-                table
-                    thead
-                        tr
-                            th Пн
-                            th Вт
-                            th Ср
-                            th Чт
-                            th Пт
-                            th Сб
-                            th Вс
-
-                    tbody(class="body" data-dot1="" data-dot2="")            
-            div(class="info") Август
-            i(class="material-icons arrow-back") arrow_back
-            i(class="material-icons arrow-forward") arrow_forward
-            span(class="clear") очистить
-            span(class="apply") применить
-        div(class="content__guests")
+    .content__room-settings
+        .content__date
+            .content__date__label даты пребывания в отеле
+            .content__date__rect
+            .content__date__title ДД.ММ.ГГГГ
+            .content__date__arrow
+        include ../../common.blocks/calendar/calendar.pug
+        
+        .content__guests
             div(class="content__guests__label") гости
             div(class="content__guests__rect")
             div(class="content__guests__title") Сколько гостей
             div(class="content__guests__arrow")
-        div(class="content__guests__dropdown")
+        .content__guests__dropdown
             div(class="guests-dropdown")
                 div(class="guests-adult")
                     div(class="guests-note") взрослые
@@ -50,7 +33,7 @@ block content
                     div(id="guests-babies-minus" class="guests-minus") -
                 span(class="guests-clear") очистить
                 span(class="guests-apply") применить
-        div(class="content__price-range")
+        .content__price-range
             div(class="content__price-range__label") диапазон цены
             div(class="content__price-range__value")
                 span(class="min") 5 000 Р
@@ -61,8 +44,8 @@ block content
                     div(class="bar")
                         div(class="lp" data-pos="0.285")
                         div(class="rp" data-pos="0.64")
-            div(class="content__price-range__remark") Стоимость за сутки пребывания в номере
-        div(class="content__home-rules")
+            .content__price-range__remark Стоимость за сутки пребывания в номере
+        .content__home-rules
             div(class="content__home-rules__title") правила дома
             div(class="content__home-rules__smoke")
                 div(class="content__home-rules__checkbox" data-checked="none")

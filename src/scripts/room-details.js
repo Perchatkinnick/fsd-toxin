@@ -4,7 +4,6 @@ import '@styles/main.css';
 import '@styles/room-details.css';
 import '@styles/reset.css';
 import '@blocks/footer/footer.css';
-import '@blocks/calendar/calendar.css';
 import '@blocks/guests-dropdown/guests-dropdown.css';
 import '@fonts/montserrat.css';
 import '@fonts/fontawesome/all.min.css';
@@ -124,15 +123,15 @@ function onGuestsElemClickHandler() {
 }
 
 function loadCalendar() {
-    let arriveElem = document.querySelector('.content__booking__date__arrive');
+    let arriveElem = document.querySelector('.date-picker__arrive');
     arriveElem.addEventListener('click', showCalendar);
 
-    let departureElem = document.querySelector('.content__booking__date__departure');
+    let departureElem = document.querySelector('.date-picker__departure');
     departureElem.addEventListener('click', showCalendar);
 }
 
 function showCalendar() {
-    let calendar = document.querySelector('.content__booking__calendar');
+    let calendar = document.querySelector('.calendar-parent');
 
     if (calendar.style.display == '') {
         calendar.style.display = 'block';

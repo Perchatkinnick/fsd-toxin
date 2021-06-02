@@ -1,0 +1,30 @@
+style
+    include ./search.css
+    include ./__date-picker/__date-picker.css
+
+.search__date-picker
+    include ../../common.blocks/date-picker/date-picker.pug
+include ../../common.blocks/calendar/calendar.pug
+.content__search__guests
+    .content__search__title гости
+    .content__search__rect(class="guests__rect") Сколько гостей
+        .expand-more(class="search-room__expand-more") expand_more
+.guests__dropdown__container
+    .guests-dropdown
+        .guests-adult
+            .guests-note взрослые
+            div(id="guests-adult-plus" class="guests-plus") +
+            div(id="guests-adult" class="guests-count") 2
+            div(id="guests-adult-minus" class="guests-minus") -
+        .guests-children
+            .guests-note дети
+            div(id="guests-children-plus" class="guests-plus") +
+            div(id="guests-children" class="guests-count") 0
+            div(id="guests-children-minus" class="guests-minus") -
+        .guests-babies
+            .guests-note младенцы
+            div(id="guests-babies-plus" class="guests-plus") +
+            div(id="guests-babies" class="guests-count") 0
+            div(id="guests-babies-minus" class="guests-minus") -
+        span(class="guests-clear") очистить
+        span(class="guests-apply") применить

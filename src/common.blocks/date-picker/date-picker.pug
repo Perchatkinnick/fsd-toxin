@@ -1,0 +1,14 @@
+style
+    include ./date-picker.css
+
+include ../title/title.pug 
+
+.date-picker
+    .date-picker__arrive
+        +title('прибытие') 
+        .content__search__rect ДД.ММ.ГГГГ
+            .expand-more(class="search-room__expand-more") expand_more
+    .date-picker__departure
+        +title('выезд') 
+        .content__search__rect ДД.ММ.ГГГГ
+            .expand-more(class="search-room__expand-more") expand_more
